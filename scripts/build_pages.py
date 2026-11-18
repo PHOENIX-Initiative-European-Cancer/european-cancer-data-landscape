@@ -52,7 +52,7 @@ SECTIONS = [
     ("FHIR guides, registry format and terminologies", "*.md", "fhir"),
     ("Registries, public datasets, infrastructure and non-FHIR digital assets", "*-landscape.md", "landscape"),
 ]
-EXCLUDE = {"overview.md"}
+EXCLUDE = {"overview.md", "overview-non-fhir.md", "eu-funding.md"}
 
 
 def split_sections(text):
@@ -219,6 +219,73 @@ def write_landscape_tables():
         encoding="utf-8")
 
 
+def write_non_fhir_tables():
+    """Tables C/D and patterns E from overview-non-fhir.md, if the consolidation exists."""
+    src = SRC / "overview-non-fhir.md"
+    intro = ("### Registries, public datasets, infrastructure and non-FHIR digital assets\n\n"
+             "Consolidated from the regional non-FHIR reports (registries, public datasets, cancer "
+             "infrastructure, non-FHIR digital assets). \"n/f\" = not found in a public source. "
+             "Details with source URLs are on the [country pages](countries.html) and in the "
+             "[cross-cutting notes](cross-cutting.html).\n\n")
+    if not src.exists():
+        (PAGES / "landscape-non-fhir.md").write_text(intro + "The consolidated tables are being compiled.\n", encoding="utf-8")
+        return
+    text = src.read_text(encoding="utf-8")
+    c, d = extract_table(text, "C."), extract_table(text, "D.")
+    table_to_csv(c, DATA / "registries-landscape.csv")
+    table_to_csv(d, DATA / "infrastructure-landscape.csv")
+    patterns = []
+    grab = False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            grab = line.startswith("## E."); continue
+        if grab:
+            patterns.append(line)
+    def linkify(lines):
+        out = []
+        for l in lines:
+            m = re.match(r"^\| ([^|]+?) \|", l)
+            name = ALIASES.get(m.group(1).strip(), m.group(1).strip()) if m else None
+            if name in COUNTRIES:
+                l = l.replace(f"| {m.group(1)} |", f"| [{name}](country-{COUNTRIES[name][1]}.html) |", 1)
+            out.append(l)
+        return out
+    body = (intro + "### Cancer registries and data access\n\nMachine-readable copy: "
+            "[data/registries-landscape.csv](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/blob/main/data/registries-landscape.csv).\n\n"
+            + "\n".join(linkify(c)) + "\n\n### Infrastructure, EU projects and non-FHIR digital assets\n\nMachine-readable copy: "
+            "[data/infrastructure-landscape.csv](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/blob/main/data/infrastructure-landscape.csv).\n\n"
+            + "\n".join(linkify(d)) + "\n\n### Patterns\n\n" + "\n".join(patterns).strip() + "\n")
+    (PAGES / "landscape-non-fhir.md").write_text(body, encoding="utf-8")
+
+
+def write_funding():
+    """Funding page from eu-funding.md plus the national funding sections of the deep dives."""
+    src = SRC / "eu-funding.md"
+    lines = ["### Research funding and upcoming calls", "",
+             "EU-level calls and running projects relevant to cancer data, interoperability and the EHDS, "
+             "compiled 2026-11-18. Deadlines and budgets are as published on the survey date; check the "
+             "Funding & Tenders portal before acting. National funding lines are on the country pages of "
+             "Germany, France, Italy and the Netherlands under \"Research funding and calls\".", ""]
+    if src.exists():
+        body = re.sub(r"^# .*\n", "", src.read_text(encoding="utf-8"), count=1)
+        body = re.sub(r"^(#{2,5}) ", lambda m: "#" + m.group(1) + " ", body, flags=re.M)
+        lines += [body.strip(), ""]
+    else:
+        lines += ["The EU funding survey is being compiled.", ""]
+    for f in sorted(SRC.glob("*-landscape.md")):
+        slug_to_name = {v[1]: k for k, v in COUNTRIES.items()}
+        slug = f.name[:-len("-landscape.md")]
+        if slug not in slug_to_name:
+            continue
+        text = f.read_text(encoding="utf-8")
+        m = re.search(r"^## Research funding and calls\s*\n(.*?)(?=^## |\Z)", text, flags=re.M | re.S)
+        if m:
+            name = slug_to_name[slug]
+            lines += [f"### National funding: {name}", "", demote(m.group(1).strip()), "",
+                      f"See the [{name} page](country-{COUNTRIES[name][1]}.html) for context.", ""]
+    (PAGES / "funding.md").write_text("\n".join(lines), encoding="utf-8")
+
+
 def write_sushi_pages():
     cfg = ROOT / "sushi-config.yaml"
     text = cfg.read_text(encoding="utf-8")
@@ -242,6 +309,8 @@ if __name__ == "__main__":
     write_country_index(pc)
     write_cross_cutting()
     write_landscape_tables()
+    write_non_fhir_tables()
+    write_funding()
     write_sushi_pages()
     n = sum(1 for p in pc.values() if p["fhir"] or p["landscape"] or p["deep"])
     print(f"wrote {n}/{len(COUNTRIES)} country pages, index, landscape tables, sushi page list")

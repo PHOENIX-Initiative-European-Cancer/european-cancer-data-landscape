@@ -13,3 +13,44 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
    https://www.snomed.org/members/iceland ; https://island.is/en/classification-system-in-health-services/icd-10 ; https://island.is/flokkunarkerfi-i-heilbrigdisthjonustu/skafl.is
 5. **Organisations and people:** Stafræn heilsa (director Sigurður Þórarinsson), Embætti landlæknis, Krabbameinsfélagið (Laufey Tryggvadóttir, registry). HL7 affiliate or FHIR maintainer: not found.
    https://island.is/s/stafraen-heilsa/frett/sigurdur-thorarinsson-skipadur-forstoedumadur-stafraennar-heilsu ; https://medicaljournalssweden.se/actaoncologica/article/view/24912
+
+### Registries, public datasets, infrastructure and non-FHIR digital assets
+
+#### (a) Cancer registries
+- Population-based: Icelandic Cancer Registry (Krabbameinsskrá), founded 1954, operated by the Icelandic Cancer Society research centre on behalf of the Directorate of Health (Act 41/2007); covers >99% of cancers; registration since 1955. https://www.krabb.is/rannsoknasetur/en/activities/about-icr/ ; https://www.laeknabladid.is/media/2024-06/f02.pdf
+- ENCR/IACR: ANCR member; ENCR listing n/f in search. https://catalogues.ema.europa.eu/network/2221158
+- Clinical quality registries: n/f.
+- Screening: Samhæfingarstöð krabbameinsskimana (Cancer Screening Coordination Centre, Heilsugæsla höfuðborgarsvæðisins) runs breast, cervical and (from Feb 2025) colorectal screening; results via Heilsuvera. https://island.is/s/hh/samhaefingarstod-krabbameinsskimana ; https://island.is/s/hh/frett/langthradur-afangi-ad-hefja-skimun-fyrir-ristilkrabbameini-28-02-2025
+- Submission format: n/f (private clinicians report only prostate cancers; linkage with pathology registries). https://medicaljournalssweden.se/actaoncologica/article/view/24912
+- Coding: IARC/ENCR rules; ICD-O-3 via NORDCAN recoding; TNM n/f. https://medicaljournalssweden.se/actaoncologica/article/view/24912
+- Researcher access: application form plus ethics-approved research plan to the Cancer Registry; family database requires National Bioethics Committee permission; >600 studies. https://www.krabb.is/rannsoknasetur/en/activities/about-icr/
+
+#### (b) Public datasets
+- NORDCAN 2.0 participant (Iceland included). https://www.iarc.who.int/news-events/iarc-and-partners-launch-nordcan-2-0-comparable-cancer-statistics-for-the-nordic-countries
+- Cancer Society publishes five-year average statistics. https://www.krabb.is/rannsoknasetur/en/activities/about-icr/
+- ECIS contributor: n/f.
+- Research access body (EHDS): Directorate of Health (TEHDAS2 partner). https://tehdas.eu/partners/
+- Synthetic datasets, national catalogue: n/f.
+
+#### (c) Cancer infrastructure
+- National plan: government cancer action plan approved by parliament June 2025 (16 measures); Cancer Council established. https://island.is/en/news/new-cancer-council
+- Landspítali Cancer Center established 2025; standardised care pathways; accreditation preparation. https://island.is/en/o/landspitali/landspitali-cancer-center ; https://island.is/en/o/landspitali/landspitali-cancer-center/standardized-cancer-care-pathways
+- OECI: n/f.
+- Genomics: deCODE genetics (>2/3 of adults participating by 2019); 1+MG / Genome of Europe participation n/f. https://www.decode.com/?p=2007
+- Biobank: BBMRI-ERIC membership n/f.
+- Imaging: EUCAIM n/f.
+- EU projects: EUCanScreen (Heilsugæsla höfuðborgarsvæðisins); TEHDAS2 (Directorate of Health); ECHoS n/f. https://island.is/en/o/hh/eu-can-screen ; https://tehdas.eu/partners/
+- OMOP/EHDEN: n/f.
+- National health data space: Stafræn heilsa (from Jan 2026) as development and service centre; draft Digital Health Act (consultation Aug 2026). https://island.is/s/stafraen-heilsa/frett/droeg-ad-frumvarpi-um-stafraena-heilsu-til-umsagnar
+
+#### (d) Digital, non-FHIR, cancer-relevant
+- Patient portal: Heilsuvera (screening invitations and results; cancer plan calls for interactive symptom-monitoring portal). https://island.is/s/hh/frett/bod-og-nidurstodur-vegna-krabbameinsskimana-a-heilsuveru-14-03-2025 ; https://island.is/en/o/sak/news/rafraen-samskiptagatt-styrkir-thjonustu-vid-sjuklinga-i-veikindum
+- EHR: Saga (Origo/Helix) nationwide; Hekla health network; prescription gateway. https://island.is/s/stafraen-heilsa/innvidir-og-kerfi
+- Classification distribution: SKAFL.is (ICD-10, NCSP). https://island.is/flokkunarkerfi-i-heilbrigdisthjonustu/skafl.is
+- Structured pathology: SNOMED used in pathology registration. https://island.is/en/classification-system-in-health-services
+- MDT software, chemotherapy system, openEHR: n/f.
+
+#### Key organisations and people
+- Embætti landlæknis, Stafræn heilsa (Sigurður Þórarinsson), Krabbameinsfélagið (Laufey Tryggvadóttir), Landspítali Cancer Center, Heilsugæsla höfuðborgarsvæðisins, deCODE (Kári Stefánsson). https://island.is/s/stafraen-heilsa/frett/sigurdur-thorarinsson-skipadur-forstoedumadur-stafraennar-heilsu
+
+---

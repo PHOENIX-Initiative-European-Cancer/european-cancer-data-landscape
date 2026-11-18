@@ -9,6 +9,7 @@ It is a survey, not a specification. It defines no profiles. It contains no pati
 * [FHIR landscape](landscape-fhir.html): one row per country with the national base guide, oncology FHIR work and the registry input format.
 * [Terminology landscape](landscape-terminology.html): SNOMED CT membership and edition, ICD-10 variant, ICD-O edition, TNM edition, LOINC variant and the national terminology server.
 * [Registries, datasets and infrastructure](landscape-non-fhir.html): the non-FHIR side: population-based and clinical registries, open data, genomics and imaging infrastructure, EU project participation, document standards.
+* [Research funding and calls](funding.html): EU calls opening or closing through 2027 and national funding lines of the four focus countries.
 * [Implications for ECCDM](implications.html): what the landscape means for the common model's bindings and design.
 * [Countries](countries.html): the detailed page per country. Every statement there carries its source URL.
 * [Method and caveats](methodology.html): how the survey was made and how far to trust it.

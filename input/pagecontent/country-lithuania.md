@@ -13,3 +13,41 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
 4. **Terminologies:** SNOMED CT charter member 2007; NRC Lithuanian Library of Medicine (Ministry of Health); 40,000 concepts translated 2015. TLK-10-AM (ICD-10-AM) used since 2019 as interim; edition not found; TLK-11 mapping planned. LOINC and ICD-O-3 used in lab IG; ATC: not found; TNM edition: not found. Terminology server: https://tx.hl7.lt/fhir/ (HL7 Lithuania); national terminology server adaptation for TLK-11 planned.
    https://snomed.org/snomed-in-action/lithuanian-nrc-library-of-medicine ; https://e-seimas.lrs.lt/rs/legalact/TAD/e1ba28a055e911f0a19dcea0bcc863ad/ ; https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html
 5. **Organisations and people:** Lithuanian Medical Library (IG publisher, SNOMED NRC), HL7 Lithuania (hl7.lt), Registrų centras (ESPBI), NVI. Named maintainers: not found.
+
+### Registries, public datasets, infrastructure and non-FHIR digital assets
+
+#### (a) Cancer registries
+- Population-based: Lithuanian Cancer Registry at Nacionalinis vėžio institutas (NVI); ENCR-listed; modernised registry with open data portal (Dec 2025); fully electronic registration per NVI 2025 report. https://encr.eu/node/262 ; https://ground.news/article/since-1978-67-million-cancer-cases-in-lithuania-new-tool-for-disease-control-introduced ; https://nvi.lt/wp-content/uploads/2026/04/2-priedas.-NVI_Ataskaita_2025_26-02-26.pdf
+- Source document: form Nr. 090/a (first-diagnosis notice). https://www.nvi.lt/uploads/pdf/Vezio%20registras/V%C4%97%C5%BEys%20Lietuvoje%202016.pdf
+- Screening: ESPBI subsystem for prevention programmes (breast, cervical, colorectal, prostate) built 2023–2025 (Kaunas Clinics project). https://kaunoklinikos.lt/media/file/Prevencini%C5%B3%20program%C5%B3%20vykdymo,%20kokyb%C4%97s%20u%C5%BEtikrinimo%20ir%20kokyb%C4%97s%20kontrol%C4%97s%20ESPBI%20IS%20posistem%C4%97s%20k%C5%ABrimas.pdf
+- Clinical quality registries: n/f.
+- Coding: ICD-O-3 topography/morphology; TLK-10-AM diagnoses; TNM edition n/f. https://www.nvi.lt/uploads/pdf/Vezio%20registras/Vezys_lietuvoje_2012.pdf
+- Legal basis: mandatory statistical form 090/a (Ministry of Health order). https://www.nvi.lt/uploads/pdf/Vezio%20registras/V%C4%97%C5%BEys%20Lietuvoje%202016.pdf
+- Researcher access: procedure n/f; State Data Agency's Lithuanian Digital Health Platform onboarded in DARWIN EU. https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf
+
+#### (b) Public datasets
+- NVI "Vėžys Lietuvoje" annual reports; new open data portal. https://www.nvi.lt/uploads/pdf/Vezio%20registras/V%C4%97%C5%BEys%20Lietuvoje%202017.pdf
+- ECIS contributor; CancerWatch project participation (Ministry of Health, NVI). https://sam.lrv.lt/en/during-the-visit-to-japan-the-focus-was-on-patient-safety/to-improve-cancer-data-quality-and-strengthen-cancer-control-europe-is-beginning-to-implement-the-cancerwatch-program-Y3mw
+- IHE Cancer Dashboard Lithuania (2025). https://ihe.se/app/uploads/2025/01/IHE-Cancer-Dashboard-Lithuania_.pdf
+- Research access body: Valstybės duomenų agentūra (TEHDAS2 partner, DARWIN EU). https://tehdas.eu/partners/
+- Synthetic datasets: n/f.
+
+#### (c) Cancer infrastructure
+- National Cancer Prevention and Control Programme 2014–2025; successor in development. https://ihe.se/app/uploads/2025/01/IHE-Cancer-Dashboard-Lithuania_.pdf ; https://www.iccp-portal.org/sites/default/files/plans/LTU_2020.pdf
+- OECI: NVI accredited Clinical Cancer Centre since 2013; NVI and VU Santaros Klinikos seeking joint CCC accreditation. https://www.vu.lt/en/news-events/news/vu-santaros-klinikos-and-the-national-cancer-institute-will-cooperate-in-the-treatment-of-oncological-diseases-and-the-development-of-oncology-science-the-aim-is-to-become-a-centre-for-comprehensive-cancer-care
+- Genomics: 1+MG participation via Santaros Klinikos biobank; €7.6M for GDI 2023–2026. https://oecd.ai/en/dashboards/policy-initiatives/1-million-genomes-vilnius-university-hospital-vul-santaros-klinikos
+- Biobank: BBMRI-ERIC full member 2024; national node via NVI; Santaros, LSMU/Kaunas biobanks. https://www.bbmri-eric.eu/national-nodes/lithuania/ ; https://nvi.lt/biobank-projects
+- Imaging: EUCAIM n/f.
+- EU projects: ECHoS (LSMU Kaunas Clinics, PI); JANE-2 (Vilnius University Hospital Santaros Klinikos); EUCanScreen (Ministry of Health, Vilnius and Kaunas hospitals); TEHDAS2 (State Data Agency). https://lsmu.lt/en/research-and-innovations/projects/international-projects/establishing-of-cancer-mission-hubs-networks-and-synergies/
+- OMOP/EHDEN: DARWIN EU partner Lithuanian Digital Health Platform (State Data Agency). https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf
+- National health data space: State Data Agency platform; openEHR pilot for health information systems. https://discourse.openehr.org/uploads/short-url/3r2W1AWAHYxZ2AnvTJyCdLuq2Zw.docx
+
+#### (d) Digital, non-FHIR, cancer-relevant
+- ESPBI IS (Registrų centras): DSTU1 Atom feeds (SKL01–03), patient portal esveikata.lt and mobile app; prevention-programme subsystem. https://www.esveikata.lt/en/en/ehealth ; https://esveikata.lt/bylos/failai/Mobilioji%20program%C4%97l%C4%97/Esveikatos%20naudojo%20vadovas-v1.1.pdf
+- openEHR: national openEHR pilot/tender for health information systems. https://discourse.openehr.org/uploads/short-url/3r2W1AWAHYxZ2AnvTJyCdLuq2Zw.docx
+- TLK-10-AM classification; TLK-11 mapping planned. https://e-seimas.lrs.lt/rs/legalact/TAD/e1ba28a055e911f0a19dcea0bcc863ad/
+- Structured pathology: LT Lab IG pathology profiles (ICD-O-3, pTNM) are FHIR; non-FHIR pathology standard n/f.
+- MDT software, chemotherapy system: n/f.
+
+#### Key organisations and people
+- NVI (cancer registry, biobank node), Ministry of Health, Registrų centras (ESPBI), Valstybės duomenų agentūra, VU Santaros Klinikos, LSMU Kaunas Clinics, Lithuanian Medical Library (SNOMED NRC, HL7 IGs). Named people: n/f.

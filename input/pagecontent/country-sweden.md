@@ -14,3 +14,52 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
    https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/256901154 ; https://www.socialstyrelsen.se/contentassets/b4f71ee88ef74195824e5fa9cca7cf89/2026-1-9989.pdf ; https://www.socialstyrelsen.se/contentassets/ad9a86523e93449097d5136a8989f561/2024-1-8918.pdf ; https://fhir.inera.se/ig/IneraFHIRTemplate/1.0.1/terminology.html
 5. **Organisations and people:** HL7 Sweden, E-hälsomyndigheten (standards body, National Group for Standardization), Socialstyrelsen, Inera, RCC i samverkan. Arvid Thunholm (chair, HL7 Sweden WG base profiles); Mattias Colliander (HL7 Sweden board, terminology server); Daniel Karlsson (E-hälsomyndigheten, Nordic terminology cooperation). Board chair: not verified.
    https://build.fhir.org/ig/HL7Sweden/basprofiler-r4/ ; https://hl7norway.github.io/best-practice/docs/FHIR-faglig-forum/presentasjon/2025-09-10-term-servers-intro.pdf
+
+### Registries, public datasets, infrastructure and non-FHIR digital assets
+
+#### (a) Cancer registries
+- Population-based: Cancerregistret at Socialstyrelsen, founded 1958; mandatory reporting; six Regional Cancer Centres (RCC) check, code and compile notifications annually. https://socialstyrelsen.se/statistik-och-data/register/cancerregistret/framstallning-och-kvalitet/ ; https://cancercentrum.se/syd/regional-cancer-centres/knowledge-based-healthcare/cancer-registry/
+- Coverage: near 100% completeness (Nordic overview); Sweden lacks legal basis to use death certificates to supplement the registry. https://medicaljournalssweden.se/actaoncologica/article/view/24912
+- ENCR/IACR: Swedish Cancer Registry listed by ENCR; ANCR member. https://catalogues.ema.europa.eu/node/1097/data-flows-and-management ; https://catalogues.ema.europa.eu/network/2221158
+- Clinical quality registries: about 30 national cancer quality registers on the INCA platform (RCC i samverkan), plus Individuell patientöversikt (IPÖ). https://cancercentrum.se/syd/regional-cancer-centres/knowledge-based-healthcare/national-swedish-cancer-registry/ ; https://akademiska.se/en/departments/specialist-healthcare/uppsala-comprehensive-cancer-centre/our-services/quality-data-at-uppsala-comprehensive-cancer-centre-uccc
+- Screening registries: NKCx (Nationellt Kvalitetsregister för Cervixcancerprevention, Karolinska Institutet, 100% national coverage, annual reports at nkcx.se); mammography and colorectal screening data via INCA/RCC. https://www.socialstyrelsen.se/contentassets/3a659c41107e40099b5d404ded89b50e/2020-6-6800-metodbilaga.pdf
+- Submission format: A-report (clinician) and B-report (lab) via INCA forms, Socialstyrelsen form, or electronic lab diagnostic statements; RCC convert to ICD-O/3. https://www.socialstyrelsen.se/contentassets/6b4e25c21ce446f2a9d850ef43daa294/2026-5-10247.pdf
+- Coding: ICD-O/3.2 (2019) with Socialstyrelsen modifications; TNM mandatory since 2004, latest UICC edition; ICD-10-SE. https://www.socialstyrelsen.se/contentassets/ad9a86523e93449097d5136a8989f561/2024-1-8918.pdf ; https://lagen.nu/sosfs/2006:15
+- Legal basis: SOSFS 2006:15 (cancer notification regulation); Patientregistret rules from 2027 mandate ICD-10-SE. https://lagen.nu/sosfs/2006:15 ; https://socialstyrelsen.se/statistik-och-data/register/patientregistret/nya-foreskrifter-om-uppgiftsskyldighet-till-patientregistret/
+- Researcher access: Socialstyrelsen register service for Cancerregistret; quality registers via RCC per-register application forms and steering-group approval; ethics approval from Etikprövningsmyndigheten; SKR quick guide. https://cancercentrum.se/syd/regional-cancer-centres/research-and-innovation/registry-research/ ; https://skr.se/kvalitetsregister/omnationellakvalitetsregister/qualityregistries/registrydatainresearch/quickguideforresearchers.54757.html
+
+#### (b) Public datasets
+- Socialstyrelsen Statistikdatabas (cancer incidence) and "Cancerregistrets framställning och kvalitet". https://socialstyrelsen.se/statistik-och-data/register/cancerregistret/framstallning-och-kvalitet/
+- NORDCAN 2.0 participant. https://www.iarc.who.int/news-events/iarc-and-partners-launch-nordcan-2-0-comparable-cancer-statistics-for-the-nordic-countries
+- ECIS contributor (Swedish Cancer Registry). https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data
+- RCC publishes quality register annual reports and SVF (standardised care pathway) indicators. https://cancercentrum.se/globalassets/vara-uppdrag/kunskapsstyrning/varje-dag-raknas/vardforlopp/redovisningar/2025/berakningsunderlag-for-andel-patienter-som-genomgatt-svf-version-9.0.pdf
+- Research data access body: Socialstyrelsen and Statistics Sweden (SCB) for linked microdata; TEHDAS2 partners: E-hälsomyndigheten, Region Skåne, Karolinska Institutet, Region Stockholm, Vetenskapsrådet, Socialstyrelsen, Uppsala University. https://tehdas.eu/partners/
+- Synthetic datasets: n/f. National health data catalogue: registerforskning.se (Vetenskapsrådet) n/f in this search.
+
+#### (c) Cancer infrastructure
+- National cancer strategy: new national cancer strategy presented by government January 2026 (10–15 year horizon), following "Bättre tillsammans" consultation. https://www.regeringen.se/pressmeddelanden/2026/01/ny-nationell-cancerstrategi-ska-radda-liv-och-hoja-livskvaliteten/
+- RCC i samverkan (six Regional Cancer Centres) as national coordination structure. https://cancercentrum.se/globalassets/om-rcc/samverkan/minnesanteckningar/2025/minnesanteckningar-rcc-i-samverkan-2025-01-21.pdf
+- OECI: Karolinska CCC (first in Sweden, 2020; re-accredited May 2025); Skåne University Hospital Cancer Centre accredited CCC; Uppsala CCC accreditation 2024; Sahlgrenska CCC (hosted first Nordic-Baltic CCC network meeting, Feb 2023); Umeå/Northern Sweden in process. https://www.karolinska.se/om-oss/centrala-nyheter/2025/05/karolinska-comprehensive-cancer-center-forst-i-sverige-med-fornyad-ackreditering/ ; https://vard.skane.se/en/skane-university-hospital/about-us/news/skane-university-hospital-cancer-centre-accredited-as-comprehensive-cancer-centre ; https://www.uu.se/en/staff/disciplinary-domain/medicine-and-pharmacy/news/archive/2024-10-15-accreditation-of-uppsala-comprehensive-cancer-centre ; https://www.sahlgrenska.se/om-sjukhuset/organisation/centrumbildningar/sccc/moten-och-konferenser/first-nordic-baltic-comprehensive-cancer-centers-network-meeting/ ; https://www.umu.se/en/news/northern-swedens-cancer-care-closer-to-international-quality-accreditation_12183076/
+- Genomics: Genomic Medicine Sweden (GMS, since 2017, seven Genomic Medicine Centres); WGS/WTS standard for all children with cancer since May 2024; GMS–Hartwig partnership for adult WGS. https://publications.scilifelab.se/publication/bc1322ec034a40f2b805278a57b8c967 ; https://www.eppermed.eu/?p=7217 ; https://www.genomeweb.com/node/653996
+- Genome of Europe: Sweden/SciLifeLab contributes (Vinnova co-funding, ≥1,000 long-read genomes). https://www.scilifelab.se/news/sweden-and-scilifelab-contribute-to-the-genome-of-europe/
+- Biobank: Biobank Sverige = Swedish BBMRI-ERIC node (National Node Director Tobias Sjöblom); runs Svenska Biobanksregistret. https://biobanksverige.se/en/about-biobank-sweden/ ; https://dev2.bbmri-eric.eu/national-nodes/sweden/
+- Imaging: EUCAIM partners Karolinska Institute, Linköping University, NBIS, Region Västerbotten, Umeå University, Vinnova; AIDA Data Hub. https://cancerimage.eu/partners/
+- EU projects: ECHoS (Karolinska CCC, Zero Vision Cancer, SALAR, Stockholm School of Economics); EUCanScreen (Socialstyrelsen); TEHDAS2 (see above); EUnetCCC/JANE-2 Swedish partners n/f. https://ki.se/en/cancerresearchki/a-new-european-consortium-funded-with-6-million-euros-will-create-a-network-of
+- OMOP/EHDEN: EHDEN data partners MEB Karolinska Institutet, CREAtinine Measurements Project, SWIBREG, Gothenburg University; DARWIN EU Swedish partner n/f. https://www.ehden.eu/datapartners/
+- National health data space: E-hälsomyndigheten leads; Sweden mandates FHIR for national services; VALO Nordic EHDS project. https://packages.fhir.org/jurisdictions/SE ; https://www.sitra.fi/en/projects/value-from-nordic-health-data-valo
+
+#### (d) Digital, non-FHIR, cancer-relevant
+- Patient portal: 1177 (Journalen); cancer-specific content n/f.
+- INCA platform: openEHR data store (CDR) receiving forms via AQL from regional systems; IPÖ. https://svfp.se/media/biki5rbx/slutrapport_openehrv12.pdf
+- openEHR oncology: Swedish pathology synoptic archetype work (building on Dutch PALGA); Karolinska "Symphony" prostate MDT dashboards on openEHR templates. https://discourse.openehr.org/t/refreshing-archetypes-related-to-pathology-reporting/2393 ; https://docs.google.com/presentation/d/1i6K_Ry6Q4CwlpeZFEjHQGguefTbRETm1/htmlpresent
+- Structured pathology: Svensk förening för patologi (KVAST) publishes cancer reporting protocols (listed by SNOMED alongside CAP/ICCR). https://conf.spaces.snomed.org/wiki/spaces/CC/pages/131826462
+- EHR: regional systems (Cosmic, Millennium in Skåne SDV); Skåne SDV antitumoral treatment coexistence guidance. https://vardgivare.skane.se/siteassets/support/sdv/samexistens/forlaga---antitumoral-behandling-under-samexistensperioden.pdf
+- Chemotherapy: Omda Oncology (ex-Cytodose) used in Nordic hospitals (vendor claim: 40+ hospitals). https://intuitionlabs.ai/software/pdfs/omda-oncology.pdf
+- Nationella informationsmängder (NIM) / national information model used for breast cancer modelling outside openEHR. https://discourse.openehr.org/t/refreshing-archetypes-related-to-pathology-reporting/2393
+- MDT software: n/f national.
+- Standardiserade vårdförlopp (SVF) indicator datasets. https://cancercentrum.se/globalassets/vara-uppdrag/kunskapsstyrning/varje-dag-raknas/vardforlopp/redovisningar/2025/berakningsunderlag-for-andel-patienter-som-genomgatt-svf-version-9.0.pdf
+
+#### Key organisations and people
+- Socialstyrelsen (Cancerregistret, ICD-10-SE, SNOMED NRC), RCC i samverkan / INCA, E-hälsomyndigheten, Inera, Biobank Sverige, GMS, Karolinska CCC. People: Joakim Dillner (NKCx), Tobias Sjöblom (Biobank Sverige), Daniel Karlsson (E-hälsomyndigheten terminology), Mattias Colliander (HL7 Sweden).
+
+---
