@@ -1,0 +1,103 @@
+# National FHIR / oncology / terminology landscape: Poland, Czechia, Slovakia, Hungary, Slovenia, Croatia, Romania, Bulgaria
+
+Survey date: 2026-11-18. Facts only; "not found" means no source could be verified.
+
+## Poland
+
+1. **National base/core FHIR IG:** "Polska specyfikacja bazowa HL7 FHIR (HL7 FHIR PL Base)", publisher HL7 Poland (Polskie Stowarzyszenie HL7). Two tracks in the repo: hl7.fhir.pl.base.r5 v0.2.0 (FHIR 5.0.0, releaseLabel ci-build, depends on hl7.fhir.eu.base-r5 2.0.1 and xtehr.eu.ehds.models 1.0.0) and hl7.fhir.pl.base.r4 v0.1.1 (FHIR 4.0.1, draft, depends on hl7.fhir.eu.base current). Canonical http://hl7.org.pl/fhir/ig/pl-base. Package registry shows 0.1.2 (R5) built 9 Oct 2025. No official release; Simplifier State of FHIR 2026 calls the national core guide "under development". Companions: hl7.fhir.pl.terminology 0.1.0 (R5), PL Laboratory IG (ci 0.1.2).
+   https://build.fhir.org/ig/HL7-Poland/pl-fhir-base/ ; https://raw.githubusercontent.com/HL7-Poland/pl-fhir-base/master/sushi-config.yaml ; https://raw.githubusercontent.com/HL7-Poland/pl-fhir-base/main/sushi-config.yaml ; https://get-ig.org/hl7.fhir.pl.base.r5 ; https://api.simplifier.net/jurisdictions/PL
+2. **Oncology FHIR specifications:** none found. eDiLO (electronic oncology diagnostics/treatment card) enters into force 11 Aug 2026 and becomes electronic-only on 1 Jan 2027, technical support by Centrum e-Zdrowia; a CeZ document bases e-DiLO documentation on IHE XDS.b; no FHIR profile or mCODE reuse found. CeZ publishes FHIR profiles for other domains (SMPL, e.g. PLPatient).
+   https://www.nfz.gov.pl/aktualnosci/aktualnosci-centrali/komunikat-dla-swiadczeniodawcow,8995.html ; https://www.nfz.gov.pl/aktualnosci/aktualnosci-centrali/komunikat-dot-realizacji-diagnostyki-i-leczenia-nowotworow-po-1-stycznia-2027-r-w-oparciu-o-karte-dilo,9041.html ; https://ezdrowie.gov.pl/pobierz/15343 ; https://isus.ezdrowie.gov.pl/smpl/StructureDefinition-PLPatient.html
+3. **Cancer registry reporting standard:** Krajowy Rejestr Nowotworów (KRN), run by NIO-PIB (Narodowy Instytut Onkologii im. M. Skłodowskiej-Curie – PIB). Since 1 Oct 2024 reporting is electronic only through e-KRN+ (web application with account login; integrated hospitals have data extracted from clinical records). Form basis: MZ/N-1a card (KZNZ); reportable ICD-10 C00–C97, D00–D09 (and some D37–D48).
+   https://onkol.kielce.pl/sites/default/files/Biuletyny/instrukcja_ekrn.pdf ; https://onkologia.org.pl/sites/default/files/iu_ekrn_lekarz_i_asystent_v1.0.pdf ; https://medycynarodzinna.wum.edu.pl/sites/medycynarodzinna.wum.edu.pl/files/2026-03/6_rok_dokumentacja_onkologiczna_w_poz.pdf.pdf
+4. **Terminologies:** SNOMED CT: not a member (Poland absent from SNOMED International member list). ICD-10: Polish 2008 edition maintained by CeZ, ICD-11 translation published as pre-final, no formal adoption decision. ICD-O-3: Polish edition published by KRN. LOINC: Polish translation (~20,000 concepts) deposited Aug 2023, included in LOINC 2.81 (Aug 2025), Polish LOINC centre at Medical University of Łódź. TNM 8 used in KRN material. ATC / national drug code: not found. Terminology server: none, "in the planning stage".
+   https://www.snomed.org/members ; https://www.gov.pl/web/zdrowie/pytania-i-odpowiedzi-icd-11 ; https://onkologia.org.pl/sites/default/files/publications/2023-11/icd_o_3_pl.pdf ; https://loinc-ssidl.umed.pl/2025/09/09/ ; https://api.simplifier.net/jurisdictions/PL
+5. **Organisations and people:** Centrum e-Zdrowia (cez.gov.pl); HL7 Poland, chair Roman Radomski; NIO-PIB (KRN). GitHub contributor to pl-fhir-base: "sbojanowski" (full name not found).
+   https://api.simplifier.net/jurisdictions/PL ; http://hl7.org.pl/ ; https://api.github.com/repos/HL7-Poland/pl-fhir-base/contributors
+
+## Czechia
+
+1. **National base/core FHIR IG:** "Czech National FHIR R4 Core and Base Implementation Guide STU 1" (HL7 Czech Base and Core FHIR IG), package hl7.fhir.cz.core, canonical https://hl7.cz/fhir/core, FHIR 4.0.1. Published 1.0.0 (STU 1, trial-use) 2026-07-29, "based on EU Base R4 v2.0.0"; earlier 0.3.0 2026-03-06; ci-build 1.1.0 (draft 2026-08-06, depends on hl7.fhir.eu.base 2.0.1, hl7.fhir.eu.extensions.r4 1.3.1, hl7.fhir.eu.laboratory 2.0.0, hl7.fhir.eu.mpd 1.0.0, ihe.pharm.mpd.r4). Publisher HL7 Czech Republic; national standards body NCEZ (Národní centrum elektronického zdravotnictví). Companion hl7.fhir.cz.terminology 0.3.0 (release, 2026-07-27; ci 0.4.0).
+   https://hl7.cz/fhir/core/package-list.json ; https://hl7.cz/fhir/ ; https://build.fhir.org/ig/HL7-cz/cz-core/en/index.html ; https://raw.githubusercontent.com/HL7-cz/cz-core/main/sushi-config.yaml ; https://hl7.cz/terminology/package-list.json ; https://api.simplifier.net/jurisdictions/CZ
+2. **Oncology FHIR specifications:** no oncology IG. hl7.cz lists Base/Core, Terminology, imaging and lab reports and orders, general order, HDR, patient summary, ambulatory report, EMS record, eHealth API. The Shared Health Record (SZZ) ci-build (0.0.1) contains screening artefacts (lung-cancer interpretation code system, mammography, colorectal screening, prostate MRI observations). No mCODE dependency.
+   https://hl7.cz/fhir/ ; https://build.fhir.org/ig/HL7-cz/szz/artifacts.html ; https://build.fhir.org/ig/HL7-cz/szz/CodeSystem-cz-lung-cancer-interpretation-cs.html
+3. **Cancer registry reporting standard:** Národní onkologický registr (NOR), run by ÚZIS ČR. Reporting via DASTA data interfaces: clinical "Incidence novotvaru" report and pathology/cytology report; a July 2026 ÚZIS methodology on automated NOR record completion still references the DASTA interfaces. Clinical report carries MKN-O-3 topography/morphology and pTNM values.
+   https://www.uzis.cz/res/file/projekty/ui/metodika-automaticke-doplnovani-zaznamu-nor.pdf ; https://www.uzis.cz/res/file/registry/nor/nor-metodika-010-20180817-1.pdf ; https://kozni.lf1.cuni.cz/file/5664/NOR.pdf
+4. **Terminologies:** SNOMED CT: member since 2012 (Ministry of Health / ÚZIS; licensing https://mlds.ihtsdotools.org/cz), National Release Centre at ÚZIS NCMNK since July 2020; Czech translation in progress (100,602 concepts in group 1 as of Aug 2025, translation milestones to Dec 2025); national edition release: not found. ICD-10: MKN-10-CZ update effective 1 Jan 2026 (ÚZIS). ICD-O: MKN-O-3.2 (2018 update) used in NOR (cases from 2019/2020). TNM: 8th edition (CZ translation 2017); Czech TNM 9 edition planned mid-2026, NOR reporting per TNM 9 from 1 Jan 2027. LOINC: Czech translation is a goal in the NCEZ interoperability strategy (June 2025). ATC / national drug code: not found (SÚKL not verified). Terminology server: national server "in development" (NCEZ strategy; Simplifier survey).
+   https://www.snomed.org/members/czech-republic ; https://www.uzis.cz/res/file/klasifikace/ncmnk/snomed-ct-cr-analyticka-zprava.pdf ; https://www.uzis.cz/res/file/akce/20250923-klasifikon/1-06-kruzik.pdf ; https://www.uzis.cz/res/file/klasifikace/mkn/mkn-10-rozdilovy-listek-tabelarni-2020-2026.pdf ; https://www.uzis.cz/res/file/akce/20250923-klasifikon/1-05-zvolsky.pdf ; https://ncez.mzcr.cz/sites/default/files/media-documents/02%20EZ_Strategie%20Interoperability_v2_6.2025.pdf
+5. **Organisations and people:** NCEZ (national standards body), HL7 Czech Republic, ÚZIS ČR (NOR, NCMNK, SNOMED NRC). Hynek Kružík (Technical Lead HL7 CZ, main cz-core GitHub contributor); SNOMED appointed representatives Irena Molinari, Miroslav Zvolský (ÚZIS).
+   https://api.simplifier.net/jurisdictions/CZ ; https://api.github.com/repos/HL7-cz/cz-core/contributors ; https://www.snomed.org/members/czech-republic
+
+## Slovakia
+
+1. **National base/core FHIR IG:** none. State of FHIR 2026: no national organisation responsible for FHIR standards, no national base/core IG, no local FHIR specifications; mandatory national standard is ISO 13606 under Act 153/2013; NCZI (ezdravie) has only recently started looking at FHIR and EHDS. Only FHIR profiles with Slovak labels are in the XpanDH HDR project IG (maturity 0).
+   https://api.simplifier.net/jurisdictions/SK ; https://packages.fhir.org/jurisdictions/SK ; https://build.fhir.org/ig/hl7-eu/xpandh-hdr/artifacts.html
+2. **Oncology FHIR specifications:** none found. Only named FHIR project: Slovak BBMRI biobanking node. mCODE reuse: not found.
+   https://api.simplifier.net/jurisdictions/SK
+3. **Cancer registry reporting standard:** Národný onkologický register SR (NOR SR), run by NCZI (founded 1976). Since 1 Jan 2023 two reports: DGO (clinical-epidemiological) and PAT (histopathology/cytology). Submission through ISZI by (a) system-to-system link, (b) upload of an XML file generated by the provider system, or (c) manual web form; report due within 30 days. Legal basis decree 434/2024 Z. z.
+   https://www.nczisk.sk/Documents/aktuality/PDF_Navod_pre_hlasenie_pacientov_do_NOR_SR.pdf ; https://nczisk.sk/Documents/nzr/2025/MP_ZR_NOR.pdf ; https://nczisk.sk/Documents/nzr/2026/MP_ZR_NOR_DGO.pdf
+4. **Terminologies:** SNOMED CT: member since Nov 2009, represented by NCZI (National Health Information Center); Member Forum rep Lucia Jurovatá; national edition: not found. ICD-10: MKCH-10 (SK). ICD-O: MKCH-O-3.2 valid since 2020 (3.1 and 3.2 listed). TNM: 2024 methodology lists 7th/8th; 2026 DGO guidance refers to 9th edition (cTNM/pTNM); current mandate unclear. LOINC, ATC variant: not found. Terminology server: none and none planned.
+   https://www.snomed.org/members/slovak-republic ; https://www.nczisk.sk/Documents/nzr/2024/Metodicky_pokyn_NOR_SR_2024.pdf ; https://nczisk.sk/Documents/nzr/2026/PDF_Navod_pre_hlasenie_pacientov_do_NOR_SR.pdf ; https://api.simplifier.net/jurisdictions/SK
+5. **Organisations and people:** NCZI (nczisk.sk). Eva Sabajová, head of strategic planning at NCZI and HL7 Slovakia chair (Digital Health Slovakia / HL7 Slovakia affiliate).
+   https://collab.hl7.at/download/attachments/108953692/03_Sabajova_NCZI_Sabajova_2024_HL7_AT.ptx.pdf?api=v2 ; https://api.simplifier.net/jurisdictions/SK
+
+## Hungary
+
+1. **National base/core FHIR IG:** none found. Simplifier jurisdiction page has no survey content (14 projects, 136 resources). EESZT (Elektronikus Egészségügyi Szolgáltatási Tér, operated by OKFŐ) uses local standards, with HL7 V3 and FHIR in specific projects (TEHDAS 2022 factsheet).
+   https://api.simplifier.net/jurisdictions/HU ; https://tehdas.eu/app/uploads/2023/03/hungary-country-visit-factsheets-10-2022.pdf ; https://e-egeszsegugy.gov.hu/documents/26398/557047/EESZT_GDPR_erintett_tajekoztatasa_egeszsegugyi_intezmenyben.pdf/22667ce0-2df3-d32b-a49b-3b45c73e744f
+2. **Oncology FHIR specifications:** none found. mCODE reuse: not found.
+3. **Cancer registry reporting standard:** Nemzeti Rákregiszter (and Nemzeti Gyermek Onkológiai Regiszter for under-18s). Decree 49/2018 EMMI (in force version from 2025-04-05): providers report at least quarterly by the 15th of the month after the quarter; data generated automatically from provider IT systems where feasible; NEAK also reports quarterly; the transfer format is fixed by agreement between the registry and the national chief medical officer, not in the decree. Web portal nrr.hu provides "Jelentés feltöltés" (report upload). Operator organisation: not verified.
+   https://net.jogtar.hu/jogszabaly?docid=A1800049.EMM ; https://njt.jog.gov.hu/jogszabaly/2018-49-20-5H ; https://nrr.hu/
+4. **Terminologies:** SNOMED CT: member since Sept 2024 (announced 5 Sept 2024), contact ESZFK (www.eszfk.hu, snomed@eszfk.hu), Member Forum Zoltán Falussy and Krisztián Iszak; national edition/translation: not found. ICD-10: BNO-10 (version not found). ICD-O-3, TNM edition, LOINC, ATC variant, national terminology server: not found.
+   https://www.snomed.org/members/hungary ; https://www.snomed.org/news/snomed-international-welcomes-hungary-to-a-growing-and-global-community-of-practice
+5. **Organisations and people:** OKFŐ (EESZT operator), ESZFK (SNOMED contact), NEAK. HL7 Hungary affiliate: not found (an older source lists Hungary only as "pre-affiliate"). Named maintainers: not found.
+   https://www.ringholm.com/column/HL7_membership_model.htm
+
+## Slovenia
+
+1. **National base/core FHIR IG:** a national core IG exists, used for a limited set of cases, shared with national stakeholders via Simplifier but not fully public; FHIR R4 (some R4B). Package id, version, canonical: not found. NIJZ is the key national body; FHIR advised, not mandated (Healthcare Databases Act). Slovenia has approved specifications in the FHIR Community Process.
+   https://api.simplifier.net/jurisdictions/SI
+2. **Oncology FHIR specifications:** none found. mCODE reuse: not found.
+3. **Cancer registry reporting standard:** Register raka Republike Slovenije at Onkološki inštitut Ljubljana (since 1950; legal basis Ur. l. RS 47/15, 31/18). Traditional form "Prijavnica rakave bolezni"; since 2019 "active registration" in which hospital information systems prepare and send lists of registrable patients; passive paper reporting being phased out. No FHIR interface found.
+   https://www.onko-i.si/rrs/register-raka-republike-slovenije
+4. **Terminologies:** SNOMED CT: member since Jan 2010 (Ministry of Health; GA rep Iztok Štotl, Member Forum Alen Vrečko of NIJZ); 2024 advisory-council minutes discuss SNOMED rollout, Slovene translation and terminology servers; national edition: not found. ICD-10: MKB-10-AM version 11 since 1 Jan 2023 (NIJZ; v6 before). ICD-O-3, TNM edition, LOINC, ATC variant: not found. Terminology server: national FHIR terminology server in development.
+   https://www.snomed.org/members/republic-of-slovenia ; https://gov.si/assets/ministrstva/MZ/DOKUMENTI/4-ZBIRKE/RSK/RSK-za-informatiko-v-zdravstvu/2024/Zapisnik-8.-seje-RSK-za-informatiko-v-zdravstvu-3.-12.-2024.pdf ; https://podatki.nijz.si/docs/Opomba_MKB-10-AM_v6_v11.pdf ; https://api.simplifier.net/jurisdictions/SI
+5. **Organisations and people:** NIJZ, HL7 Slovenia (site hl7.si unreachable at survey time), Onkološki inštitut Ljubljana. Brane Leskošek (University of Ljubljana Faculty of Medicine / HL7 Slovenia); Alen Vrečko (NIJZ, SNOMED).
+   https://api.simplifier.net/jurisdictions/SI ; https://www.snomed.org/members/republic-of-slovenia
+
+## Croatia
+
+1. **National base/core FHIR IG:** "CEZIH osnova" (CEZIH Base Guide) on Simplifier; the guide shows package cezih.hr.base#1.1 based on FHIR R4; registry packages cezih.hr.cezih-osnova 0.2.9, 1.0.0–1.0.2 (deprecated flags) and 1.0.3-beta, FHIR R4, canonical base http://fhir.cezih.hr/specifikacije/. CEZIH operated under Ministry of Health and HZZO; FHIR messaging, documents and REST used; national terminology server "in production".
+   https://simplifier.net/guide/cezih-osnova ; https://packages.simplifier.net/cezih.hr.cezih-osnova ; https://packages2.fhir.org/xig/resource/cezih.hr.cezih-osnova%7C1.0.2/StructureDefinition/StructureDefinition-hr-message-header.json ; https://api.simplifier.net/jurisdictions/HR
+2. **Oncology FHIR specifications:** none found. A unified ONKO+ message (upgrade of the existing CEZIH malignant-neoplasm notification message, to be aligned with European cancer-reporting standards) was developed and tested on the central system but not implemented in hospital systems; format not stated. mCODE reuse: not found.
+   https://hrcak.srce.hr/file/355760
+3. **Cancer registry reporting standard:** Registar za rak at HZJZ (since 1959). Sources: hospital Onko-tip form (JZ-ONK), outpatient "Prijava maligne neoplazme" (JZ-NEO), copies of histology/cytology/autopsy findings; electronic reporting of cancer hospitalisations via CEZIH since 2017; legal basis Law on Official Statistics.
+   https://hrcak.srce.hr/file/429874 ; https://hrcak.srce.hr/file/355760
+4. **Terminologies:** SNOMED CT: member since June 2023 (Croatian Ministry of Health; GA rep Srebrenka Mesić, Member Forum Andreja Matkun, Višnja Antolković Ilić); national edition: not found. National terminology server: "available and in production" per State of FHIR 2026, name/URL/operator not found. MKB-10 version, ICD-O-3, TNM, LOINC, ATC variant: not found.
+   https://www.snomed.org/members/croatia ; https://api.simplifier.net/jurisdictions/HR
+5. **Organisations and people:** Ministry of Health, HZZO (CEZIH), HZJZ (registry). HL7 Croatia chair Miroslav Koncar per HL7 Europe affiliate page (page offline at survey time). State of FHIR contributors Siniša Koščina (IN2), Krešimir Kerš (Ericsson Nikola Tesla); registry head Ariana Znaor (HZJZ, per hrcak article).
+   https://hl7.eu/affiliate_co.html ; https://api.simplifier.net/jurisdictions/HR ; https://hrcak.srce.hr/file/429874
+
+## Romania
+
+1. **National base/core FHIR IG:** none found. Simplifier jurisdiction page has no survey content. National Digitalisation in Health Strategy 2024-2030 names HL7 FHIR; DES (Dosarul electronic de sănătate) interface specifications for providers are hosted on portal.cnas.ro (access blocked, format unverified).
+   https://api.simplifier.net/jurisdictions/RO ; https://audit.ms.ro/media/documents/v.1._Strategia_Nationala_de_Digitalizare_%C3%AEn_S%C4%83n%C4%83tate_pentru_Romania_Versiune__D4WP2R0.docx ; https://portal.cnas.ro/cnas/des/docs/specificatii/Specificatie%20Interfatare%20DES%20-%20Aplicatii_de_Raportare_pentru_Furnizori.pdf
+2. **Oncology FHIR specifications:** none found. mCODE reuse: not found.
+3. **Cancer registry reporting standard:** Registrul Național de Cancer (RNC) created by HG 663/2023, owned by INSP (CNSBNT and CNS); single case report form and coding methodology to be approved by ministerial order; case report due within 30 days; operational status and electronic format not verified (minister stated end-2024 target).
+   https://iob.ro/wp-content/uploads/2023/09/hotararea-nr-663-2023-privind-infiintarea-registrului-national-de-cancer.pdf ; https://management-documente.ms.ro/media/documents/HG_-REGISTRUL_NATIONAL_DE_CANCER_-_25.07.2023_2okqVrf.docx
+4. **Terminologies:** SNOMED CT: not a member. ICD-10-AM (3rd ed., 2002) for DRG (RO.vi.DRG / RODRG); CIM-10 for diagnoses. ICD-O-3, TNM, LOINC, ATC variant, terminology server: not found.
+   https://www.snomed.org/members ; https://www.hosptm.ro/files/drg/rodrgv1/ManualGrupare_RODRG_v1_Vol_1.pdf
+5. **Organisations and people:** CNAS (DES/PIAS), INSP (RNC), Ministry of Health. HL7 Romania (founded Nov 2006, 21 members), chair Florica Moldoveanu per HL7 Europe affiliate page (page offline at survey time).
+   https://hl7.eu/affiliate_ro.html
+
+## Bulgaria
+
+1. **National base/core FHIR IG:** none. NHIS (НЗИС, his.bg; Ministry of Health; integrator Information Services AD) exposes XML/XSD-based APIs (NHIS-C001 nomenclature request etc., NHIS-X003, Swagger at https://ptest-api.his.bg/index.html; e-prescription API v1.5.1, e-referral v1.4.4, e-hospitalisation v1.1.2); no FHIR mentioned. Governed by Ordinance H-6 of 21 Dec 2022.
+   https://his.bg/bg/dev/specifications ; https://www.mh.government.bg/upload/3994/naredban-6-21-12-2022.pdf
+2. **Oncology FHIR specifications:** none found. mCODE reuse: not found.
+3. **Cancer registry reporting standard:** National Cancer Registry; draft amendment to Ordinance No. 6/2018 "Medical oncology" (public consultation 14 Nov–15 Dec 2025) restructures it as an "information database for persons with malignant neoplasms and carcinoma in situ" functioning as part of NHIS. Ministry of Health reports 302,450 malignant cases registered in NHIS as of 2025. Current submission format: not found.
+   https://www.strategy.bg/bg/public-consultations/11919/export ; https://www.bta.bg/en/news/1057238-over-300-000-cancer-cases-registered-in-bulgaria-s-national-health-information-s
+4. **Terminologies:** SNOMED CT: not a member. ICD-10 as NHIS nomenclature CL011 ("Заболяване по МКБ 10"), ICD-9 procedures as CL054; NHIS nomenclature spec v1.5.36 (3 Nov 2026). ICD-O-3, TNM, LOINC, ATC variant, terminology server: not found.
+   https://his.bg/bg/dev/nomenclatures ; https://his.bg/bg/dev/specifications ; https://www.snomed.org/members
+5. **Organisations and people:** Ministry of Health, Information Services AD (system integrator). HL7 Bulgaria affiliate: not found (not in hl7.eu affiliate index). Named maintainers: not found.
+   https://his.bg/en/news/198

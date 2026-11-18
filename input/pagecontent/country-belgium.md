@@ -1,0 +1,47 @@
+### Belgium (BE)
+
+Region: DACH and Benelux. Sources: see the URLs on each statement; raw research reports in [sources/survey](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/tree/main/sources/survey).
+
+### FHIR guides, registry format and terminologies
+
+1. **Base IG.** eHealth Platform Federal Core Profiles / HL7 Belgium Core, package `hl7.fhir.be.core`, FHIR R4 (R4 and R4B packages), canonical https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core. Current published 2.2.0 (Release, STU1, package built 19 Aug 2026); previous 2.1.2 (30 Aug 2024). Publisher eHealth Platform. Transversal Clinical Core `hl7.fhir.be.core-clinical` 1.4.0 current. https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/index.html ; https://get-ig.org/hl7.fhir.be.core ; https://www.ehealth.fgov.be/standards/fhir/core-clinical/index.html
+2. **Oncology.** "Belgian Cancer Registry on FHIR", package `be.fhir.bcr` 0.1.0, draft/experimental, FHIR 4.0.1, dated 2026-06-03, canonical https://www.ehealth.fgov.be/standards/fhir/registries/bcr/ImplementationGuide/be.fhir.bcr , copyright eHealth Platform Belgium, hosted by Axel Vanraes (Tiro.health). Logical models of the BCR registration form Bijlage 55 plus three supplements (breast, MOC, follow-up), the Cancer in Belgium research dataset (metadata v2, May 2025) and cyto-histopathology screening samples; 23 CodeSystems, 33 ValueSets, all draft pending BCR review. mCODE reference: not found. https://axelv.github.io/bcr/index.html ; https://api.github.com/users/axelv . HL7 Belgium terminology IG (`hl7.fhir.be.terminology` 1.0.0) has an experimental OncologyPatientCodes value set (https://build.fhir.org/ig/hl7-be/terminology/en/ValueSet-OncologyPatientCodes.html).
+3. **Registry standard.** Belgian Cancer Registry (Stichting Kankerregister / Fondation Registre du Cancer), Brussels. Hospitals with oncological care programmes submit via the WBCR web application or batch extraction, form Bijlage 55 of the RIZIV Verordening of 28-07-2003, amended 15-12-2025, within 4 to 6 months of incidence. healthdata.be collection BCR_Cancer (v1.1, CSV) accepts ICD-O-3 topography and morphology and official UICC TNM codes. TNM edition: not found. Official batch file specification: not found. https://kankerregister.org/en/ ; https://axelv.github.io/bcr/StructureDefinition-bcr-cancer-registration-form.html ; https://dcd.healthdata.be/en/collection/BCR_Cancer/ ; https://www.riziv.fgov.be/SiteCollectionDocuments/formulier_verordening20030728_bijlage_55.docx
+4. **Terminologies.** SNOMED CT: NRC is the Terminology Centre of FPS Public Health; first Belgian release March 2018; join year: not found; snomed.org states six-monthly releases while SNOMED release notes show monthly releases since Nov 2024 (Dec 2025, Feb 2026, June 2026) (https://www.snomed.org/members/belgium ; https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/476184610). ICD-10-BE (Belgian ICD-10-CM/PCS, mandatory since 2015 discharges); latest handbook found: version 2023; coding tool icd10be.health.belgium.be (https://www.health.belgium.be/sites/default/files/uploads/fields/fpshealth_theme_file/passage_a_licd-10-be_version_2023_et_au_apr-drg_version_v40.0.pdf). ICD-O-3 for registry coding (healthdata.be above). LOINC national variant: not found. ATC or national drug code: not found. Terminology server: Ontoserver 6.25.1 at https://apps.health.belgium.be/ontoserver/fhir , publisher FPS VVVL (FHIR metadata), used as authoritative SNOMED server by Belgian IGs (https://ehealth.fgov.be/standards/fhir/core-clinical/qa-txservers.html).
+5. **People.** HL7 Belgium chair Jose Costa Teixeira (https://hl7.eu/affiliate_be.html ; GitHub costateixeira); hl7-be/core top contributor Bart Decuypere (eHealth Platform) (https://github.com/hl7-be/core); BCR on FHIR author Axel Vanraes, Tiro.health, Ghent (https://api.github.com/users/axelv).
+
+### Registries, public datasets, infrastructure and non-FHIR digital assets
+
+#### (a) Cancer registries
+- Population-based: Belgian Cancer Registry (Stichting Kankerregister / Fondation Registre du Cancer), national since 2004, mandatory registration by oncological care programmes and pathology laboratories (law of 2006); data on screening also collected; ENCR member (National Cancer Registry listed). https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2019.00120/full ; https://publications.iarc.fr/_publications/media/download/3789/c59f506329fb5e54d3a355edbb825388ed440e50.pdf
+- Clinical registration: via multidisciplinary oncology consultation (MOC/COM) reimbursed under the 2003 royal decree on oncological care programmes; form Bijlage 55 (RIZIV Verordening 28-07-2003, amended 15-12-2025). https://www.riziv.fgov.be/SiteCollectionDocuments/formulier_verordening20030728_bijlage_55.docx
+- Screening: BCR collects screening data; Flemish Centrum voor Kankeropsporing screening register: n/f; Sciensano is EUCanScreen partner. https://www.unicancer.fr/wp-content/uploads/2025/10/eucanscreen-project-consortium-octobre-2025-1.pdf
+- Submission format: WBCR web application or batch extraction; healthdata.be BCR_Cancer collection (v1.1, CSV via HD4DP) with ICD-O-3 topography/morphology, CODAP, SNOMED axes and UICC TNM; TNM edition: n/f. https://dcd.healthdata.be/en/collection/BCR_Cancer/
+- Data access: BCR "data request" for in-depth research; linkage via trusted third parties (eHealth TTP, CBSS); national registry number enables linkage with health insurance (IMA) and hospital discharge data (ISC deliberation 18/178, 2025). https://www.in.ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/82f246426c189e659fa2372a0f5936dcad93ea8d/18-178-n184-herval-bij-borst--en-gynaecologische-kankerpatienten-stichting-kankerregister-gewijzigd-op-6-mei-2025.pdf
+
+#### (b) Public datasets
+- Open statistics: BCR publishes incidence, prevalence, mortality, survival (20 years of statistics, >78,000 new diagnoses); Sciensano Belgian National Burden of Disease cancer dashboard. https://kankerregister.org/en/ ; https://burden.sciensano.be/shiny/cancer/
+- Research access body: Health Data Agency (HDA, law of 14 March 2023, launched 17 Jan 2024) building a national metadata catalogue; healthdata.be (Sciensano) hosts data collections. https://www.hoganlovells.com/en/publications/creation-of-a-health-data-agency-in-belgium-a-key-agency-for-the-future-european-health-data-space ; https://dcd.healthdata.be/en/collection/BCR_Cancer/
+- OMOP: BCR breast and lung dataset (incidence 2014–2023) mapped to OMOP, ETL in progress (EMA catalogue). https://catalogues.ema.europa.eu/node/4943/data-flows-and-management
+- Tumour bank: Belgian Virtual Tumourbank catalogue (BVTc) coordinated by BCR, 11 university hospitals. https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2019.00120/full
+- ECIS contribution, synthetic datasets: n/f.
+
+#### (c) Cancer infrastructure
+- National plan: National Cancer Plan 2008 (Onkelinx); current cancer plan 2025: n/f. https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2019.00120/full
+- OECI: Leuven Cancer Institute recognised as Comprehensive Cancer Centre (Jan 2025); Institut Jules Bordet listed as OECI CCC (secondary source). https://www.uzleuven.be/en/nieuws/oeci ; https://en.wikipedia.org/wiki/Organisation_of_European_Cancer_Institutes
+- EU projects: EUnetCCC partners Sciensano, UZ Antwerpen, KU Leuven, Cliniques universitaires Saint-Luc, UGent; EUCAIM (Sciensano project list); TEHDAS2 (Sciensano); EUCanScreen (Sciensano). https://sciensano.be/en/projects/european-network-comprehensive-cancer-centre ; https://www.sciensano.be/en/taxonomy/term/305/projects-all ; https://sciensano.be/en/print/projects/second-joint-action-towards-european-health-data-space
+- Genomics: Sciensano owns NGS data of BALLETT/GeNeo precision oncology trials (BSMO). https://pmc.ncbi.nlm.nih.gov/articles/PMC12420906
+- Biobanks: BBMRI.be national network incl. BVT. https://www.gigabiotheque.uliege.be/cms/c_6227843/en/gigabiotheque-networks
+- OMOP: 14 Belgian EHDEN data partners incl. UZ Brussel, UZA, UZ Leuven. https://ehden.eu/datapartners/
+
+#### (d) Digital, non-FHIR, cancer-relevant
+- National exchange: KMEHR (legacy XML standard), eHealth platform hubs (Vitalink, RSW, Abrumet); KMEHR oncology content: n/f. https://ehealth.fgov.be/standards/kmehr/en/page/hl7-fhir-governance
+- Registry forms: Bijlage 55 paper/web form; healthdata.be HD4DP2 collection tooling with code lists (ICD-10-CM, ICD-O-3). https://fair-v1.healthdata.be/book/export/html/10094
+- Coding: ICD-10-BE (hospital MZG/RHM, since 2015), coding tool icd10be.health.belgium.be; SNOMED CT Belgian edition via Ontoserver. https://www.health.belgium.be/sites/default/files/uploads/fields/fpshealth_theme_file/passage_a_licd-10-be_version_2023_et_au_apr-drg_version_v40.0.pdf
+- PROMs/PREMs project at BCR (ISC deliberation 25/124). https://www.ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/fe87d440cf3b4806455ff4b5f321469af07462a3/25-124-n256-project-proms-prems-bcr.pdf
+- Tumour-board software, structured pathology, openEHR, ePrescription oncology: n/f.
+
+#### Key organisations and people
+- Belgian Cancer Registry (Brussels), Sciensano / healthdata.be, Health Data Agency, FPS Public Health Terminology Centre, RIZIV/INAMI, eHealth platform (Bart Decuypere), HL7 Belgium (Jose Costa Teixeira), Tiro.health (Axel Vanraes). https://kankerregister.org/en/ ; https://hl7.eu/affiliate_be.html
+
+---

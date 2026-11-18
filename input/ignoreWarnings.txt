@@ -1,0 +1,10 @@
+== Suppressed Messages ==
+# Template-generated search form markup (fhir.base.template), not content of this guide
+The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12

@@ -1,0 +1,48 @@
+### Austria (AT)
+
+Region: DACH and Benelux. Sources: see the URLs on each statement; raw research reports in [sources/survey](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/tree/main/sources/survey).
+
+### FHIR guides, registry format and terminologies
+
+1. **Base IG.** HL7 Austria FHIR Core IG. R5: `hl7.at.fhir.core.r5` 2.0.0, STU2, FHIR 5.0.0, generated 2025-01-24, current published; 2.1.0 (STU3) only as CI build. R4: `hl7.at.fhir.core.r4` 2.0.0, STU2, FHIR 4.0.1, generated 2025-01-27. Publisher HL7 Austria, TC FHIR. https://fhir.hl7.at/HL7-AT-FHIR-Core-R5/ ; https://fhir.hl7.at/HL7-AT-FHIR-Core-R4/ ; registry https://fhir.hl7.at/
+2. **Oncology.** None. The HL7 Austria registry lists only Core R4/R5, TC-FHIR-AG-Scheduling-R5 and ELGA-AustrianPatientSummary-R4; ELGA is "mainly based on HL7 CDA" (https://fhir.hl7.at/ ; https://fhir.hl7.at/HL7-AT-FHIR-Core-R5/). Cancer registry FHIR profile set: not found.
+3. **Registry standard.** Österreichisches Nationales Krebsregister, run by Statistik Austria under Krebsstatistikgesetz 1969 and Krebsstatistikverordnung 2019 (BGBl. II Nr. 124/2019). Hospitals must report exclusively electronically and structured via a secured interface provided by Statistik Austria, using the encrypted identifier vbPK-AS, within three months. Named schema or file format: not found. https://www.statistik.at/statistiken/bevoelkerung-und-soziales/gesundheit/krebserkrankungen ; https://ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2019_II_124/BGBLA_2019_II_124.pdf ; https://www.statistik.at/fileadmin/publications/Krebserkrankungen_Berichtsjahr-2024_bf.pdf
+4. **Terminologies.** SNOMED CT member since March 2019 (37th member), NRC ELGA GmbH; Austria Extension via SNOMED Managed Service, releases e.g. Nov 2025 (on Nov 2025 International Edition) and May 2026 (https://www.snomed.org/news/austria-introduces-nationwide-standard-of-clinical-terminology-with-membership-in-snomed-international ; https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/353370146). ICD-10 BMSGPK 2026 in use since 01/2026; 2027 version registered (https://www.gesundheit.gv.at/OID_Frontend/oid-static/1/2/40/0/34/5/231.html). Registry coding: ICD-O-3 Revision 2 since 2020, TNM UICC 8th edition (Statistik Austria report above). LOINC: ELGA LOINC guideline V1.03 (2017), LOINC German Austria Edition 2.77 (https://www.elga.gv.at/fileadmin/user_upload/Dokumente_PDF_MP4/CDA/Leitfaden_LOINC_Anwendung_in_ELGA_V1.03.pdf). ATC or national drug code: not found. Terminology server: TerminoloGit, https://termgit.elga.gv.at , ELGA GmbH, FHIR endpoint "FHIR-tx-at", replaced the old ELGA server on 1 Oct 2022 (https://www.gesundheit.gv.at/service/professional/it-services/terminologieserver.html).
+5. **People.** TC FHIR authors page (dev build) names Anna Lin (TC FHIR Lead, FH OÖ), Reinhard Egelkraut (CGM), Oliver Krauss (FH OÖ) (https://dev-tergi.elga.gv.at/r5-core-70-Apply-Template-for-Base-IGs/authors.html); HL7 Austria chair Alexander Mense (https://hl7.eu/affiliate_at.html). Core R5 GitHub top contributors gabriel0316, oliver-krauss, regelkraut (https://github.com/HL7Austria/HL7-AT-FHIR-Core-R5). SNOMED NRC head Stefan Sabutsch (2019 press release above).
+
+### Registries, public datasets, infrastructure and non-FHIR digital assets
+
+#### (a) Cancer registries
+- Population-based: Österreichisches Nationales Krebsregister, run by Statistik Austria since 1969, nationwide coverage (mandatory hospital reporting); ENCR members listed historically include Statistik Austria, Tyrol and Carinthia registries. https://www.statistik.at/statistiken/bevoelkerung-und-soziales/gesundheit/krebserkrankungen ; https://publications.iarc.fr/_publications/media/download/3789/c59f506329fb5e54d3a355edbb825388ed440e50.pdf
+- Clinical/regional tumour registries: Tumorregister Tirol (1986), Vorarlberg (1981), Salzburg (1985), Kärnten (1988), Tumorzentrum Oberösterreich, Onkologisches Informationssystem; regional registries act as service providers for hospitals in most Länder (not Burgenland, Styria, Vienna). https://irihs.ihs.ac.at/id/eprint/6054/1/ihs-report-2021-stacherl-czypionka-hobodites-krankheitsverlaufsbezogene-krebsregister-oesterreich-europa.pdf ; https://epidownload.i-med.ac.at/download/public/ROeS/lectures/9_Analysis%20of%20Registries/Oberaigner_W.pdf
+- Screening registries: breast cancer screening programme (national, since 2014) – dedicated screening register: n/f; no national organised colorectal programme (pilots Vienna, Styria, 2026). https://www.oesterreich.gv.at/themen/gesundheit/medizinische_versorgung/screening-programm_brustkrebs-frueherkennung.html ; https://www.salzburg24.at/news/oesterreich/salzburg-muss-warten-darmkrebs-screening-in-wien-und-steiermark-ausgerollt-art-327523
+- Legal basis: Krebsstatistikgesetz 1969; Krebsstatistikverordnung 2019 (BGBl. II Nr. 124/2019). https://ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2019_II_124/BGBLA_2019_II_124.pdf
+- Submission format: exclusively electronic, structured, via Statistik Austria's secured interface with vbPK-AS pseudonym, within 3 months; variable groups (diagnosis, TNM, other classifications) in the ordinance annex; schema name: n/f. Coding: ICD-O-3 Revision 2 since 2020, TNM UICC 8th edition. https://www.statistik.at/fileadmin/publications/Krebserkrankungen_Berichtsjahr-2024_bf.pdf
+- Data access: via Statistik Austria request form; since January 2026 records pseudonymised with bPK-AS enabling linkage with other official statistics (e.g. employment and cancer study 2025). https://www.statistik.at/en/about-us/surveys/educational-cultural-research-and-health-institutions/cancer-registry-notification ; https://www.statistik.at/fileadmin/announcement/2026/01/20260129Krebsstatistik.pdf ; https://www.statistik.at/en/statistics/labour-market/labour-and-health/employment-and-cancer
+
+#### (b) Public datasets
+- Open statistics: STATcube and open.data Krebsstatistik (incidence, mortality, prevalence, survival from 1983). https://www.statistik.at/statistiken/bevoelkerung-und-soziales/gesundheit/krebserkrankungen
+- Research microdata: Austrian Micro Data Center (AMDC) at Statistik Austria (registry linkage) – cancer registry in AMDC: n/f.
+- ECIS: Statistik Austria contributes to ECIS (ENCR member) – explicit confirmation: n/f.
+- Screening data, synthetic datasets, national data catalogue: n/f.
+
+#### (c) Cancer infrastructure
+- National plan: Nationales Krebsrahmenprogramm 2026–2035 (BMASGPK with Gesundheit Österreich GmbH), successor of 2014–2025 programme. https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/Nationales-Krebsrahmenprogramm-2026%E2%80%932035.html
+- CCCs: Austrian Comprehensive Cancer Network (ACCN) links the three university CCCs Vienna, Graz, Innsbruck; cooperation with Bayerisches Zentrum für Krebsforschung signed July 2025; OECI accreditation of Austrian CCCs in progress (ministry slide). https://ccc.meduniwien.ac.at/en/austrian-comprehensive-cancer-network-accn ; https://www.ffg.at/sites/default/files/2026-10/Barbara%20Fr%C3%B6schl_Projektvorstellung_EUnetCCC.pdf
+- Genomics: Austria contributes 2,150 citizens' genomes to the 1+MG Genome of Europe reference dataset. https://www.ffg.at/europa/heu/missions/nationale-umsetzung/krebs
+- Biobanks: BBMRI.at (Biobank Graz, MedUni Wien Biobank); BBMRI-ERIC headquarters in Graz. https://forschungsinfrastruktur.bmfwf.gv.at/en/eufi/bbmri-eric_2?id=4924
+- EU projects: EUnetCCC (Austrian presentation by GÖG); EUCanScreen partner Gesundheit Österreich GmbH; Plattform Klinische Studien Onkologie (national trial information point). https://www.unicancer.fr/wp-content/uploads/2025/10/eucanscreen-project-consortium-octobre-2025-1.pdf ; https://www.gesundheit.gv.at/service/professional/plattform-klinische-studien-onkologie/plattform-klinische-studien-faq.html
+- OMOP: EHDEN data partners Medical University of Vienna and Syndena; MedUni Wien converted national ELGA e-Medikation CDA records to OMOP. https://zenodo.org/records/6490069/files/EHDEN%20Year%203%20partner%20report_final.pdf ; https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI230300
+- EUCAIM, JANE-2, TEHDAS2 Austrian partners: n/f.
+
+#### (d) Digital, non-FHIR, cancer-relevant
+- National EHR: ELGA, mainly HL7 CDA (e-Befund, e-Medikation, Patient Summary); oncology-specific CDA guide: n/f. https://fhir.hl7.at/HL7-AT-FHIR-Core-R5/
+- Terminology: TerminoloGit (termgit.elga.gv.at), ICD-10 BMSGPK 2026, LOINC guideline for ELGA lab reports. https://www.gesundheit.gv.at/service/professional/it-services/terminologieserver.html
+- Outpatient diagnosis coding with ICD-10 mandatory from 1 July 2026 (relevant to cancer epidemiology). https://www.sozialministerium.gv.at/Themen/Gesundheit/Gesundheitssystem/Gesundheitssystem-und-Qualitaetssicherung/Dokumentation/Ambulante-Leistungs--und-Diagnosendokumentation.html
+- Screening IT: e-card based automatic enrolment for breast screening. https://www.oesterreich.gv.at/themen/gesundheit/medizinische_versorgung/screening-programm_brustkrebs-frueherkennung.html
+- Tumour-board software, structured pathology, openEHR: n/f.
+
+#### Key organisations and people
+- Statistik Austria (cancer registry); BMASGPK and Gesundheit Österreich GmbH (Krebsrahmenprogramm, screening committee); ELGA GmbH (ELGA, SNOMED NRC, TerminoloGit); ACCN (MedUni Wien/Graz/Innsbruck); BBMRI.at; HL7 Austria (Alexander Mense chair; TC FHIR lead Anna Lin). https://www.sozialministerium.gv.at/Themen/Gesundheit/Nicht-uebertragbare-Krankheiten/Krebs/Nationales-Screening-Komitee-auf-Krebserkrankungen.html ; https://hl7.eu/affiliate_at.html
+
+---

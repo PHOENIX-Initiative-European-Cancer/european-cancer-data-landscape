@@ -1,0 +1,16 @@
+### Sweden (SE)
+
+Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research reports in [sources/survey](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/tree/main/sources/survey).
+
+### FHIR guides, registry format and terminologies
+
+1. **National base IG:** "Swedish Base Profiles Implementation Guide", package `hl7se.fhir.base`, FHIR R4 (4.0.1), v1.1.0 (built 2025-05-20; v2.0.0 in development), publisher HL7 Sweden, canonical http://hl7.se/fhir/ig/base. Profiles: Patient, Practitioner, PractitionerRole, Organization, HealthcareService; stated as not compatible with EU Core. E-hälsomyndigheten publishes national guides (National Medication List) on Simplifier.
+   https://hl7.se/fhir/ig/base/1.1.0/ ; https://get-ig.org/hl7se.fhir.base/1.1.0 ; https://hl7europe-test.azurewebsites.net/wp-content/uploads/2025/02/01_eusni2025_sweden.pdf
+2. **Oncology FHIR specifications:** not found. INCA (RCC platform for Cancer Registry, IPÖ, quality registers) uses an openEHR data store; no FHIR oncology IG located.
+   https://svfp.se/media/biki5rbx/slutrapport_openehrv12.pdf ; https://packages.fhir.org/jurisdictions/SE
+3. **Cancer registry reporting:** Cancerregistret at Socialstyrelsen; six Regional Cancer Centres receive A-reports (clinicians) and B-reports (laboratories) via INCA forms, Socialstyrelsen's form, or electronic transmission of lab diagnostic statements, code them in ICD-O/3 and deliver annually. Coding handbook "Kodning i cancerregistret 2026".
+   https://cancercentrum.se/syd/regional-cancer-centres/knowledge-based-healthcare/cancer-registry/ ; https://www.socialstyrelsen.se/contentassets/6b4e25c21ce446f2a9d850ef43daa294/2026-5-10247.pdf
+4. **Terminologies:** SNOMED CT charter member 2007; NRC Socialstyrelsen; Swedish extension May/November, latest November 2025. ICD-10-SE 13th version for 2026 (published January 2026) plus national fördjupningskoder 2026; ICD-11 for cause-of-death from 2027. ICD-O/3.2 (2019) with Socialstyrelsen modifications. TNM: latest UICC edition per Socialstyrelsen (edition number not stated). KVÅ for procedures. LOINC, ATC: not found. Terminology servers: national FHIR terminology server in production (survey), Inera Terminologitjänst (FHIR Terminology API, fhir.inera.se); Nordic tx-nordics.fhir.org/fhir hosted by HL7 Sweden.
+   https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/256901154 ; https://www.socialstyrelsen.se/contentassets/b4f71ee88ef74195824e5fa9cca7cf89/2026-1-9989.pdf ; https://www.socialstyrelsen.se/contentassets/ad9a86523e93449097d5136a8989f561/2024-1-8918.pdf ; https://fhir.inera.se/ig/IneraFHIRTemplate/1.0.1/terminology.html
+5. **Organisations and people:** HL7 Sweden, E-hälsomyndigheten (standards body, National Group for Standardization), Socialstyrelsen, Inera, RCC i samverkan. Arvid Thunholm (chair, HL7 Sweden WG base profiles); Mattias Colliander (HL7 Sweden board, terminology server); Daniel Karlsson (E-hälsomyndigheten, Nordic terminology cooperation). Board chair: not verified.
+   https://build.fhir.org/ig/HL7Sweden/basprofiler-r4/ ; https://hl7norway.github.io/best-practice/docs/FHIR-faglig-forum/presentasjon/2025-09-10-term-servers-intro.pdf
