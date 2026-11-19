@@ -25,6 +25,48 @@ Which terminology, in which version, an implementer has to use for ECCDM data pe
 
 The version matrix is being compiled.
 
+### SNOMED CT translation coverage (measured)
+
+Active concepts with at least one term in the language reference set, counted on 2026-11-19 with ECL description filters (`<<X {{ D dialectId = <refset> }}`) on a local Snowstorm holding the International edition 20261001 and the German (20260815), Austrian (20260815) and Swiss (20260607) editions. "ECCDM SNOMED codes" are the 25 SNOMED concepts used in ECCDM value sets and fixed codes.
+
+| Hierarchy | de-DE | de-AT | de-CH | fr-CH | it-CH |
+|---|---|---|---|---|---|
+| malignant neoplastic disease | 5,379 / 6,176 (87 %) | 5,379 / 6,176 (87 %) | 2,605 / 6,177 (42 %) | 4,571 / 6,177 (74 %) | 373 / 6,177 (6 %) |
+| morphologic abnormality | 28 / 5,279 (1 %) | 28 / 5,279 (1 %) | 28 / 5,269 (1 %) | 238 / 5,269 (5 %) | 17 / 5,269 (0 %) |
+| body structure | 68 / 45,089 (0 %) | 68 / 45,089 (0 %) | 62 / 43,637 (0 %) | 6,966 / 43,637 (16 %) | 23 / 43,637 (0 %) |
+| procedure | 23,174 / 60,698 (38 %) | 23,175 / 60,699 (38 %) | 22,705 / 59,975 (38 %) | 33,171 / 59,975 (55 %) | 1,205 / 59,975 (2 %) |
+| observable entity | 203 / 11,052 (2 %) | 205 / 11,052 (2 %) | 199 / 11,033 (2 %) | 4,169 / 11,033 (38 %) | 122 / 11,033 (1 %) |
+| qualifier value | 861 / 12,469 (7 %) | 861 / 12,469 (7 %) | 934 / 12,461 (7 %) | 3,964 / 12,461 (32 %) | 409 / 12,461 (3 %) |
+| ECCDM SNOMED codes | 6 / 25 (24 %) | 6 / 25 (24 %) | 6 / 25 (24 %) | 21 / 25 (84 %) | 2 / 25 (8 %) |
+
+ECCDM SNOMED codes without a term, per language ("x" = missing):
+
+| Code | Preferred term (en) | de-DE | de-AT | de-CH | fr-CH | it-CH |
+|---|---|---|---|---|---|---|
+| 255470001 | Local | x | x | x | x | x |
+| 14799000 | Neoplasm, metastatic | x | x | x | x | x |
+| 410674003 | Regional | x | x | x | x | x |
+| 438949009 | Alive | x | x | x |  | x |
+| 413744002 | Cancer screening follow up | x | x | x |  | x |
+| 260998006 | Clinical staging | x | x | x |  | x |
+| 373808002 | Curative - procedure intent | x | x | x |  | x |
+| 169413002 | Hormone therapy | x | x | x |  | x |
+| 360037004 | Imaging - action | x | x | x |  | x |
+| 103338009 | In full remission | x | x | x |  | x |
+| 103337004 | In partial remission | x | x | x |  | x |
+| 395531003 | Neoplasm observable | x | x | x |  | x |
+| 363676003 | Palliative intent | x | x | x |  | x |
+| 261023001 | Pathological staging | x | x | x |  | x |
+| 359748005 | Patient condition unchanged | x | x | x |  | x |
+| 263853000 | Recurrent episode | x | x | x |  | x |
+| 79970003 | Simultaneous | x | x | x |  | x |
+| 229803000 | Single episode | x | x | x |  | x |
+| 419835002 | Tumor progression | x | x | x |  | x |
+| 262061000 | Postoperative period |  |  |  | x | x |
+| 76334006 | Immunological therapy |  |  |  |  | x |
+| 262068006 | Preoperative |  |  |  |  | x |
+| 1287742003 | Radiotherapy |  |  |  |  | x |
+
 ### Official mappings between terminologies
 
 Live test 2026-11-19 on a local Snowstorm (SNOMED CT International plus German, Austrian, Swiss and LOINC-SNOMED editions): it serves eight implicit ConceptMaps, among them SNOMED→ICD-10 extended map (`http://snomed.info/sct?fhir_cm=447562003`), SNOMED→ICD-O simple map (`?fhir_cm=446608001`), SNOMED→ICD-10-CM complex map and the historical associations (SAME AS, REPLACED BY, POSSIBLY EQUIVALENT TO, ALTERNATIVE). `$translate` returned 254837009 Malignant neoplasm of breast → ICD-10 C50.9, and 82711006 Infiltrating duct carcinoma → ICD-O 8500/3. **Note for ECCDM:** the ICD-O map returns `system = http://hl7.org/fhir/sid/icd-o`, whereas ECCDM uses `http://terminology.hl7.org/CodeSystem/icd-o-3`; implementers translating from SNOMED must rewrite the system URI. The MII Ontoserver was unreachable (HTTP 503), so the German transition ConceptMaps were not test-loaded.

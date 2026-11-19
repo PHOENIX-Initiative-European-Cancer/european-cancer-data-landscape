@@ -332,22 +332,21 @@ def write_terminology_page():
         L += _md_table(["Element", "Code system", "Strength", "Value set", "Note"],
                        [[r["element"], r["code_system"], r["strength"], r["binding"], r["note"]] for r in b])
         L += [""]
+    parts = sorted(TERM.glob("matrix-*.csv"))
+    if parts:
+        rows_all, header = [], None
+        for f in parts:
+            with open(f, newline="", encoding="utf-8") as fh:
+                rd = csv.reader(fh); h = next(rd); header = header or h
+                rows_all += [r for r in rd if r]
+        with open(TERM / "terminology-matrix.csv", "w", newline="", encoding="utf-8") as fh:
+            w = csv.writer(fh); w.writerow(header); w.writerows(rows_all)
     m = _csv(TERM / "terminology-matrix.csv")
     if m:
-        cols = ["SNOMED CT", "ICD-10 (national variant)", "ICD-O (edition)", "TNM (UICC/AJCC edition)",
-                "LOINC (national variant/version)", "ATC (national version)", "procedure classification",
-                "national terminology server"]
-        short = {"SNOMED CT": "SNOMED CT", "ICD-10 (national variant)": "ICD-10", "ICD-O (edition)": "ICD-O",
-                 "TNM (UICC/AJCC edition)": "TNM", "LOINC (national variant/version)": "LOINC",
-                 "ATC (national version)": "ATC", "procedure classification": "Procedures",
-                 "national terminology server": "Terminology server"}
+        cols = ["SNOMED CT", "ICD-10", "ICD-O", "TNM", "LOINC", "ATC", "Procedures", "Terminology server"]
+        short = {c: c for c in cols}
         def norm(t):
-            t = t.lower()
-            for c in cols:
-                key = c.split(" (")[0].lower()
-                if t.startswith(key):
-                    return c
-            return None
+            return t if t in cols else None
         cell = {}
         for r in m:
             c = norm(r["terminology"])
@@ -381,6 +380,52 @@ def write_terminology_page():
         (DATA / "terminology-matrix.csv").write_text((TERM / "terminology-matrix.csv").read_text(encoding="utf-8"), encoding="utf-8")
     else:
         L += ["The version matrix is being compiled.", ""]
+    tc = TERM / "snomed-translation-counts.tsv"
+    if tc.exists():
+        rows = list(csv.DictReader(open(tc, encoding="utf-8"), delimiter="\t"))
+        langs = []
+        for r in rows:
+            if r["language"] not in langs: langs.append(r["language"])
+        scopes = []
+        for r in rows:
+            if r["scope"] not in scopes and r["scope"] != "all concepts": scopes.append(r["scope"])
+        def fmt(r):
+            try:
+                t, n = int(r["translated"]), int(r["total"]); return f"{t:,} / {n:,} ({100*t/n:.0f} %)"
+            except ValueError:
+                return "n/f"
+        L += ["### SNOMED CT translation coverage (measured)", "",
+              "Active concepts with at least one term in the language reference set, counted on 2026-11-19 with ECL description filters "
+              "(`<<X {{ D dialectId = <refset> }}`) on a local Snowstorm holding the International edition 20261001 and the German (20260815), "
+              "Austrian (20260815) and Swiss (20260607) editions. \"ECCDM SNOMED codes\" are the 25 SNOMED concepts used in ECCDM value sets and fixed codes.", ""]
+        tab = []
+        for sc in scopes:
+            cells = [fmt(next(r for r in rows if r["scope"] == sc and r["language"] == lg)) for lg in langs]
+            if all(c == "n/f" for c in cells):
+                continue
+            tab.append([sc] + cells)
+        L += _md_table(["Hierarchy"] + langs, tab) + [""]
+        miss = TERM / "eccdm-sct-missing.txt"
+        if miss.exists():
+            names = {}
+            nf = TERM / "eccdm-sct-names.tsv"
+            if nf.exists():
+                for ln in nf.read_text(encoding="utf-8").splitlines():
+                    c, _, t = ln.partition("\t"); names[c] = t
+            miss_by = {}
+            for line in miss.read_text(encoding="utf-8").splitlines():
+                lg, _, codes = line.partition(" missing:")
+                for c in codes.split():
+                    miss_by.setdefault(c, []).append(lg)
+            L += ["ECCDM SNOMED codes without a term, per language (\"x\" = missing):", ""]
+            L += _md_table(["Code", "Preferred term (en)"] + langs,
+                           [[c, names.get(c, "")] + ["x" if lg in miss_by[c] else "" for lg in langs]
+                            for c in sorted(miss_by, key=lambda c: (-len(miss_by[c]), names.get(c, "")))]) + [""]
+    tcov = TERM / "translation-coverage.md"
+    if tcov.exists():
+        body = re.sub(r"^# .*\n", "", tcov.read_text(encoding="utf-8"), count=1)
+        body = re.sub(r"^(#{1,5}) ", lambda x: "###" + " ", body, flags=re.M)
+        L += ["### Translations per code system (published figures)", "", body.strip(), ""]
     mp = TERM / "terminology-mappings.md"
     if mp.exists():
         body = re.sub(r"^# .*\n", "", mp.read_text(encoding="utf-8"), count=1)
