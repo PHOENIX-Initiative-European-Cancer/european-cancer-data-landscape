@@ -143,6 +143,162 @@ NL,Procedures,yes,DHD Verrichtingenthesaurus 3.3 (SNOMED-based); NZa DBC codelij
 NL,Pathology coding,yes,PALGA SNOMED CT coding; protocol refset 552131000146100,n/f,monthly Nictiz pathology change lists,http://snomed.info/sct,n/f,SNOMED NL edition (refset); PALGA protocols,SNOMED affiliate licence via Nictiz,yes,https://conf.spaces.snomed.org/wiki/spaces/PLT/pages/131829878,yes
 NL,UCUM,yes,UCUM (national norm in LOINC-Implementatieadvies 1.0),2026-05-28,n/f,http://unitsofmeasure.org,n/f,nl-core / zib packages; Labcodeset,Free; Regenstrief UCUM licence,n/f,https://www.nictiz.nl/document/202615-loinc-implementatie-webversiepdf,yes
 NL,Terminology server,yes,"Nationale Terminologieserver (Ontoserver, Nictiz)",n/f,n/f,n/f,n/f,https://terminologieserver.nl/fhir,Free account; licensed content after licence + Nictiz service desk request,n/f,https://www.nictiz.nl/document/gevorderdenhandleiding-handleiding-nationale-terminologieserver-ntspdf,yes
+ES,SNOMED CT,yes,ES national edition (SNS extension; Apr/Oct releases),n/f,next edition 2027-04-30 (releases 30 Apr and 31 Oct),http://snomed.info/sct,http://snomed.info/sct/900000001000122104,Ministerio de Sanidad download area (Área de Recursos Semánticos),"free in ES (member, NRC Ministerio de Sanidad)",n/f,https://www.sanidad.gob.es/profesionales/hcdsns/areaRecursosSem/snomed-ct/areaDescarga.htm ; https://docs.snomed.org/snomed-ct-practical-guides/snomed-ct-extension-guide/4-logical-design/4.4-editions/4.4.2-edition-uri-examples,yes
+ES,ICD-10,yes,CIE-10-ES 6th ed 2026,n/f,n/f,n/f,n/f,Ministerio de Sanidad (Unidad Técnica de Codificación),free,n/f,https://www.sanidad.gob.es/estadEstudios/estadisticas/normalizacion/,yes
+ES,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+ES,ICD-O,yes,CIE-O-3.2,2026-01-01,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,Ministerio de Sanidad,free,yes,https://www.sanidad.gob.es/ca/estadEstudios/estadisticas/normalizacion/CIE10/2026/Nota_edicion_CIE_O_3_2.pdf,yes
+ES,TNM,yes,edition recorded per case (UICC 5-8 field in REDECAN/SEOM set); national edition n/f,n/f,n/f,n/f,n/f,n/f,UICC licence,yes,https://seom.org//images/ESTUDIO_REGISTRO_DE_CANCER_BASE_POBLACIONAL.pdf,yes
+ES,LOINC,yes,LOINC 2.77 esES,2024-02,n/f,http://loinc.org,2.77,loinc.org (Servicio Extremeño de Salud translation),free (LOINC licence),n/f,https://loinc.org/?p=7929,yes
+ES,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+ES,Drug code,yes,Código Nacional (AEMPS),n/f,n/f,n/f,n/f,AEMPS,n/f,n/f,n/f,no
+ES,Procedures,yes,CIE-10-ES Procedimientos 6th ed 2026,n/f,n/f,n/f,n/f,Ministerio de Sanidad,free,n/f,https://www.sanidad.gob.es/estadEstudios/estadisticas/normalizacion/,yes
+ES,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+ES,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+ES,Terminology server,yes,Servidor de Terminologías de Referencia del SNS (production),n/f,n/f,n/f,n/f,Ministerio de Sanidad,n/f,n/f,https://www.sanidad.gob.es/areas/saludDigital/semanticaClinica/factoriaRecursos/servTerm.htm,yes
+PT,SNOMED CT,partial,International edition (no PT national edition found),n/f,n/f,http://snomed.info/sct,n/f,SPMS Centro de Terminologias Clínicas,"free in PT (member since 2014, NRC SPMS CTC)",n/f,https://www.snomed.org/member/portugal,yes
+PT,ICD-10,yes,ICD-10-CM (English original),2017-01-01,n/f,http://hl7.org/fhir/sid/icd-10-cm,n/f,SPMS CTC,n/f,n/f,https://interop-pt.atlassian.net/wiki/spaces/CTCPT/pages/58884368,yes
+PT,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+PT,ICD-O,yes,ICD-O-3,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,n/f,no
+PT,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+PT,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+PT,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+PT,Drug code,yes,CHNM (INFARMED),2007,n/f,n/f,n/f,INFARMED,n/f,n/f,https://www.infarmed.pt/documents/15786/1068150/034-B_Port_155_2007_VF.pdf,yes
+PT,Procedures,yes,ICD-10-PCS,2017-01-01,n/f,http://www.cms.gov/Medicare/Coding/ICD10,n/f,SPMS CTC,n/f,n/f,https://interop-pt.atlassian.net/wiki/spaces/CTCPT/pages/58884368,yes
+PT,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+PT,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+PT,Terminology server,planned,none in production; SPMS PRR consultancy tender 2026,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://diariodarepublica.pt/dr/detalhe/anuncio-procedimento/1947-2026-1027897292,yes
+GR,SNOMED CT,no,n/f (GR not a SNOMED International member),n/f,n/f,http://snomed.info/sct,n/f,n/f,affiliate licence (GR not a member),no,https://www.snomed.org/members,no
+GR,ICD-10,yes,ICD-10-GrM 2017 v2 (derived from ICD-10-GM 2013),n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+GR,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+GR,ICD-O,partial,ICD-O-3 (implied by ENCR alignment; not specified in registry decree),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,n/f,https://www.dsanet.gr/Epikairothta/Nomothesia/950.PDF,no
+GR,TNM,n/f,n/f (stage at diagnosis is a registry field; edition not specified),n/f,n/f,n/f,n/f,n/f,n/f,yes,https://www.dsanet.gr/Epikairothta/Nomothesia/950.PDF,yes
+GR,LOINC,no,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+GR,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+GR,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+GR,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+GR,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+GR,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+GR,Terminology server,planned,under development (n/f operator),n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+CY,SNOMED CT,partial,International edition (no CY extension; adoption pending stakeholder decision),n/f,n/f,http://snomed.info/sct,n/f,NeHA (NRC),"free in CY (member since Sep 2018, NRC NeHA)",n/f,https://www.snomed.org/members/cyprus ; https://www.snomed.org/snomed-in-action/national-ehealth-authority-of-cyprus,yes
+CY,ICD-10,yes,ICD-10 (national modification n/f; mixed with ICPC and CPT-4),n/f,n/f,http://hl7.org/fhir/sid/icd-10,n/f,n/f,n/f,yes,https://pmc.ncbi.nlm.nih.gov/articles/PMC4523219,yes
+CY,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+CY,ICD-O,yes,ICD-O-3 (CanReg4 derives ICD-10),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://pmc.ncbi.nlm.nih.gov/articles/PMC4523219 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11168067/,yes
+CY,TNM,yes,"edition n/f (registry codes TNM plus SEER Summary Staging, MECC rules)",n/f,n/f,n/f,n/f,n/f,UICC licence,yes,https://pmc.ncbi.nlm.nih.gov/articles/PMC11168067/,yes
+CY,LOINC,partial,n/f (NeHA lists LOINC in current coding mix),n/f,n/f,http://loinc.org,n/f,n/f,free (LOINC licence),n/f,n/f,no
+CY,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+CY,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+CY,Procedures,partial,CPT-4 (reimbursement),n/f,n/f,http://www.ama-assn.org/go/cpt,n/f,n/f,AMA licence,n/f,n/f,no
+CY,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+CY,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+CY,Terminology server,planned,in planning (NeHA),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/CY,yes
+MT,SNOMED CT,yes,International edition (no Maltese translation; terminology of choice for EHRs and National Patient Summary),n/f,n/f,http://snomed.info/sct,n/f,Information Management Unit (NRC),"free in MT (member since Oct 2011, NRC MoH IMU)",n/f,https://www.snomed.org/members/malta ; https://health.gov.mt/national-level-service/snomed-national-release-centre-malta/,yes
+MT,ICD-10,yes,ICD-10 WHO (no national modification),1995,n/f,http://hl7.org/fhir/sid/icd-10,n/f,WHO,n/f,n/f,https://ec.europa.eu/eurostat/cache/metadata/en/hlth_res_esms_mt.htm,yes
+MT,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+MT,ICD-O,yes,ICD-O-3,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://ghdx.healthdata.org/node/113711,no
+MT,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+MT,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+MT,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+MT,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+MT,Procedures,yes,ICD-9-CM (DHIR National Hospital Information System),n/f,n/f,http://hl7.org/fhir/sid/icd-9-cm,n/f,n/f,n/f,n/f,https://ec.europa.eu/eurostat/cache/metadata/en/hlth_res_esms_mt.htm,yes
+MT,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+MT,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+MT,Terminology server,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+DK,SNOMED CT,yes,DK extension Sep 2025 (on INT 20250801),2025-09,bi-annual DK releases (March/September); later release n/f,http://snomed.info/sct,http://snomed.info/sct/554471000005108,SNOMED MLDS (NRC Sundhedsdatastyrelsen),"free in DK (charter member 2007, NRC Sundhedsdatastyrelsen)",n/f,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/148406293 ; https://docs.snomed.org/snomed-ct-practical-guides/snomed-ct-extension-guide/4-logical-design/4.4-editions/4.4.2-edition-uri-examples,yes
+DK,ICD-10,yes,SKS ICD-10 diagnoses (SKS-D; version numbering n/f),n/f,Sundhedsdatastyrelsen merges into Digital Sundhed Danmark 2027-01-01,urn:oid:1.2.208.176.2.4.12,n/f,SKS browser (Sundhedsdatastyrelsen),free,yes,https://cdn1.gopublic.dk/sundhedsdatastyrelsen/Media/638650952569270242/Registerdeklaration%20Cancerregisteret.pdf ; https://packages.fhir.org/hl7.fhir.dk.core,yes
+DK,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+DK,ICD-O,yes,ICD-O-3 (morphology since 2004),2004,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://cdn1.gopublic.dk/sundhedsdatastyrelsen/Media/638650952569270242/Registerdeklaration%20Cancerregisteret.pdf,yes
+DK,TNM,yes,"current UICC edition (number not fixed; cTNM mandatory, pTNM optional in LPR3)",n/f,n/f,n/f,n/f,n/f,UICC licence,yes,https://cdn.sundhedsdatastyrelsen.dk/sundhedsdatastyrelsen/Media/638955095432142451/LPR-indberetningsvejledning_2025_v.5.1.pdf,yes
+DK,LOINC,partial,LOINC observation profiles in DK Core; NPU is the lab terminology (http://npu-terminology.org),n/f,n/f,http://loinc.org,n/f,n/f,free (LOINC licence),n/f,https://hl7.dk/fhir/core/index.html,yes
+DK,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+DK,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+DK,Procedures,n/f,SKS (DK Core uses SKS root OID; procedure chapter use not confirmed in reports),n/f,n/f,urn:oid:1.2.208.176.2.4,n/f,SKS browser (Sundhedsdatastyrelsen),free,n/f,https://packages.fhir.org/hl7.fhir.dk.core,no
+DK,Pathology coding,yes,"Danish SNOMED pathology codes (Patobank), converted to ICD-O-3 by tables",n/f,n/f,n/f,n/f,Patobank,n/f,yes,https://cdn1.gopublic.dk/sundhedsdatastyrelsen/media/15733/FI%20Registrering%20Patologi.pdf,yes
+DK,UCUM,yes,UCUM (DK Core observation profiles),n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://packages.fhir.org/hl7.fhir.dk.core,yes
+DK,Terminology server,planned,"national server in planning; shared tx-nordics.fhir.org/fhir (HL7 Sweden, not production)",n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/DK ; https://hl7norway.github.io/best-practice/referat/2025-09-10-referat.html,yes
+SE,SNOMED CT,yes,SE extension Nov 2025,2025-11,semi-annual SE releases (May/November); later release n/f,http://snomed.info/sct,http://snomed.info/sct/45991000052106,SNOMED MLDS (NRC Socialstyrelsen),"free in SE (charter member 2007, NRC Socialstyrelsen)",n/f,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/256901154 ; https://docs.snomed.org/snomed-ct-practical-guides/snomed-ct-extension-guide/4-logical-design/4.4-editions/4.4.2-edition-uri-examples,yes
+SE,ICD-10,yes,ICD-10-SE 2026 (13th version),2026-01,n/f,n/f,n/f,Socialstyrelsen,free,yes,https://www.socialstyrelsen.se/contentassets/b4f71ee88ef74195824e5fa9cca7cf89/2026-1-9989.pdf,yes
+SE,ICD-11,planned,n/f,n/f,ICD-11 for cause-of-death coding from 2027,http://id.who.int/icd/release/11/mms,n/f,WHO,n/f,no,https://www.socialstyrelsen.se/contentassets/ad9a86523e93449097d5136a8989f561/2024-1-8918.pdf,yes
+SE,ICD-O,yes,ICD-O-3.2 (2019) with Socialstyrelsen modifications,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,Socialstyrelsen,free,yes,https://www.socialstyrelsen.se/contentassets/6b4e25c21ce446f2a9d850ef43daa294/2026-5-10247.pdf,yes
+SE,TNM,yes,UICC 8 and UICC 9 in parallel,n/f,n/f,n/f,n/f,n/f,UICC licence,yes,https://www.socialstyrelsen.se/contentassets/6b4e25c21ce446f2a9d850ef43daa294/2026-5-10247.pdf,yes
+SE,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+SE,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+SE,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SE,Procedures,yes,KVÅ (Klassifikation av vårdåtgärder),n/f,n/f,n/f,n/f,Socialstyrelsen,free,n/f,https://www.socialstyrelsen.se/contentassets/b4f71ee88ef74195824e5fa9cca7cf89/2026-1-9989.pdf,no
+SE,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SE,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+SE,Terminology server,yes,Inera Terminologitjänst (FHIR Terminology API; production),n/f,n/f,n/f,n/f,fhir.inera.se,n/f,n/f,https://fhir.inera.se/ig/IneraFHIRTemplate/1.0.1/terminology.html,yes
+NO,SNOMED CT,yes,NO edition (about 10 extension releases per year; current release date n/f),n/f,n/f,http://snomed.info/sct,http://snomed.info/sct/51000202101,Helsedirektoratet (NRC),"free in NO (member since 2017-01-01, NRC Helsedirektoratet)",n/f,https://www.helsedirektoratet.no/digitalisering-og-e-helse/helsefaglige-kodeverk/snomed-ct/snomed-ct-i-norge ; https://docs.snomed.org/snomed-ct-practical-guides/snomed-ct-extension-guide/4-logical-design/4.4-editions/4.4.2-edition-uri-examples,yes
+NO,ICD-10,yes,ICD-10 NO 2026,2026-01-01,n/f,urn:oid:2.16.578.1.12.4.1.1.7110,n/f,FinnKode (Helsedirektoratet),free,yes,https://www.helsedirektoratet.no/veiledere/kodeveiledning-regler-og-veiledning-for-klinisk-koding-i-spesialisthelsetjenesten ; https://simplifier.net/hl7norwayno-basis,yes
+NO,ICD-11,planned,n/f,n/f,ICD-11 upgrade strategy drafted 2026 (no date),http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,no,https://www.helsedirektoratet.no/rapporter/oppgraderingsstrategi-for-icd-11-informasjonsforvaltning-kodeverk-og-terminologi/sammendrag,yes
+NO,ICD-O,yes,ICD-O-3 (registration classification; converted to ICD-10 for reporting),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://www.fhi.no/Content/cancer-in-norway-2025.pdf,yes
+NO,TNM,yes,UICC 8,n/f,n/f,n/f,n/f,n/f,UICC licence,yes,https://www.helsedirektoratet.no/retningslinjer/kreft-i-tykktarm-og-endetarm-handlingsprogram/patologi/uicc-tnm-klassifisering-og-stadieinndeling,yes
+NO,LOINC,n/f,"n/f (NPU used for lab, to be published on tx-nordics)",n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+NO,ATC,yes,WHO ATC (no-basis Medication and AllergyIntolerance slices),n/f,n/f,http://www.whocc.no/atc,n/f,WHO CC Oslo,n/f,n/f,https://simplifier.net/hl7norwayno-basis,yes
+NO,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+NO,Procedures,yes,"Norsk klinisk prosedyrekodeverk (NCMP, NCSP, NCRP)",n/f,n/f,urn:oid:2.16.578.1.12.4.1.1.7275,n/f,FinnKode (Helsedirektoratet),free,n/f,https://simplifier.net/hl7norwayno-basis,yes
+NO,Pathology coding,yes,NORPAT (mandatory in all pathology departments),n/f,n/f,n/f,n/f,n/f,n/f,yes,https://www.fhi.no/en/cancer/reporting/reporting-pathology-information/,yes
+NO,UCUM,yes,UCUM (no-basis),n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://simplifier.net/hl7norwayno-basis,yes
+NO,Terminology server,planned,national FHIR terminology server in development,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/NO,yes
+FI,SNOMED CT,partial,FI edition (subset translation; annual December release; latest release date n/f),n/f,next FI edition each December,http://snomed.info/sct,http://snomed.info/sct/11000229106,THL (NRC),"free in FI (member 2018, NRC THL)",n/f,https://hl7.fi/fhir/finnish-base-profiles/2.0.0/Parameters-exp-params.json.html ; https://www.snomed.org/members/finland,yes
+FI,ICD-10,yes,THL Tautiluokitus ICD-10 (version n/f),n/f,ICD-11 planned from 2028,urn:oid:1.2.246.537.6.1,1999 (as used in Finnish Base Profiles examples),Koodistopalvelu (THL content; not FHIR),free,yes,https://hl7.fi/fhir/finnish-base-profiles/terminology.html,yes
+FI,ICD-11,planned,n/f,n/f,ICD-11 from 2028,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,https://www.snomed.org/members/finland,no
+FI,ICD-O,yes,ICD-O-3 (topography; morphology; behaviour),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://finngen.gitbook.io/finngen-handbook/finngen-data-specifics/red-library-data-individual-level-data/what-phenotype-files-are-available-in-sandbox-1/other-registers/finnish-cancer-registry-detailed-cancer-data,no
+FI,TNM,n/f,n/f (stage available for 42% of 2024 cases),n/f,n/f,n/f,n/f,n/f,n/f,partial,https://www.verkkouutiset.fi/a/syopatiedoissa-isot-alueelliset-erot-yksi-seutu-erottuu/,no
+FI,LOINC,partial,LOINC in Kanta PHR profiles (Finnish Base Profiles),n/f,n/f,http://loinc.org,n/f,n/f,free (LOINC licence),n/f,https://hl7.fi/fhir/finnish-base-profiles/,yes
+FI,ATC,yes,ATC (Kanta national code set),n/f,n/f,urn:oid:1.2.246.537.6.32,2007 (as used in Finnish Base Profiles examples),Koodistopalvelu,n/f,n/f,https://hl7.fi/fhir/finnish-base-profiles/,yes
+FI,Drug code,yes,Kanta medicinal product identifier (OID 1.2.246.537.6.55),n/f,n/f,urn:oid:1.2.246.537.6.55,n/f,n/f,n/f,n/f,https://hl7.fi/fhir/finnish-base-profiles/,no
+FI,Procedures,yes,THL procedure classification (NCSP-based),n/f,n/f,urn:oid:1.2.246.537.6.2,2007 (as used in Finnish Base Profiles examples),Koodistopalvelu,n/f,n/f,https://hl7.fi/fhir/finnish-base-profiles/,no
+FI,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+FI,UCUM,yes,UCUM (Finnish Base Profiles),n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://hl7.fi/fhir/finnish-base-profiles/,yes
+FI,Terminology server,planned,"FHIR server in planning; Koodistopalvelu (THL/Kela) not FHIR, SOAP retired 2026-01-13",n/f,n/f,n/f,n/f,Koodistopalvelu,n/f,n/f,https://www.kanta.fi/documents/d/guest/koodistopalvelun-rajapinnat-ja-liittymisohje-1_8 ; https://packages.fhir.org/jurisdictions/FI,yes
+IS,SNOMED CT,partial,International edition (pathology; microbiology; virology; immunology),n/f,n/f,http://snomed.info/sct,n/f,Directorate of Health (national licence),free in IS (member since Sep 2011),n/f,https://www.snomed.org/members/iceland,yes
+IS,ICD-10,yes,ICD-10 IS (Icelandic translation 1996; current editions 2014),n/f,n/f,n/f,n/f,SKAFL.is,free,n/f,https://island.is/en/classification-system-in-health-services/icd-10,yes
+IS,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+IS,ICD-O,yes,ICD-O (edition not stated),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://www.laeknabladid.is/media/2024-06/f02.pdf,yes
+IS,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+IS,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+IS,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+IS,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+IS,Procedures,yes,NCSP (listed on SKAFL.is),n/f,n/f,n/f,n/f,SKAFL.is,n/f,n/f,https://island.is/flokkunarkerfi-i-heilbrigdisthjonustu/skafl.is,yes
+IS,Pathology coding,partial,SNOMED CT in pathology,n/f,n/f,http://snomed.info/sct,n/f,n/f,n/f,n/f,https://www.snomed.org/members/iceland,yes
+IS,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+IS,Terminology server,planned,national FHIR terminology server in development,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/IS,yes
+EE,SNOMED CT,yes,EE edition 20260530,2026-05-30,semi-annual EE releases (May/November on TEHIK server),http://snomed.info/sct,http://snomed.info/sct/11000181102/version/20260530,TEHIK terminology server (term.tehik.ee),"free in EE (member since Jan 2010, NRC TEHIK)",n/f,https://term.tehik.ee/fhir ; https://www.snomed.org/members/estonia,yes
+EE,ICD-10,yes,RHK-10 (TEHIK CodeSystem 11.0.0),n/f,n/f,https://fhir.ee/CodeSystem/rhk10,11.0.0,TEHIK terminology server and Publitseerimiskeskus,free,yes,https://term.tehik.ee/fhir ; https://en.tai.ee/en/r-and-d/registers/estonian-cancer-registry,yes
+EE,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+EE,ICD-O,yes,RHK-O-3 (ICD-O-3) since 2008,2008,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://tai.ee/sites/default/files/2021-03/Teatise_vormistamise_juhend.pdf,yes
+EE,TNM,yes,UICC 8 (pTNM else cTNM),n/f,n/f,https://fhir.ee/CodeSystem/pahaloomulise-kasvaja-levik-tnm-jargi,2.0.0,TEHIK terminology server,UICC licence,yes,https://tai.ee/sites/default/files/2021-03/Teatise_vormistamise_juhend.pdf ; https://term.tehik.ee/fhir,yes
+EE,LOINC,yes,LOINC 2.77 etEE,2024-02-27,n/f,http://loinc.org,2.77,loinc.org (Estonian Society for Clinical Chemistry translation),free (LOINC licence),n/f,https://loinc.org/?p=7910,yes
+EE,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+EE,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+EE,Procedures,yes,NCSP (TEHIK CodeSystem 11.0.0); Tervisekassa service list 57.2.0,n/f,n/f,https://fhir.ee/CodeSystem/ncsp,11.0.0,TEHIK terminology server,n/f,n/f,https://term.tehik.ee/fhir,yes
+EE,Pathology coding,partial,Patomorfoloogiline lõppdiagnoos (TEHIK CodeSystem 22.0.0),n/f,n/f,https://fhir.ee/CodeSystem/patomorfoloogiline-loppdiagnoos,22.0.0,TEHIK terminology server,n/f,n/f,https://term.tehik.ee/fhir,no
+EE,UCUM,yes,UCUM (EE Base),n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://build.fhir.org/ig/HL7EE/ig-ee-base,yes
+EE,Terminology server,yes,TEHIK Ontoserver (production; SNOMED CT EE+INT and 400+ value sets),n/f,n/f,n/f,n/f,https://term.tehik.ee/fhir,n/f (UI login required),n/f,https://build.fhir.org/ig/TEHIK-EE/TerminologyServices ; https://term.tehik.ee/fhir,yes
+LV,SNOMED CT,partial,SNOMED GPS (member since Jan 2026; no LV edition yet),2026-01,national roadmap to 2030,http://snomed.info/sct,n/f,SPKC (NRC),"free in LV (member since Jan 2026, NRC SPKC)",n/f,https://www.snomed.org/members/latvia ; https://lvportals.lv/dienaskartiba/395031-snomed-ct-palidzes-veidot-vienotu-klinisko-zinasanu-telpu-latvija-2026,yes
+LV,ICD-10,yes,SSK-10 (version numbering n/f),n/f,SSK-11 under consideration,n/f,n/f,SPKC,free,yes,https://likumi.lv/ta/id/365793,yes
+LV,ICD-11,no,n/f,n/f,SSK-11 under consideration,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,no,https://likumi.lv/ta/id/365793,yes
+LV,ICD-O,yes,SSK-O-3.2 (cancer patient card),2024-01-01,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,SPKC,n/f,yes,https://www.spkc.gov.lv/lv/media/19929/download ; https://spkc.gov.lv/lv/media/19977/download,yes
+LV,TNM,yes,UICC 8 (cancer patient card),2024-01-01,n/f,n/f,n/f,n/f,UICC licence,yes,https://www.spkc.gov.lv/lv/media/19929/download,yes
+LV,LOINC,planned,n/f,n/f,named in LDVC strategy,http://loinc.org,n/f,n/f,n/f,n/f,https://www.varam.gov.lv/lv/media/46103/download,yes
+LV,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+LV,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LV,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LV,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LV,UCUM,planned,n/f,n/f,named in LDVC strategy,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://www.varam.gov.lv/lv/media/46103/download,yes
+LV,Terminology server,yes,national FHIR terminology server in production (operator and URL n/f),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/LV,no
+LT,SNOMED CT,partial,LT translation (40000 concepts translated 2015; LT edition module n/f),n/f,n/f,http://snomed.info/sct,n/f,Lithuanian Medical Library (NRC),"free in LT (charter member 2007, NRC Lithuanian Medical Library)",n/f,https://snomed.org/snomed-in-action/lithuanian-nrc-library-of-medicine,yes
+LT,ICD-10,yes,TLK-10-AM (ICD-10-AM; edition n/f),2011-02-23,TLK-11 mapping planned,n/f,n/f,n/f,n/f,n/f,https://e-seimas.lrs.lt/rs/legalact/TAD/TAIS.211963/,yes
+LT,ICD-11,planned,n/f,n/f,TLK-11 mapping and terminology server adaptation planned (no date),http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,https://e-seimas.lrs.lt/rs/legalact/TAD/e1ba28a055e911f0a19dcea0bcc863ad/,yes
+LT,ICD-O,yes,ICD-O-3 (lab IG morphology; registry topography and morphology),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html ; https://nvi.lt/wp-content/uploads/2026/04/2-priedas.-NVI_Ataskaita_2025_26-02-26.pdf,yes
+LT,TNM,partial,pTNM in lab IG (prostate; edition n/f); AJCC grade,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html,yes
+LT,LOINC,yes,LOINC (lab IG; version n/f),n/f,n/f,http://loinc.org,n/f,n/f,free (LOINC licence),n/f,https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html,yes
+LT,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+LT,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LT,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LT,Pathology coding,partial,ICD-O-3 morphology in lab IG pathology report,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,n/f,https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html,yes
+LT,UCUM,yes,UCUM (LT Base),n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://hl7.lt/fhir/base/0.3.0/en/index.html,yes
+LT,Terminology server,yes,tx.hl7.lt (HL7 Lithuania),n/f,n/f,n/f,n/f,https://tx.hl7.lt/fhir/,n/f,n/f,https://build.fhir.org/ig/HL7LT/ig-lt-lab/en/terminology.html,yes
 AT,SNOMED CT,yes,AT extension 20260815,2026-08-15,next AT release n/f (Managed Service; Nov and May releases seen),http://snomed.info/sct,http://snomed.info/sct/11000234105/version/20260815,SNOMED Managed Service (MLDS),free in AT (member since 2019; NRC ELGA GmbH),n/f,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/353370146,no
 AT,ICD-10,yes,ICD-10 BMSGPK 2026,2026-01-01,ICD-10 BMSGPK 2027 from 2027-01-01,https://termgit.elga.gv.at/CodeSystem/icd-10-bmsgpk-2025,n/f,TerminoloGit (termgit.elga.gv.at),free,n/f,https://www.gesundheit.gv.at/OID_Frontend/oid-static/1/2/40/0/34/5/231.html ; https://packages2.fhir.org/xig/hl7.at.fhir.gkl.ig-tooling|0.3.0/CodeSystem/icd-10-bmsgpk-2025,yes
 AT,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
