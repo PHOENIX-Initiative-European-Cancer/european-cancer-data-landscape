@@ -305,6 +305,93 @@ def write_verification():
     (PAGES / "verification.md").write_text("\n".join(lines), encoding="utf-8")
 
 
+def _csv(path):
+    if not path.exists():
+        return []
+    with open(path, newline="", encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
+
+
+def _md_table(header, rows):
+    out = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
+    for r in rows:
+        out.append("| " + " | ".join((c or "").replace("|", "/").replace("\n", " ") for c in r) + " |")
+    return out
+
+
+def write_terminology_page():
+    """Compact terminology page: ECCDM bindings, version matrix, FHIR system URIs, upcoming changes, mappings."""
+    TERM = ROOT / "sources" / "terminology"
+    L = ["### Terminology versions", "",
+         "Which terminology, in which version, an implementer has to use for ECCDM data per country. "
+         "Status 2026-11-19. Details and sources: [country pages](countries.html); raw data: "
+         "[data/terminology-matrix.csv](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/blob/main/data/terminology-matrix.csv).", ""]
+    b = _csv(TERM / "eccdm-bindings.csv")
+    if b:
+        L += ["### What ECCDM binds", ""]
+        L += _md_table(["Element", "Code system", "Strength", "Value set", "Note"],
+                       [[r["element"], r["code_system"], r["strength"], r["binding"], r["note"]] for r in b])
+        L += [""]
+    m = _csv(TERM / "terminology-matrix.csv")
+    if m:
+        cols = ["SNOMED CT", "ICD-10 (national variant)", "ICD-O (edition)", "TNM (UICC/AJCC edition)",
+                "LOINC (national variant/version)", "ATC (national version)", "procedure classification",
+                "national terminology server"]
+        short = {"SNOMED CT": "SNOMED CT", "ICD-10 (national variant)": "ICD-10", "ICD-O (edition)": "ICD-O",
+                 "TNM (UICC/AJCC edition)": "TNM", "LOINC (national variant/version)": "LOINC",
+                 "ATC (national version)": "ATC", "procedure classification": "Procedures",
+                 "national terminology server": "Terminology server"}
+        def norm(t):
+            t = t.lower()
+            for c in cols:
+                key = c.split(" (")[0].lower()
+                if t.startswith(key):
+                    return c
+            return None
+        cell = {}
+        for r in m:
+            c = norm(r["terminology"])
+            if c:
+                v = r["current_version"] if r["in_use"] not in ("no",) else "no"
+                if r.get("verified", "").lower() != "yes" and v not in ("n/f", "no"):
+                    v += " *"
+                cell[(r["country"], c)] = v
+        L += ["### Version matrix", "",
+              "Cells show the version in use. \"*\" = not backed by a primary source; \"n/f\" = not found; \"no\" = not used.", ""]
+        rows = []
+        for name in sorted(COUNTRIES):
+            iso, slug, _ = COUNTRIES[name]
+            rows.append([f"[{iso}](country-{slug}.html)"] + [cell.get((iso, c), "") for c in cols])
+        L += _md_table(["Country"] + [short[c] for c in cols], rows) + [""]
+        uris = {}
+        for r in m:
+            if r["fhir_system"] and r["fhir_system"] != "n/f":
+                uris.setdefault((r["terminology"], r["fhir_system"]), set()).add(r["country"])
+        L += ["### FHIR system URIs", ""]
+        L += _md_table(["Terminology", "Coding.system", "Countries"],
+                       [[t, f"`{u}`", ", ".join(sorted(cs)) if len(cs) < 31 else "all"] for (t, u), cs in sorted(uris.items())])
+        L += [""]
+        nxt = [r for r in m if r["next_change"] and r["next_change"] != "n/f"]
+        if nxt:
+            L += ["### Upcoming changes", ""]
+            L += _md_table(["Country", "Terminology", "Change"],
+                           [[r["country"], r["terminology"], r["next_change"]] for r in sorted(nxt, key=lambda r: (r["terminology"], r["country"]))])
+            L += [""]
+        DATA.mkdir(exist_ok=True)
+        (DATA / "terminology-matrix.csv").write_text((TERM / "terminology-matrix.csv").read_text(encoding="utf-8"), encoding="utf-8")
+    else:
+        L += ["The version matrix is being compiled.", ""]
+    mp = TERM / "terminology-mappings.md"
+    if mp.exists():
+        body = re.sub(r"^# .*\n", "", mp.read_text(encoding="utf-8"), count=1)
+        body = re.sub(r"^(#{1,5}) ", lambda x: "###" + " ", body, flags=re.M)
+        L += ["### Official mappings between terminologies", "", body.strip(), "",
+              "Full list: [data/terminology-mappings.csv](https://github.com/PHOENIX-Initiative-European-Cancer/european-cancer-data-landscape/blob/main/data/terminology-mappings.csv).", ""]
+        if (TERM / "terminology-mappings.csv").exists():
+            (DATA / "terminology-mappings.csv").write_text((TERM / "terminology-mappings.csv").read_text(encoding="utf-8"), encoding="utf-8")
+    (PAGES / "terminology-versions.md").write_text("\n".join(L), encoding="utf-8")
+
+
 def write_sushi_pages():
     cfg = ROOT / "sushi-config.yaml"
     text = cfg.read_text(encoding="utf-8")
@@ -331,6 +418,7 @@ if __name__ == "__main__":
     write_non_fhir_tables()
     write_funding()
     write_verification()
+    write_terminology_page()
     write_sushi_pages()
     n = sum(1 for p in pc.values() if p["fhir"] or p["landscape"] or p["deep"])
     print(f"wrote {n}/{len(COUNTRIES)} country pages, index, landscape tables, sushi page list")

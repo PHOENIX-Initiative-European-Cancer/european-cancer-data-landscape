@@ -38,6 +38,8 @@ pages:
     title: FHIR landscape
   landscape-terminology.md:
     title: Terminology landscape
+  terminology-versions.md:
+    title: Terminology versions and mappings
   landscape-non-fhir.md:
     title: Registries, datasets and infrastructure
   implications.md:
@@ -119,6 +121,7 @@ menu:
   Home: index.html
   Landscape:
     FHIR landscape: landscape-fhir.html
+    Terminology versions and mappings: terminology-versions.html
     Terminology landscape: landscape-terminology.html
     Registries, datasets and infrastructure: landscape-non-fhir.html
     Implications for ECCDM: implications.html

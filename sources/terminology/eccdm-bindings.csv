@@ -1,0 +1,17 @@
+element,profile,binding,code_system,strength,note
+Cancer diagnosis code (Condition.code),cancer-condition-at-diagnosis-eu-ccm,none,ICD-10 or SNOMED CT expected,unbound,No value set; logical model gives no terminology
+Body site / topography (Condition.bodySite),cancer-condition-at-diagnosis-eu-ccm,none,ICD-O-3 topography recommended,unbound,Logical model comment: WG recommends ICD-O-3 and will monitor next versions
+Histology and behaviour (Observation.value),observation-histology-behaviour-eu-ccm,none,ICD-O-3 morphology recommended,unbound,Observation.code fixed to SNOMED 395531003
+Clinical or pathological stage type,observation-cancer-stage-eu-ccm,ClinicalOrPathologicalVS,SNOMED CT,required,260998006 / 261023001
+TNM components T N M,observation-cancer-stage-eu-ccm,none,any (component.code and component.value are unbound CodeableConcepts),unbound,No TNM code system and no element for the TNM edition
+Treatment intent,cancer-treatment-common-eu-ccm,CancerTreatmentIntentVS,SNOMED CT,required,
+Treatment setting,cancer-treatment-common-eu-ccm,CancerTreatmentSettingVS,SNOMED CT,required,
+Surgery intent,procedure-surgery-eu-ccm,SurgeryIntentVS,SNOMED CT,required,
+Systemic treatment type,procedure-systemic-treatment-eu-ccm,SystemicTreatmentTypeVS,SNOMED CT,extensible,Targeted therapy code still to be confirmed
+Radiotherapy procedure code,procedure-radiotherapy-eu-ccm,fixed code,SNOMED CT,fixed,1287742003
+Disease status,observation-cancer-progression-eu-ccm,DiseaseStatusVS,SNOMED CT,required,
+Extent type,observation-cancer-progression-eu-ccm,ExtentTypeVS,SNOMED CT,required,
+Overall treatment response,observation-treatment-response-eu-ccm,OverallResponseVS,SNOMED CT,required,
+Vital status,observation-follow-up-eu-ccm,DeadOrAliveVS,SNOMED CT,required,
+Comorbidities,observation-comorbidity-eu-ccm,VsComorbiditiesSctI4rc (commented out),SNOMED CT,extensible (inactive),Binding currently commented out in FSH
+SNOMED CT expansion version,exp-params,system-version,SNOMED CT International 900000000000207008,pinned module,No release date pinned
