@@ -4,7 +4,7 @@ Live test 2026-11-19 on a local Snowstorm (SNOMED CT International plus German, 
 ## What exists
 | From → to | Publisher | Status | FHIR available? |
 |---|---|---|---|
-| ICD-10-GM yy → yy+1 | BfArM | official | MII SU-TermServ transition ConceptMaps (derived) |
+| ICD-10-GM edition → next edition (yearly until 2026, then three-yearly: next 2029) | BfArM | official | MII SU-TermServ transition ConceptMaps (derived) |
 | OPS yy → yy+1 | BfArM | official | MII SU-TermServ (derived) |
 | CHOP yy → yy+1 | BFS | official | no |
 | CIM-10 FR / CCAM version changes | ATIH | official change lists, not maps | no (SMT serves code systems only) |

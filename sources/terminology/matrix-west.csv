@@ -1,0 +1,73 @@
+country,terminology,in_use,current_version,valid_from,next_change,fhir_system,version_string,distribution,licence,used_by_cancer_registry,source_url,verified
+AT,SNOMED CT,yes,AT extension 20260815,2026-08-15,next AT release n/f (Managed Service; Nov and May releases seen),http://snomed.info/sct,http://snomed.info/sct/11000234105/version/20260815,SNOMED Managed Service (MLDS),free in AT (member since 2019; NRC ELGA GmbH),n/f,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/353370146,no
+AT,ICD-10,yes,ICD-10 BMSGPK 2026,2026-01-01,ICD-10 BMSGPK 2027 from 2027-01-01,https://termgit.elga.gv.at/CodeSystem/icd-10-bmsgpk-2025,n/f,TerminoloGit (termgit.elga.gv.at),free,n/f,https://www.gesundheit.gv.at/OID_Frontend/oid-static/1/2/40/0/34/5/231.html ; https://packages2.fhir.org/xig/hl7.at.fhir.gkl.ig-tooling|0.3.0/CodeSystem/icd-10-bmsgpk-2025,yes
+AT,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+AT,ICD-O,yes,ICD-O-3.2,2020,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,n/f,n/f,yes,https://www.statistik.at/fileadmin/publications/Krebserkrankungen_Berichtsjahr-2024_bf.pdf,yes
+AT,TNM,yes,UICC 8,n/f,n/f,n/f,8,n/f,UICC (Wiley),yes,https://www.statistik.at/fileadmin/publications/Krebserkrankungen_Berichtsjahr-2024_bf.pdf,yes
+AT,LOINC,yes,LOINC 2.77 deAT,n/f,n/f,http://loinc.org,2.77,TerminoloGit / loinc.org,free (Regenstrief),n/f,https://www.elga.gv.at/fileadmin/user_upload/Dokumente_PDF_MP4/CDA/Leitfaden_LOINC_Anwendung_in_ELGA_V1.03.pdf,yes
+AT,ATC,yes,ATC German (WIdO),n/f,n/f,https://termgit.elga.gv.at/CodeSystem/atc-deutsch-wido,n/f,TerminoloGit,n/f,n/f,https://fhir.hl7.at/r4-ELGA-e-Medikation-main/StructureDefinition-at-elga-emed-medication-medikation-definitions.html,yes
+AT,Drug code,yes,PZN (ASP-Liste),n/f,n/f,https://termgit.elga.gv.at/CodeSystem/asp-liste,n/f,TerminoloGit,n/f,n/f,https://fhir.hl7.at/r4-ELGA-e-Medikation-main/StructureDefinition-at-elga-emed-medication-medikation-definitions.html,yes
+AT,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+AT,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+AT,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+AT,Terminology server,yes,TerminoloGit (FHIR-tx-at),2022-10-01,n/f,n/f,n/f,https://termgit.elga.gv.at,free,n/f,https://www.gesundheit.gv.at/service/professional/it-services/terminologieserver.html,yes
+CH,SNOMED CT,yes,CH extension 20260607,2026-06-07,next CH release Dec 2026 (June and December cycle),http://snomed.info/sct,http://snomed.info/sct/2011000195101/version/20260607,SNOMED International (MLDS),free in CH (member since 2016; NRC eHealth Suisse),n/f,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/424738850,no
+CH,ICD-10,yes,ICD-10-GM 2024 (coding year 2026),2026-01-01,ICD-10-GM 2026 from 2027-01-01 (Swiss supplement 2026-10-27),http://fhir.de/CodeSystem/dimdi/icd-10-gm,2024,BFS,free,yes,https://statistik.admin.ch/de/daten-statistiken-verstehen/nomenklaturen/medkk/instrumente-medizinischen-kodierung ; https://fhir.ch/ig/ch-crl/package.tgz,yes
+CH,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+CH,ICD-O,yes,"ICD-O-3 (version recorded per case, NKRS var. 3.2)",2026-01-01,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://www.nkrs.ch/upload/downloads/Forschende/Datenstruktur/Datenstrukturv15/Basisdatenv15/A_DataDictionary_BasicVariables_v1.5_01.01.2026.pdf,yes
+CH,TNM,yes,"UICC (edition recorded per case, NKRS var. 4.1)",2026-01-01,n/f,n/f,n/f,n/f,UICC (Wiley),yes,https://www.nkrs.ch/upload/downloads/Forschende/Datenstruktur/Datenstrukturv15/Basisdatenv15/A_DataDictionary_BasicVariables_v1.5_01.01.2026.pdf,yes
+CH,LOINC,yes,n/f,n/f,n/f,http://loinc.org,n/f,loinc.org,free (Regenstrief),yes,https://fhir.ch/ig/ch-lab-order/index.html ; https://fhir.ch/ig/ch-crl/package.tgz,yes
+CH,ATC,yes,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,https://fhir.ch/ig/ch-core/index.html,yes
+CH,Drug code,partial,GTIN,n/f,n/f,urn:oid:2.51.1.1,n/f,n/f,n/f,n/f,https://fhir.ch/ig/ch-term/index.html,no
+CH,Procedures,yes,CHOP 2026,2026-01-01,CHOP 2027 from 2027-01-01 (published 2026-07-30),n/f,2026,BFS (opendata.swiss),free,n/f,https://ckan.opendata.swiss/dataset/schweizerische-operationsklassifikation-chop10 ; https://statistik.admin.ch/de/daten-statistiken-verstehen/nomenklaturen/medkk/instrumente-medizinischen-kodierung,yes
+CH,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+CH,UCUM,yes,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,free,n/f,https://fhir.ch/ig/ch-term/index.html,no
+CH,Terminology server,yes,tx.fhir.ch (HL7 Switzerland),n/f,national government server recommended by eHealth Suisse (no date),n/f,n/f,https://tx.fhir.ch/r4,free,n/f,https://fhir.github.io/ig-registry/tx-servers.json,yes
+BE,SNOMED CT,yes,BE extension 20260715 (pinned by BE Core 2.2.0),2026-07-15,monthly BE releases on the 15th (except Jan and Aug),http://snomed.info/sct,http://snomed.info/sct/11000172109/version/20260715,SNOMED International (MLDS),free in BE (member; NRC FPS Public Health),n/f,https://build.fhir.org/ig/hl7-be/core/en/index.html ; https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/476184610,yes
+BE,ICD-10,yes,ICD-10-BE 2025 (CM/PCS),n/f,n/f,n/f,n/f,icd10be.health.belgium.be,free,n/f,https://santesecu.public.lu/dam-assets/fr/espace-professionnel/informations-et-donnees-de-sante/dcsh-ressources/modalits-de-codage-2026v05.pdf ; https://www.health.belgium.be/sites/default/files/uploads/fields/fpshealth_theme_file/passage_a_licd-10-be_version_2023_et_au_apr-drg_version_v40.0.pdf,yes
+BE,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+BE,ICD-O,yes,ICD-O-3,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://dcd.healthdata.be/en/collection/BCR_Cancer/,yes
+BE,TNM,yes,UICC (edition n/f),n/f,n/f,n/f,n/f,n/f,UICC (Wiley),yes,https://dcd.healthdata.be/en/collection/BCR_Cancer/,yes
+BE,LOINC,yes,FPS Health LOINC subset (version n/f),n/f,n/f,http://loinc.org,n/f,n/f,free (Regenstrief),n/f,https://build.fhir.org/ig/hl7-be/lab/qa-ipreview.html,yes
+BE,ATC,yes,ATC (FPS ATC-to-CNK mapping),n/f,n/f,http://www.whocc.no/atc,n/f,eHealth KMEHR tables,n/f,n/f,https://www.ehealth.fgov.be/standards/kmehr/en/tables/atc-codes,yes
+BE,Drug code,yes,CNK (SAM),n/f,n/f,https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes,n/f,SAM (Authentic Source of Medicines),n/f,n/f,https://www.ehealth.fgov.be/standards/fhir/medication/en/NamingSystem-be-ns-cnk-codes.html,yes
+BE,Procedures,yes,ICD-10-BE PCS 2025,n/f,n/f,n/f,n/f,icd10be.health.belgium.be,free,n/f,https://santesecu.public.lu/dam-assets/fr/espace-professionnel/informations-et-donnees-de-sante/dcsh-ressources/modalits-de-codage-2026v05.pdf,yes
+BE,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BE,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+BE,Terminology server,yes,FPS Ontoserver 6.25.1,n/f,n/f,n/f,n/f,https://apps.health.belgium.be/ontoserver/fhir,authenticated (credentials required),n/f,https://ehealth.fgov.be/standards/fhir/core-clinical/qa-txservers.html,yes
+LU,SNOMED CT,partial,member since 2018; national edition n/f,n/f,n/f,http://snomed.info/sct,n/f,n/f,free in LU (member; Agence eSanté),n/f,https://globenewswire.com/news-release/2018/05/24/1511618/0/en/Luxembourg-Announced-as-SNOMED-International-s-Newest-Member.html,yes
+LU,ICD-10,yes,ICD-10-CM via ICD-10-BE 2025 manual,2016,n/f,http://hl7.org/fhir/sid/icd-10-cm,n/f,n/f,n/f,n/f,https://santesecu.public.lu/dam-assets/fr/espace-professionnel/informations-et-donnees-de-sante/dcsh-ressources/modalits-de-codage-2026v05.pdf,yes
+LU,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+LU,ICD-O,yes,ICD-O-3 (revision n/f),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://gouvernement.lu/dam-assets/documents/actualites/2021/02-fevrier/04-journee-cancer/MSA-5632-20-rapport-cancer-2020-web-BAT-4-.pdf,yes
+LU,TNM,yes,UICC 7 (2020 report; later edition n/f),n/f,n/f,n/f,7,n/f,UICC (Wiley),yes,https://gouvernement.lu/dam-assets/documents/actualites/2021/02-fevrier/04-journee-cancer/MSA-5632-20-rapport-cancer-2020-web-BAT-4-.pdf,yes
+LU,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+LU,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+LU,Drug code,yes,CNS positive list numéro national,n/f,n/f,n/f,n/f,CNS (CSV),free,n/f,https://cns.public.lu/en/legislations/textes-coordonnes/liste-positive-csv.html,yes
+LU,Procedures,yes,ICD-10-PCS via ICD-10-BE 2025 manual,n/f,n/f,http://www.cms.gov/Medicare/Coding/ICD10,n/f,n/f,n/f,n/f,https://santesecu.public.lu/dam-assets/fr/espace-professionnel/informations-et-donnees-de-sante/dcsh-ressources/modalits-de-codage-2026v05.pdf,yes
+LU,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+LU,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+LU,Terminology server,planned,n/f,n/f,in planning (State of FHIR 2026),n/f,n/f,n/f,n/f,n/f,https://packages.fhir.org/jurisdictions/LU,yes
+GB,SNOMED CT,yes,UK Clinical Edition 43.0.1,2026-10-20,monthly minor releases; next major 44.0.0 n/f,http://snomed.info/sct,http://snomed.info/sct/83821000000107,TRUD,free in UK (founder member; NRC NHS England),n/f,https://isd.hscic.gov.uk/trud/users/guest/filters/0/categories/26/items/101/releases ; https://packages.fhir.org/fhir.r4.ukcore.stu2/2.0.2,yes
+GB,ICD-10,yes,ICD-10 5th edition,n/f,n/f,http://hl7.org/fhir/sid/icd-10,5.0,TRUD / NHS Classifications Browser,WHO licence held by NHS England,yes,https://classbrowser.nhs.uk/ ; https://www.gov.uk/government/publications/ncras-statistical-publications-quality-and-methodology-information/cancer-registration-methodology,yes
+GB,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+GB,ICD-O,yes,ICD-O-3 (revision n/f),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://www.qub.ac.uk/research-centres/nicr/FileStore/OfficialStatistics1993-2022/July2025release/Methodology%20report.pdf,no
+GB,TNM,yes,UICC 8,2018-01-01,n/f,n/f,8,n/f,UICC (Wiley),yes,https://dhcw.nhs.wales/data/information-standards/data-standards/data-standards-files/20250717-dscn-2019-09-nat-cancer-ds-core-banked-tissue-amd-docx-pdf/,yes
+GB,LOINC,no,none (SNOMED CT Unified Test List used instead),n/f,n/f,http://loinc.org,n/f,n/f,n/f,no,https://standards.nhs.uk/published-standards/pathology-test-and-results-standard,yes
+GB,ATC,n/f,n/f,n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,n/f,no
+GB,Drug code,yes,dm+d (UK Drug Extension 42.1.0),2026-05-13,GTINs added in Monolith 43.1.0 (2026-10-28),https://dmd.nhs.uk,n/f,TRUD,free in UK,n/f,https://isd.hscic.gov.uk/trud3/user/guest/group/0/pack/26 ; https://packages.fhir.org/fhir.r4.ukcore.stu2/2.0.2,yes
+GB,Procedures,yes,OPCS-4.11,2026-04-01,n/f,n/f,4.11,TRUD / NHS Classifications Browser,free in UK,n/f,https://digital.nhs.uk/data-and-information/information-standards/governance/latest-activity/standards-and-collections/dapb0084-opcs-classification-of-interventions-and-procedures,yes
+GB,Pathology coding,yes,SNOMED CT UK Edition (Pathology extension; COSD Pathology v5.1),n/f,n/f,http://snomed.info/sct,n/f,TRUD,free in UK,yes,https://standards.nhs.uk/published-standards/pathology-test-and-results-standard ; https://standards.nhs.uk/published-standards/cancer-outcomes-and-services-data-set,yes
+GB,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+GB,Terminology server,yes,NHS England Terminology Server (Ontoserver); NHS Scotland Terminology Server,n/f,n/f,n/f,n/f,https://ontology.nhs.uk/production1/fhir,account required (self-service or system-to-system),n/f,https://digital.nhs.uk/services/terminology-server ; https://www.snomed.nhs.scot/?p=51,yes
+IE,SNOMED CT,yes,IE edition 20260621,2026-06-21,n/f,http://snomed.info/sct,n/f,HSE CTS / MLDS,free in IE (member since 2016; NRC HSE),yes,https://conf.spaces.snomed.org/wiki/spaces/RMT/pages/1003192357 ; https://www.ncri.ie/en/media/145/download,yes
+IE,ICD-10,yes,ICD-10-AM 12th edition (HIPE),2024-01-01,13th edition adoption n/f,n/f,12,n/f,IHACPA licence,yes,https://www.hse.ie/eng/about/personalpq/pq/2025-pq-responses/july-2025/pq-35566-25-padraig-mac-lochlainn.pdf ; https://www.ncri.ie/en/media/145/download,yes
+IE,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+IE,ICD-O,yes,ICD-O-3.2,2020,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,n/f,n/f,yes,https://www.ncri.ie/en/media/145/download,yes
+IE,TNM,yes,UICC 7,2014,no move to TNM 8 announced,n/f,7,n/f,UICC (Wiley),yes,https://www.ncri.ie/en/media/145/download ; https://www.drugsandalcohol.ie/46716/1/NCRI_AnnualStatReport_2026.pdf,yes
+IE,LOINC,yes,n/f,n/f,n/f,http://loinc.org,n/f,HSE Central Terminology Service,free (Regenstrief),n/f,https://about.hse.ie/news/the-hse-central-terminology-service-cts,yes
+IE,ATC,yes,WHO ATC (HSE PCRS),n/f,n/f,http://www.whocc.no/atc,n/f,n/f,n/f,n/f,https://pmc.ncbi.nlm.nih.gov/articles/PMC5662670,yes
+IE,Drug code,yes,SNOMED CT Irish Drug Extension,n/f,n/f,http://snomed.info/sct,n/f,HSE Central Terminology Service,free in IE,n/f,https://about.hse.ie/news/the-hse-central-terminology-service-cts ; https://www.snomed.org/members/ireland,yes
+IE,Procedures,yes,"ACHI 12th edition (HIPE); NCRI uses ACHI 6th edition for treatments",2024-01-01,n/f,n/f,12,n/f,IHACPA licence,yes,https://www.ncri.ie/en/media/145/download,yes
+IE,Pathology coding,yes,SNOMED CT (lab feeds converted to ICD-O by NCRI),n/f,n/f,http://snomed.info/sct,n/f,n/f,free in IE,yes,https://www.hiqa.ie/areas-we-work/health-information/data-collections/national-cancer-registry-ireland-ncri,yes
+IE,UCUM,yes,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,HSE Central Terminology Service,free,n/f,https://about.hse.ie/news/the-hse-central-terminology-service-cts,yes
+IE,Terminology server,yes,HSE Central Terminology Service (Ontoserver; Dedalus),2025,n/f,n/f,n/f,n/f,n/f,n/f,https://about.hse.ie/news/the-hse-central-terminology-service-cts,yes

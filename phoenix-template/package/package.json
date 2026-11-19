@@ -1,0 +1,11 @@
+{
+  "name": "phoenix.fhir.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "PHOENIX Initiative FHIR IG template (PHOENIX logo and HL7 Europe styling on the generic FHIR base template)",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  }
+}

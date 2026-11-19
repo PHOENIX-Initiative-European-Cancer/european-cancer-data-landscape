@@ -380,6 +380,10 @@ def write_terminology_page():
         (DATA / "terminology-matrix.csv").write_text((TERM / "terminology-matrix.csv").read_text(encoding="utf-8"), encoding="utf-8")
     else:
         L += ["The version matrix is being compiled.", ""]
+    vc = TERM / "valueset-completeness.md"
+    if vc.exists():
+        body = re.sub(r"^# .*\n", "", vc.read_text(encoding="utf-8"), count=1)
+        L += ["### Value set completeness", "", body.strip(), ""]
     tc = TERM / "snomed-translation-counts.tsv"
     if tc.exists():
         rows = list(csv.DictReader(open(tc, encoding="utf-8"), delimiter="\t"))

@@ -1,0 +1,97 @@
+country,terminology,in_use,current_version,valid_from,next_change,fhir_system,version_string,distribution,licence,used_by_cancer_registry,source_url,verified
+PL,SNOMED CT,no,n/f,n/f,n/f,http://snomed.info/sct,n/f,n/f,affiliate licence (PL not a member),no,https://www.snomed.org/members,yes
+PL,ICD-10,yes,ICD-10 PL 2008,n/f,n/f,http://hl7.org.pl/fhir/CodeSystem/pl-icd10Condition-CS,n/f,CeZ,n/f,yes,https://www.gov.pl/web/zdrowie/pytania-i-odpowiedzi-icd-11 ; https://packages.fhir.org/hl7.fhir.pl.base.r5/0.1.2,yes
+PL,ICD-11,no,ICD-11 PL translation (pre-final),n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,no,https://www.gov.pl/web/zdrowie/pytania-i-odpowiedzi-icd-11,yes
+PL,ICD-O,yes,ICD-O-3 PL edition,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,KRN (onkologia.org.pl),n/f,yes,https://onkologia.org.pl/sites/default/files/publications/2023-11/icd_o_3_pl.pdf,yes
+PL,TNM,yes,UICC 8,n/f,n/f,n/f,n/f,n/f,n/f,yes,https://medycynarodzinna.wum.edu.pl/sites/medycynarodzinna.wum.edu.pl/files/2026-03/6_rok_dokumentacja_onkologiczna_w_poz.pdf.pdf,yes
+PL,LOINC,partial,LOINC 2.81 plPL,2025-08,n/f,http://loinc.org,2.81,loinc.org,LOINC licence (free),n/f,https://loinc-ssidl.umed.pl/2025/09/09/,yes
+PL,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+PL,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+PL,Procedures,yes,ICD-9-PL,n/f,n/f,http://hl7.org.pl/fhir/CodeSystem/pl-icd9plServiceCode-CS,n/f,CeZ,n/f,n/f,https://packages.fhir.org/hl7.fhir.pl.base.r5/0.1.2,yes
+PL,Pathology coding,partial,CAP synoptic report format (PTP),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://journals.viamedica.pl/oncology_in_clinical_practice/article/download/38273/26904,yes
+PL,UCUM,partial,UCUM (PL Base draft),n/f,n/f,http://unitsofmeasure.org,n/f,unitsofmeasure.org,UCUM licence (free),n/f,https://packages.fhir.org/hl7.fhir.pl.base.r5/0.1.2,yes
+PL,Terminology server,planned,none (planning stage),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://api.simplifier.net/jurisdictions/PL,yes
+CZ,SNOMED CT,partial,no national edition (CZ translation in progress),n/f,n/f,http://snomed.info/sct,n/f,MLDS (mlds.ihtsdotools.org/cz),member licence (CZ member since 2012),n/f,https://www.snomed.org/members/czech-republic ; https://packages.fhir.org/hl7.fhir.cz.core/1.0.0,yes
+CZ,ICD-10,yes,MKN-10-CZ 2026,2026-01-01,n/f,https://uzis.cz/terminology/CodeSystem/mkn-10,n/f,ÚZIS,n/f,yes,https://www.uzis.cz/res/file/klasifikace/mkn/mkn-10-rozdilovy-listek-tabelarni-2020-2026.pdf ; https://packages.fhir.org/hl7.fhir.cz.terminology/0.3.0,yes
+CZ,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+CZ,ICD-O,yes,MKN-O-3.2,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,ÚZIS,n/f,yes,https://www.uzis.cz/res/file/akce/20250923-klasifikon/1-05-zvolsky.pdf,yes
+CZ,TNM,yes,UICC 8,n/f,UICC 9 in NOR from 2027-01-01,n/f,n/f,ÚZIS (CZ translation 2017),n/f,yes,https://www.uzis.cz/res/file/akce/20250923-klasifikon/1-05-zvolsky.pdf,yes
+CZ,LOINC,partial,n/f (CZ translation planned),n/f,n/f,http://loinc.org,n/f,loinc.org,LOINC licence (free),n/f,https://ncez.mzcr.cz/sites/default/files/media-documents/02%20EZ_Strategie%20Interoperability_v2_6.2025.pdf ; https://packages.fhir.org/hl7.fhir.cz.core/1.0.0,yes
+CZ,ATC,yes,SÚKL DLP ATC,n/f,n/f,https://sukl.cz/terminology/CodeSystem/dlp-atc,n/f,SÚKL DLP,n/f,n/f,https://packages.fhir.org/hl7.fhir.cz.terminology/0.3.0,yes
+CZ,Drug code,yes,SÚKL DLP medicinal products,n/f,n/f,https://sukl.cz/terminology/CodeSystem/dlp-lecivepripravky,n/f,SÚKL DLP,n/f,n/f,https://packages.fhir.org/hl7.fhir.cz.terminology/0.3.0,yes
+CZ,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+CZ,Pathology coding,yes,DASTA NOR pathology/cytology report (MKN-O-3.2),n/f,n/f,n/f,n/f,DASTA (MZ ČR),n/f,yes,https://ciselniky.dasta.mzcr.cz/hypertext/200940/hypertext/m61nor.pdf,yes
+CZ,UCUM,yes,UCUM (CZ Core 1.0.0),n/f,n/f,http://unitsofmeasure.org,n/f,unitsofmeasure.org,UCUM licence (free),n/f,https://packages.fhir.org/hl7.fhir.cz.core/1.0.0,yes
+CZ,Terminology server,planned,national server in development (NCEZ),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://ncez.mzcr.cz/sites/default/files/media-documents/02%20EZ_Strategie%20Interoperability_v2_6.2025.pdf,yes
+SK,SNOMED CT,n/f,n/f,n/f,n/f,http://snomed.info/sct,n/f,MLDS,member licence (SK member since 2009),n/f,https://www.snomed.org/members/slovak-republic,yes
+SK,ICD-10,yes,MKCH-10,n/f,n/f,n/f,n/f,NCZI,n/f,yes,https://www.nczisk.sk/Documents/nzr/2024/Metodicky_pokyn_NOR_SR_2024.pdf,yes
+SK,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+SK,ICD-O,yes,MKCH-O-3.2,2020,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.2,NCZI,n/f,yes,https://www.nczisk.sk/Documents/nzr/2024/Metodicky_pokyn_NOR_SR_2024.pdf,yes
+SK,TNM,yes,UICC 9,2026-01-01,n/f,n/f,n/f,NCZI (DGO guidance Annex 1),n/f,yes,https://nczisk.sk/Documents/nzr/2026/MP_ZR_NOR_DGO.pdf,yes
+SK,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+SK,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SK,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SK,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SK,Pathology coding,yes,NOR SR PAT report (MKCH-O-3.2),2023-01-01,n/f,n/f,n/f,NCZI ISZI,n/f,yes,https://www.nczisk.sk/Documents/aktuality/PDF_Navod_pre_hlasenie_pacientov_do_NOR_SR.pdf,yes
+SK,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+SK,Terminology server,no,none and none planned,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://api.simplifier.net/jurisdictions/SK,yes
+HU,SNOMED CT,n/f,n/f,n/f,n/f,http://snomed.info/sct,n/f,MLDS (contact ESZFK),member licence (HU member since 2024-09),n/f,https://www.snomed.org/members/hungary,yes
+HU,ICD-10,yes,BNO-10,n/f,n/f,n/f,n/f,n/f,n/f,yes,https://2015-2019.kormany.hu/download/b/ea/81000/ML.pdf,yes
+HU,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+HU,ICD-O,n/f,n/f,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,no,https://pubmed.ncbi.nlm.nih.gov/36521336/,yes
+HU,TNM,yes,UICC 8 (UICC 7 for prostate),n/f,n/f,n/f,n/f,n/f,n/f,yes,https://www.por-journal.com/articles/10.3389/pore.2022.1610668/full ; https://2015-2019.kormany.hu/download/b/ea/81000/ML.pdf,yes
+HU,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+HU,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+HU,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+HU,Procedures,yes,OENO,n/f,n/f,n/f,n/f,n/f,n/f,yes,https://2015-2019.kormany.hu/download/b/ea/81000/ML.pdf,yes
+HU,Pathology coding,yes,BNO-10 morphology annex,n/f,n/f,n/f,n/f,n/f,n/f,yes,https://2015-2019.kormany.hu/download/b/ea/81000/ML.pdf,yes
+HU,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+HU,Terminology server,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,SNOMED CT,planned,n/f (SI translation discussed 2024),n/f,n/f,http://snomed.info/sct,n/f,MLDS,member licence (SI member since 2010),n/f,https://www.snomed.org/members/republic-of-slovenia ; https://gov.si/assets/ministrstva/MZ/DOKUMENTI/4-ZBIRKE/RSK/RSK-za-informatiko-v-zdravstvu/2024/Zapisnik-8.-seje-RSK-za-informatiko-v-zdravstvu-3.-12.-2024.pdf,yes
+SI,ICD-10,yes,MKB-10-AM v11,2023-01-01,n/f,n/f,n/f,NIJZ,n/f,n/f,https://podatki.nijz.si/docs/Opomba_MKB-10-AM_v6_v11.pdf,yes
+SI,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+SI,ICD-O,n/f,n/f,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,n/f,n/f,no
+SI,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+SI,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+SI,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+SI,Terminology server,planned,national FHIR terminology server in development,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://api.simplifier.net/jurisdictions/SI,yes
+HR,SNOMED CT,n/f,n/f,n/f,n/f,http://snomed.info/sct,n/f,MLDS,member licence (HR member since 2023-06),n/f,https://www.snomed.org/members/croatia,yes
+HR,ICD-10,yes,MKB-10 (CEZIH),n/f,n/f,http://fhir.cezih.hr/specifikacije/CodeSystem/icd10-hr,n/f,CEZIH,n/f,n/f,https://packages.simplifier.net/cezih.hr.cezih-osnova/1.0.2,yes
+HR,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+HR,ICD-O,yes,MKB-O 3.1,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,3.1,HZJZ,n/f,yes,https://www.hzjz.hr/wp-content/uploads/2026/02/Bilten-2023.pdf,yes
+HR,TNM,n/f,n/f (registry uses summary stage),n/f,n/f,n/f,n/f,n/f,n/f,no,https://www.hzjz.hr/wp-content/uploads/2026/02/Bilten-2023.pdf,yes
+HR,LOINC,partial,n/f,n/f,n/f,http://loinc.org,n/f,loinc.org,LOINC licence (free),n/f,https://packages.simplifier.net/cezih.hr.cezih-osnova/1.0.2,yes
+HR,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+HR,Drug code,yes,HALMED medicines list,n/f,n/f,http://fhir.cezih.hr/specifikacije/CodeSystem/HALMED-lista-lijekova,n/f,CEZIH,n/f,n/f,https://packages.simplifier.net/cezih.hr.cezih-osnova/1.0.2,yes
+HR,Procedures,yes,CEZIH procedure code list,n/f,n/f,http://fhir.cezih.hr/specifikacije/CodeSystem/kodna-lista-procedura,n/f,CEZIH,n/f,n/f,https://packages.simplifier.net/cezih.hr.cezih-osnova/1.0.2,yes
+HR,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+HR,UCUM,yes,UCUM (CEZIH osnova 1.0.2),n/f,n/f,http://unitsofmeasure.org,n/f,unitsofmeasure.org,UCUM licence (free),n/f,https://packages.simplifier.net/cezih.hr.cezih-osnova/1.0.2,yes
+HR,Terminology server,yes,national server in production (name n/f),n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://api.simplifier.net/jurisdictions/HR,yes
+RO,SNOMED CT,no,n/f,n/f,n/f,http://snomed.info/sct,n/f,n/f,affiliate licence (RO not a member),no,https://www.snomed.org/members,yes
+RO,ICD-10,yes,ICD-10-AM 3rd ed (DRG) and CIM-10,n/f,n/f,n/f,n/f,n/f,n/f,n/f,https://www.hosptm.ro/files/drg/rodrgv1/ManualGrupare_RODRG_v1_Vol_1.pdf,yes
+RO,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+RO,ICD-O,yes,ICD-O-3 (CIM-O-3),n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,yes,https://management-documente.ms.ro/media/documents/HG_-REGISTRUL_NATIONAL_DE_CANCER_-_25.07.2023_2okqVrf.docx,yes
+RO,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+RO,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+RO,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+RO,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+RO,Procedures,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+RO,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+RO,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+RO,Terminology server,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BG,SNOMED CT,no,n/f,n/f,n/f,http://snomed.info/sct,n/f,n/f,affiliate licence (BG not a member),no,https://www.snomed.org/members,yes
+BG,ICD-10,yes,MKB-10 (NHIS nomenclature CL011),n/f,n/f,n/f,n/f,NHIS nomenclature API (his.bg),n/f,yes,https://his.bg/bg/dev/nomenclatures ; https://ncpha.government.bg/uploads/magazines/bulletins/bul_onko_2020web.pdf,yes
+BG,ICD-11,n/f,n/f,n/f,n/f,http://id.who.int/icd/release/11/mms,n/f,n/f,n/f,n/f,n/f,no
+BG,ICD-O,n/f,n/f,n/f,n/f,http://terminology.hl7.org/CodeSystem/icd-o-3,n/f,n/f,n/f,n/f,https://www.strategy.bg/bg/public-consultations/11919/export,yes
+BG,TNM,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BG,LOINC,n/f,n/f,n/f,n/f,http://loinc.org,n/f,n/f,n/f,n/f,n/f,no
+BG,ATC,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BG,Drug code,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BG,Procedures,yes,ICD-9 procedures (NHIS nomenclature CL054),n/f,n/f,n/f,n/f,NHIS nomenclature API (his.bg),n/f,n/f,https://his.bg/bg/dev/nomenclatures,yes
+BG,Pathology coding,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,n/f,no
+BG,UCUM,n/f,n/f,n/f,n/f,http://unitsofmeasure.org,n/f,n/f,n/f,n/f,n/f,no
+BG,Terminology server,partial,NHIS nomenclature API spec v1.5.36 (non-FHIR),2026-11-03,n/f,n/f,n/f,his.bg,n/f,n/f,https://his.bg/bg/dev/specifications,yes
