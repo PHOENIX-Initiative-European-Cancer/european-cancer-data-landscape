@@ -9,7 +9,7 @@ Which terminologies, and which national variants and versions, are in use for on
 | [Switzerland](country-switzerland.html) | member 2016, eHealth Suisse, CH ext 2026-06 | ICD-10-GM (BFS), CHOP 2026 | ICD-O-3 (ed n/f) | n/f | n/f | tx.fhir.ch (HL7 CH), no government server |
 | [Netherlands](country-netherlands.html) | charter 2007, Nictiz, monthly NL edition | ICD-10 NL 2021 (RIVM) | ICD-O-3 NL | UICC 8 since 2017 | Labcodeset on 2.83 | Nationale Terminologieserver (Ontoserver) |
 | [Belgium](country-belgium.html) | NRC FPS Health, monthly BE release since Nov 2024 | ICD-10-BE (CM/PCS) 2023 handbook | ICD-O-3 | n/f | n/f | FPS Ontoserver apps.health.belgium.be |
-| [France](country-france.html) | member 2023, ANS, FR edition Feb 2025 annual | CIM-10 FR PMSI 2026 (ATIH) | CIM-O-3 | UICC 9 per UICC 2026, FR adoption n/f | LOINC Bio FR | SMT (ANS) |
+| [France](country-france.html) | member 2023, ANS; FR edition 20260621 (translations only, 58.8% translated), annual, SMT-only | CIM-10 FR PMSI 2026 (ATIH), CIM-11 switch horizon 2031 | CIM-O-3 (revision n/f; OSIRIS-RWD uses 3.2) | UICC 7 in CI-SIS Fiche RCP 2025.01, OSIRIS lists eds 5–7; TNM 9 adoption n/f | LOINC Biologie FRA 2.24 on 2.81 (Apr 2026) | SMT (ANS, Ontoserver 6.28, in HL7 tx-registry) |
 | [Italy](country-italy.html) | not a member | ICD-9-CM 2007 (SDO), ICD-10 mortality | ICD-O-3.2 (AIRTUM) | TNM 8 (AIRTUM) | IT translation 2.75 (CNR) | none |
 | [Spain](country-spain.html) | member, MoH, ES edition Apr/Oct | CIE-10-ES 6th ed 2026 | CIE-O-3.2 from 2026-01-01 | n/f | LOINC ES 2.77 | SNS Servidor de Terminologías (production) |
 | [Portugal](country-portugal.html) | member 2014, SPMS CTC | ICD-10-CM/PCS since 2017 | ICD-O-3 | n/f | n/f | none (tender 2026) |
