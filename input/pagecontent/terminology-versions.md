@@ -29,37 +29,37 @@ Cells show the version in use. "*" = not backed by a primary source; "n/f" = not
 
 | Country | SNOMED CT | ICD-10 | ICD-O | TNM | LOINC | ATC | Procedures | Terminology server |
 |---|---|---|---|---|---|---|---|---|
-| [AT](country-austria.html) | AT extension 20260815 * | ICD-10 BMSGPK 2026 | ICD-O-3.2 | UICC 8 | LOINC 2.77 deAT | ATC German (WIdO) | n/f | TerminoloGit (FHIR-tx-at) |
-| [BE](country-belgium.html) | BE extension 20260715 (pinned by BE Core 2.2.0) | ICD-10-BE 2025 (CM/PCS) | ICD-O-3 | UICC (edition n/f) | FPS Health LOINC subset (version n/f) | ATC (FPS ATC-to-CNK mapping) | ICD-10-BE PCS 2025 | FPS Ontoserver 6.25.1 |
-| [BG](country-bulgaria.html) | no | MKB-10 (NHIS nomenclature CL011) | n/f | n/f | n/f | n/f | ICD-9 procedures (NHIS nomenclature CL054) | NHIS nomenclature API spec v1.5.36 (non-FHIR) |
-| [HR](country-croatia.html) | n/f | MKB-10 (CEZIH) | MKB-O 3.1 | n/f (registry uses summary stage) | n/f | n/f | CEZIH procedure code list | national server in production (name n/f) |
-| [CY](country-cyprus.html) | International edition (no CY extension; adoption pending stakeholder decision) | ICD-10 (national modification n/f; mixed with ICPC and CPT-4) | ICD-O-3 (CanReg4 derives ICD-10) | edition n/f (registry codes TNM plus SEER Summary Staging, MECC rules) | n/f (NeHA lists LOINC in current coding mix) * | n/f | CPT-4 (reimbursement) * | in planning (NeHA) |
-| [CZ](country-czechia.html) | no national edition (CZ translation in progress) | MKN-10-CZ 2026 | MKN-O-3.2 | UICC 8 | n/f (CZ translation planned) | SÚKL DLP ATC | n/f | national server in development (NCEZ) |
-| [DK](country-denmark.html) | DK extension Sep 2025 (on INT 20250801) | SKS ICD-10 diagnoses (SKS-D; version numbering n/f) | ICD-O-3 (morphology since 2004) | current UICC edition (number not fixed; cTNM mandatory, pTNM optional in LPR3) | LOINC observation profiles in DK Core; NPU is the lab terminology (http://npu-terminology.org) | n/f | SKS (DK Core uses SKS root OID; procedure chapter use not confirmed in reports) * | national server in planning; shared tx-nordics.fhir.org/fhir (HL7 Sweden, not production) |
-| [EE](country-estonia.html) | EE edition 20260530 | RHK-10 (TEHIK CodeSystem 11.0.0) | RHK-O-3 (ICD-O-3) since 2008 | UICC 8 (pTNM else cTNM) | LOINC 2.77 etEE | n/f | NCSP (TEHIK CodeSystem 11.0.0); Tervisekassa service list 57.2.0 | TEHIK Ontoserver (production; SNOMED CT EE+INT and 400+ value sets) |
-| [FI](country-finland.html) | FI edition (subset translation; annual December release; latest release date n/f) | THL Tautiluokitus ICD-10 (version n/f) | ICD-O-3 (topography; morphology; behaviour) * | n/f (stage available for 42% of 2024 cases) * | LOINC in Kanta PHR profiles (Finnish Base Profiles) | ATC (Kanta national code set) | THL procedure classification (NCSP-based) * | FHIR server in planning; Koodistopalvelu (THL/Kela) not FHIR, SOAP retired 2026-01-13 |
-| [FR](country-france.html) | FR edition 20260621 (on INT May 2026) | CIM-10 FR à usage PMSI 2026 | CIM-O-3 (revision 3.1 vs 3.2 not stated by Francim/RNC) | UICC 8 (registries, e.g. Aquitaine); UICC 7 cited in CI-SIS Fiche RCP 2025.01 | LOINC Biologie FRA 2.24 (on LOINC 2.81) | ATC 2026-02 (SMT) | CCAM v84.00 | ANS SMT FTS (Ontoserver 6.28), release 14 (Sep 2026), in HL7 tx-registry |
-| [DE](country-germany.html) | DE edition 20260815 | ICD-10-GM 2026 | ICD-O-3 Zweite Revision 2019 (=ICD-O-3.2) | UICC 8 and UICC 9 (oBDS TNM-Version 6/7/8/9) | LOINC 2.83 deDE | ATC-DE amtlich 2026 (WIdO/BfArM) | OPS 2026 | BfArM ZTS Stage 1 (NPM package API, no FHIR $lookup/$expand); MII Ontoserver (mTLS, Germany only) |
-| [GR](country-greece.html) | no | ICD-10-GrM 2017 v2 (derived from ICD-10-GM 2013) * | ICD-O-3 (implied by ENCR alignment; not specified in registry decree) * | n/f (stage at diagnosis is a registry field; edition not specified) | no | n/f | n/f | under development (n/f operator) * |
-| [HU](country-hungary.html) | n/f | BNO-10 | n/f | UICC 8 (UICC 7 for prostate) | n/f | n/f | OENO | n/f |
-| [IS](country-iceland.html) | International edition (pathology; microbiology; virology; immunology) | ICD-10 IS (Icelandic translation 1996; current editions 2014) | ICD-O (edition not stated) | n/f | n/f | n/f | NCSP (listed on SKAFL.is) | national FHIR terminology server in development |
-| [IE](country-ireland.html) | IE edition 20260621 | ICD-10-AM 12th edition (HIPE) | ICD-O-3.2 | UICC 7 | n/f | WHO ATC (HSE PCRS) | ACHI 12th edition (HIPE); NCRI uses ACHI 6th edition for treatments | HSE Central Terminology Service (Ontoserver; Dedalus) |
-| [IT](country-italy.html) | no | ICD-9-CM 2007 in SDO/FSE; ISTAT mortality ICD-10 v2019 | ICD-O-3 (3.1 or 3.2 accepted; Italian ed. Inferenze 2005) | any UICC/AJCC edition 1-8, edition recorded (no national mandate) | LOINC itIT variant (IIT-CNR); variant version n/f, UMLS lower bound 2.75 | ATC (AIFA) in HL7 Italia Terminology IG 0.1.2 | ICD-9-CM 2007 procedures (SDO) | no |
-| [LV](country-latvia.html) | SNOMED GPS (member since Jan 2026; no LV edition yet) | SSK-10 (version numbering n/f) | SSK-O-3.2 (cancer patient card) | UICC 8 (cancer patient card) | n/f | n/f | n/f | national FHIR terminology server in production (operator and URL n/f) * |
-| [LT](country-lithuania.html) | LT translation (40000 concepts translated 2015; LT edition module n/f) | TLK-10-AM (ICD-10-AM; edition n/f) | ICD-O-3 (lab IG morphology; registry topography and morphology) | pTNM in lab IG (prostate; edition n/f); AJCC grade | LOINC (lab IG; version n/f) | n/f | n/f | tx.hl7.lt (HL7 Lithuania) |
-| [LU](country-luxembourg.html) | member since 2018; national edition n/f | ICD-10-CM via ICD-10-BE 2025 manual | ICD-O-3 (revision n/f) | UICC 7 (2020 report; later edition n/f) | n/f | n/f | ICD-10-PCS via ICD-10-BE 2025 manual | n/f |
-| [MT](country-malta.html) | International edition (no Maltese translation; terminology of choice for EHRs and National Patient Summary) | ICD-10 WHO (no national modification) | ICD-O-3 * | n/f | n/f | n/f | ICD-9-CM (DHIR National Hospital Information System) | n/f |
-| [NL](country-netherlands.html) | NL edition 20261031 | ICD-10 NL 2021 + errata 2024-1 | ICD-O-3 (Flemish/Dutch translation; ICD-O-3.2 English only) | UICC 8 (since 2017) | Nederlandse Labcodeset on LOINC 2.83 | WHO ATC via G-Standaard (yearly ATC update on 1 Feb) | DHD Verrichtingenthesaurus 3.3 (SNOMED-based); NZa DBC codelijst | Nationale Terminologieserver (Ontoserver, Nictiz) |
-| [NO](country-norway.html) | NO edition (about 10 extension releases per year; current release date n/f) | ICD-10 NO 2026 | ICD-O-3 (registration classification; converted to ICD-10 for reporting) | UICC 8 | n/f (NPU used for lab, to be published on tx-nordics) * | WHO ATC (no-basis Medication and AllergyIntolerance slices) | Norsk klinisk prosedyrekodeverk (NCMP, NCSP, NCRP) | national FHIR terminology server in development |
-| [PL](country-poland.html) | no | ICD-10 PL 2008 | ICD-O-3 PL edition | UICC 8 | LOINC 2.81 plPL | n/f | ICD-9-PL | none (planning stage) |
-| [PT](country-portugal.html) | International edition (no PT national edition found) | ICD-10-CM (English original) | ICD-O-3 * | n/f | n/f | n/f | ICD-10-PCS | none in production; SPMS PRR consultancy tender 2026 |
-| [RO](country-romania.html) | no | ICD-10-AM 3rd ed (DRG) and CIM-10 | ICD-O-3 (CIM-O-3) | n/f | n/f | n/f | n/f | n/f |
+| [AT](country-austria.html) | AT extension 20260815 * | ICD-10 BMSGPK 2026 | ICD-O-3.2 | UICC 8 | LOINC 2.77 deAT | ATC German | n/f | TerminoloGit |
+| [BE](country-belgium.html) | BE extension 20260715 | ICD-10-BE 2025 | ICD-O-3 | UICC | FPS Health LOINC subset | ATC | ICD-10-BE PCS 2025 | FPS Ontoserver 6.25.1 |
+| [BG](country-bulgaria.html) | no | MKB-10 | n/f | n/f | n/f | n/f | ICD-9 procedures | NHIS nomenclature API spec v1.5.36 |
+| [CH](country-switzerland.html) | CH extension 20260607 * | ICD-10-GM 2024 | ICD-O-3 | UICC | n/f | n/f | CHOP 2026 | tx.fhir.ch |
+| [CY](country-cyprus.html) | International edition | ICD-10 | ICD-O-3 | edition n/f | n/f | n/f | CPT-4 * | in planning |
+| [CZ](country-czechia.html) | no national edition | MKN-10-CZ 2026 | MKN-O-3.2 | UICC 8 | n/f | SÚKL DLP ATC | n/f | national server in development |
+| [DE](country-germany.html) | DE edition 20260815 | ICD-10-GM 2026 | ICD-O-3 Zweite Revision 2019 | UICC 8 and UICC 9 | LOINC 2.83 deDE | ATC-DE amtlich 2026 | OPS 2026 | BfArM ZTS Stage 1 |
+| [DK](country-denmark.html) | DK extension Sep 2025 | SKS ICD-10 diagnoses | ICD-O-3 | current UICC edition | LOINC observation profiles in DK Core / NPU… | n/f | SKS * | national server in planning / shared tx-nord… |
+| [EE](country-estonia.html) | EE edition 20260530 | RHK-10 | RHK-O-3 | UICC 8 | LOINC 2.77 etEE | n/f | NCSP | TEHIK Ontoserver |
+| [ES](country-spain.html) | ES national edition | CIE-10-ES 6th ed 2026 | CIE-O-3.2 | edition recorded per case | LOINC 2.77 esES | n/f | CIE-10-ES Procedimientos 6th ed 2026 | Servidor de Terminologías de Referencia del… |
+| [FI](country-finland.html) | FI edition | THL Tautiluokitus ICD-10 | ICD-O-3 * | n/f | LOINC in Kanta PHR profiles | ATC | THL procedure classification * | FHIR server in planning / Koodistopalvelu |
+| [FR](country-france.html) | FR edition 20260621 | CIM-10 FR à usage PMSI 2026 | CIM-O-3 | UICC 8 registries / UICC 7 in CI-SIS RCP sheet | LOINC Biologie FRA 2.24 | ATC 2026-02 | CCAM v84.00 | ANS SMT FTS |
+| [GB](country-united-kingdom.html) | UK Clinical Edition 43.0.1 | ICD-10 5th edition | ICD-O-3 * | UICC 8 | no | n/f | OPCS-4.11 | NHS England Terminology Server |
+| [GR](country-greece.html) | no | ICD-10-GrM 2017 v2 * | ICD-O-3 * | n/f | no | n/f | n/f | under development * |
+| [HR](country-croatia.html) | n/f | MKB-10 | MKB-O 3.1 | n/f | n/f | n/f | CEZIH procedure code list | national server in production |
+| [HU](country-hungary.html) | n/f | BNO-10 | n/f | UICC 8 | n/f | n/f | OENO | n/f |
+| [IE](country-ireland.html) | IE edition 20260621 | ICD-10-AM 12th edition | ICD-O-3.2 | UICC 7 | n/f | WHO ATC | ACHI 12th edition | HSE Central Terminology Service |
+| [IS](country-iceland.html) | International edition | ICD-10 IS | ICD-O | n/f | n/f | n/f | NCSP | national FHIR terminology server in developm… |
+| [IT](country-italy.html) | no | ICD-9-CM 2007 in SDO/FSE / ISTAT mortality I… | ICD-O-3 | any UICC/AJCC edition 1-8 | LOINC itIT variant | ATC | ICD-9-CM 2007 procedures | no |
+| [LT](country-lithuania.html) | LT translation | TLK-10-AM | ICD-O-3 | pTNM in lab IG | LOINC | n/f | n/f | tx.hl7.lt |
+| [LU](country-luxembourg.html) | member since 2018 / national edition n/f | ICD-10-CM via ICD-10-BE 2025 manual | ICD-O-3 | UICC 7 | n/f | n/f | ICD-10-PCS via ICD-10-BE 2025 manual | n/f |
+| [LV](country-latvia.html) | SNOMED GPS | SSK-10 | SSK-O-3.2 | UICC 8 | n/f | n/f | n/f | national FHIR terminology server in production * |
+| [MT](country-malta.html) | International edition | ICD-10 WHO | ICD-O-3 * | n/f | n/f | n/f | ICD-9-CM | n/f |
+| [NL](country-netherlands.html) | NL edition 20261031 | ICD-10 NL 2021 + errata 2024-1 | ICD-O-3 | UICC 8 | Nederlandse Labcodeset on LOINC 2.83 | WHO ATC via G-Standaard | DHD Verrichtingenthesaurus 3.3 | Nationale Terminologieserver |
+| [NO](country-norway.html) | NO edition | ICD-10 NO 2026 | ICD-O-3 | UICC 8 | n/f | WHO ATC | Norsk klinisk prosedyrekodeverk | national FHIR terminology server in developm… |
+| [PL](country-poland.html) | no | ICD-10 PL 2008 | ICD-O-3 PL edition | UICC 8 | LOINC 2.81 plPL | n/f | ICD-9-PL | none |
+| [PT](country-portugal.html) | International edition | ICD-10-CM | ICD-O-3 * | n/f | n/f | n/f | ICD-10-PCS | none in production / SPMS PRR consultancy te… |
+| [RO](country-romania.html) | no | ICD-10-AM 3rd ed | ICD-O-3 | n/f | n/f | n/f | n/f | n/f |
+| [SE](country-sweden.html) | SE extension Nov 2025 | ICD-10-SE 2026 | ICD-O-3.2 | UICC 8 and UICC 9 in parallel | n/f | n/f | KVÅ * | Inera Terminologitjänst |
+| [SI](country-slovenia.html) | n/f | MKB-10-AM v11 | n/f | n/f | n/f | n/f | n/f | national FHIR terminology server in developm… |
 | [SK](country-slovakia.html) | n/f | MKCH-10 | MKCH-O-3.2 | UICC 9 | n/f | n/f | n/f | no |
-| [SI](country-slovenia.html) | n/f (SI translation discussed 2024) | MKB-10-AM v11 | n/f | n/f | n/f | n/f | n/f | national FHIR terminology server in development |
-| [ES](country-spain.html) | ES national edition (SNS extension; Apr/Oct releases) | CIE-10-ES 6th ed 2026 | CIE-O-3.2 | edition recorded per case (UICC 5-8 field in REDECAN/SEOM set); national edition n/f | LOINC 2.77 esES | n/f | CIE-10-ES Procedimientos 6th ed 2026 | Servidor de Terminologías de Referencia del SNS (production) |
-| [SE](country-sweden.html) | SE extension Nov 2025 | ICD-10-SE 2026 (13th version) | ICD-O-3.2 (2019) with Socialstyrelsen modifications | UICC 8 and UICC 9 in parallel | n/f | n/f | KVÅ (Klassifikation av vårdåtgärder) * | Inera Terminologitjänst (FHIR Terminology API; production) |
-| [CH](country-switzerland.html) | CH extension 20260607 * | ICD-10-GM 2024 (coding year 2026) | ICD-O-3 (version recorded per case, NKRS var. 3.2) | UICC (edition recorded per case, NKRS var. 4.1) | n/f | n/f | CHOP 2026 | tx.fhir.ch (HL7 Switzerland) |
-| [GB](country-united-kingdom.html) | UK Clinical Edition 43.0.1 | ICD-10 5th edition | ICD-O-3 (revision n/f) * | UICC 8 | no | n/f | OPCS-4.11 | NHS England Terminology Server (Ontoserver); NHS Scotland Terminology Server |
 
 ### FHIR system URIs
 

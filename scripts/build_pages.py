@@ -352,13 +352,17 @@ def write_terminology_page():
             c = norm(r["terminology"])
             if c:
                 v = r["current_version"] if r["in_use"] not in ("no",) else "no"
+                v = " / ".join(x.strip() for x in re.split(r" \([^)]*\)?", v)[0].split(";"))
+                v = re.split(r", ", v)[0].strip()
+                if len(v) > 46:
+                    v = v[:44].rstrip() + "…"
                 if r.get("verified", "").lower() != "yes" and v not in ("n/f", "no"):
                     v += " *"
                 cell[(r["country"], c)] = v
         L += ["### Version matrix", "",
               "Cells show the version in use. \"*\" = not backed by a primary source; \"n/f\" = not found; \"no\" = not used.", ""]
         rows = []
-        for name in sorted(COUNTRIES):
+        for name in sorted(COUNTRIES, key=lambda n: COUNTRIES[n][0]):
             iso, slug, _ = COUNTRIES[name]
             rows.append([f"[{iso}](country-{slug}.html)"] + [cell.get((iso, c), "") for c in cols])
         L += _md_table(["Country"] + [short[c] for c in cols], rows) + [""]
