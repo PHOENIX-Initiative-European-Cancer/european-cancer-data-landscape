@@ -14,17 +14,17 @@ One page per country. Flags in the table: F = FHIR/terminology report present, N
 | [Estonia](country-estonia.html) | EE | Nordic and Baltic | FN |
 | [Finland](country-finland.html) | FI | Nordic and Baltic | FN |
 | [France](country-france.html) | FR | Southern Europe | FD |
-| [Germany](country-germany.html) | DE | DACH and Benelux | FN |
+| [Germany](country-germany.html) | DE | DACH and Benelux | FND |
 | [Greece](country-greece.html) | GR | Southern Europe | ND |
 | [Hungary](country-hungary.html) | HU | Central and Eastern Europe | FN |
 | [Iceland](country-iceland.html) | IS | Nordic and Baltic | FN |
 | [Ireland](country-ireland.html) | IE | Islands | FN |
-| [Italy](country-italy.html) | IT | Southern Europe | FN |
+| [Italy](country-italy.html) | IT | Southern Europe | FND |
 | [Latvia](country-latvia.html) | LV | Nordic and Baltic | FN |
 | [Lithuania](country-lithuania.html) | LT | Nordic and Baltic | FN |
 | [Luxembourg](country-luxembourg.html) | LU | DACH and Benelux | FN |
 | [Malta](country-malta.html) | MT | Islands | FN |
-| [Netherlands](country-netherlands.html) | NL | DACH and Benelux | FN |
+| [Netherlands](country-netherlands.html) | NL | DACH and Benelux | FND |
 | [Norway](country-norway.html) | NO | Nordic and Baltic | FN |
 | [Poland](country-poland.html) | PL | Central and Eastern Europe | FN |
 | [Portugal](country-portugal.html) | PT | Southern Europe | FN |

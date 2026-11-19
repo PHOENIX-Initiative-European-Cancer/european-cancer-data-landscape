@@ -148,6 +148,7 @@ def write_country_pages(per_country):
             # drop the report's H1, demote the rest by one level so H2 -> H3
             body = re.sub(r"^# .*\n", "", text, count=1)
             body = re.sub(r"^(#{2,5}) ", lambda m: "#" + m.group(1) + " ", body, flags=re.M)
+            body = re.sub(r"^# ", "### ", body, flags=re.M)  # any further H1 inside the report
             lines += [f"### {title}", "", body.strip(), ""]
         if not (parts["fhir"] or parts["landscape"] or parts["deep"]):
             lines += ["No country report yet.", ""]
@@ -278,7 +279,7 @@ def write_funding():
         if slug not in slug_to_name:
             continue
         text = f.read_text(encoding="utf-8")
-        m = re.search(r"^## Research funding and calls\s*\n(.*?)(?=^## |\Z)", text, flags=re.M | re.S)
+        m = re.search(r"^## (?:[A-Z]?\d+\.\s*)?Research funding and calls[^\n]*\n(.*?)(?=^## |\Z)", text, flags=re.M | re.S)
         if m:
             name = slug_to_name[slug]
             lines += [f"### National funding: {name}", "", demote(m.group(1).strip()), "",
