@@ -103,7 +103,7 @@ def split_other(text):
 def collect():
     per_country = {c: {"fhir": [], "landscape": [], "deep": []} for c in COUNTRIES}
     for f in sorted(SRC.glob("*.md")):
-        if f.name in EXCLUDE:
+        if f.name in EXCLUDE or f.name.endswith("-verification-log.md"):
             continue
         kind = "landscape" if f.name.endswith("-landscape.md") else "fhir"
         # dedicated deep-dive files: <country>-<topic>.md, e.g. france-fhir.md, greece.md
@@ -287,6 +287,24 @@ def write_funding():
     (PAGES / "funding.md").write_text("\n".join(lines), encoding="utf-8")
 
 
+def write_verification():
+    """One page concatenating all verification logs (second pass, 2026-11-19)."""
+    lines = ["### Verification pass", "",
+             "On 2026-11-19 every statement marked \"n/f\", \"not verified\" or sourced from a search snippet was "
+             "re-checked by the agent that wrote it, using national-language searches, the organisations' own "
+             "documents, archived copies of blocked pages and direct package or terminology-server queries; pages "
+             "that block automated access were read in a real browser by the editor where no human check was "
+             "required. Changed statements in the reports carry \"(verified 2026-11-19)\". Each log below records "
+             "every item as VERIFIED, CORRECTED or STILL NOT FOUND, with the evidence, and ends with the pages that "
+             "still need a browser or are unreachable.", ""]
+    for f in sorted(SRC.glob("*-verification-log.md")):
+        body = re.sub(r"^# .*\n", "", f.read_text(encoding="utf-8"), count=1)
+        body = re.sub(r"^(#{1,5}) ", lambda m: "####" + " ", body, flags=re.M)
+        title = f.name[:-len("-verification-log.md")]
+        lines += [f"### {title}", "", body.strip(), ""]
+    (PAGES / "verification.md").write_text("\n".join(lines), encoding="utf-8")
+
+
 def write_sushi_pages():
     cfg = ROOT / "sushi-config.yaml"
     text = cfg.read_text(encoding="utf-8")
@@ -312,6 +330,7 @@ if __name__ == "__main__":
     write_landscape_tables()
     write_non_fhir_tables()
     write_funding()
+    write_verification()
     write_sushi_pages()
     n = sum(1 for p in pc.values() if p["fhir"] or p["landscape"] or p["deep"])
     print(f"wrote {n}/{len(COUNTRIES)} country pages, index, landscape tables, sushi page list")

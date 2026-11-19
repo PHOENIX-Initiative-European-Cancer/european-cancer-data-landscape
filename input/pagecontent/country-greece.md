@@ -6,12 +6,12 @@ Region: Southern Europe. Sources: see the URLs on each statement; raw research r
 
 #### (a) Cancer registries
 - No population-based cancer registry historically (OECD cancer inequalities report). https://www.oecd.org/en/publications/beating-cancer-inequalities-in-the-eu_14fdc89a-en/full-report/component-6.html
-- National Registry of Neoplastic Diseases (Εθνικό Μητρώο Νεοπλασματικών Ασθενειών): created by ministerial decision ΦΕΚ Β' 950/2024; in production since 24 Feb 2025; platform by IDIKA under the RRF-funded "Integrated Information System for Oncology and Haematology Patients"; states interoperability with ECIS. https://news4health.gr/politiki-ygeias/idika-enarksi-leitourgias-tou-ethnikoy-mitroou-neoplasmatikon-astheneion
+- National Registry of Patients with Neoplastic Diseases (Εθνικό Μητρώο Ασθενών με Νεοπλασματικές Ασθένειες): created by ministerial decision 6197/2024, ΦΕΚ Β' 950/09.02.2024, under law 4600/2019 arts. 82-84; registration mandatory for all patients diagnosed after launch or treated after launch; data fields include diagnosis/histological type/grade, mode and date of diagnosis, diagnosing facility, stage at diagnosis, prognostic/predictive biomarkers; HDIKA is processor; interoperates with AMKA registry, the paediatric neoplasm registry and the national EHR (https://www.dsanet.gr/Epikairothta/Nomothesia/950.PDF) (verified 2026-11-19); in production since 24 Feb 2025; platform by IDIKA under the RRF-funded "Integrated Information System for Oncology and Haematology Patients"; states interoperability with ECIS. https://news4health.gr/politiki-ygeias/idika-enarksi-leitourgias-tou-ethnikoy-mitroou-neoplasmatikon-astheneion
 - Earlier pathology-based registry 2009-2013 (>95% population). https://springerlink.bibliotecabuap.elogim.com/10.1007/s00428-017-2287-8
 - Paediatric: NARECHEM-ST (University of Athens, Prof. Eleni Petridou), ENCR-listed site-specific registry. https://www.encr.eu/node/209
-- ENCR membership of the new national registry: n/f. Submission format, ICD-O/TNM editions: n/f.
+- ENCR membership of the new national registry: n/f (ENCR list NEEDS BROWSER); Greece absent from the ECIS contributing-registries list (archived) https://web.archive.org/web/2025/https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (verified 2026-11-19). Submission format: web platform by HDIKA; ICD-O/TNM editions: not specified in the decree (n/f).
 - Screening: national free preventive examinations (breast, cervical, colorectal) via e-referral on the e-health record portal. https://ehealthrecord.gov.gr/en/citizens-services
-- Researcher access route: n/f.
+- Researcher access route: decree provides a "statistical information users" role; INAB/CERTH designated National Cancer Data Node for Greece in CANDLE (https://www.inab.certh.gr/wp-content/uploads/2025/07/PRESS-RELEASE-CANDLE.pdf) (verified 2026-11-19); public procedure n/f.
 
 #### (b) Public datasets
 - No national incidence data from a population registry; ECIS estimates used. https://www.oecd.org/en/publications/beating-cancer-inequalities-in-the-eu_14fdc89a-en/full-report/component-6.html
@@ -26,7 +26,7 @@ Region: Southern Europe. Sources: see the URLs on each statement; raw research r
 - Genomics: Genome of Greece (Hellenic Pasteur Institute). https://www.pasteur.gr/en/node/29990
 - EUCAIM partners: Aristotle University of Thessaloniki, FORTH, Hellenic Cancer Society, NKUA, NHRF. https://cancerimage.eu/partners/
 - EHDEN/OMOP: 5 Greek data partners incl. Papageorgiou General Hospital (OMOP, refreshed Jul 2025), General Hospital of Kavala. https://www.ehden.eu/datapartners/ ; https://catalogues.ema.europa.eu/print/pdf/node/4597
-- OECI accredited centre: n/f. UNCAN.eu, canSERV, JANE, CraNE, EUCanScreen, TEHDAS2: n/f.
+- OECI: General Oncology Hospital of Athens Saint Savvas is the only Greek centre on the OECI list as of 2026-11-19 (https://accreditation.oeci.eu/), accredited June 2025 (https://en.protothema.gr/2025/06/13/saint-savas-was-certified-by-the-organization-of-european-oncology-institutes/) (verified 2026-11-19). CraNE partners: 1st Regional Health Authority of Attica, Agios Savvas, Laiko General Hospital (https://crane4health.eu/partners/); EUCanScreen: 6th Regional Health Authority DYPEDE (https://eucanscreen.eu/partners/); TEHDAS2: Ministry of Health, GRNET, IDIKA (https://tehdas.eu/partners/) (verified 2026-11-19). UNCAN.eu, canSERV, JANE: n/f.
 
 #### (d) Digital, non-FHIR
 - National EHR (ΕΗΦΥ) launched 2025 (IDIKA); myHealth app (2021) with prescriptions, results, preventive exams; cancer registries planned in next phase. https://origin01-en.protothema.gr/2025/03/10/greek-healthcare-national-electronic-health-record-how-will-it-work

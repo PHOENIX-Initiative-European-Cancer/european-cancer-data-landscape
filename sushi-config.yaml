@@ -32,6 +32,8 @@ pages:
     title: Home
   methodology.md:
     title: Method and caveats
+  verification.md:
+    title: Verification pass
   landscape-fhir.md:
     title: FHIR landscape
   landscape-terminology.md:
@@ -123,5 +125,7 @@ menu:
     Cross-cutting notes: cross-cutting.html
     Research funding and calls: funding.html
   Countries: countries.html
-  Method: methodology.html
+  Method:
+    Method and caveats: methodology.html
+    Verification pass: verification.html
   Change log: changes.html

@@ -17,5 +17,7 @@ Sections of the regional reports that are not about a single country: EU project
 
 - EHDEN data partner counts: Italy 26, Spain 27, Portugal 11, Greece 5, Luxembourg 1 (RNC), Malta 0, Cyprus 0. https://www.ehden.eu/datapartners/
 - BBMRI-ERIC national nodes exist for Italy, Greece, Malta, Cyprus, Portugal (GIMM) and Spain (full member 2025); Luxembourg n/f. https://www.bbmri-eric.eu/national-nodes/
-- EUCAIM partner countries among the seven: Italy, Spain, Portugal, Greece, Cyprus; Malta via BreastSCan link; Luxembourg n/f. https://cancerimage.eu/partners/
+- EUCAIM partner countries among the seven: Italy, Spain, Portugal, Greece, Cyprus; Malta via BreastSCan link; Luxembourg not on the partner list. https://cancerimage.eu/partners/ (verified 2026-11-19)
 - HDAB preparation projects: HDAB-ES (ES), HealthData@PT (PT), HDAB-LU (LU), GR-HDAB (GR), Malta HDAB (DHIR), CY-EHDS-2nd (NeHA); Italy designation pending.
+- ECIS contributing registries (archived list, 2025): Italy 41, Spain 15, Portugal 4 regional (to 2016), Cyprus 1 (1998-2022), Malta 1 (1993-2013), Greece 0, Luxembourg 0. https://web.archive.org/web/2025/https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (verified 2026-11-19)
+- CraNE (Comprehensive Cancer Infrastructures) partners exist in all seven countries; ECHoS National Cancer Mission Hubs exist in all seven. https://crane4health.eu/partners/ ; https://cancermissionhubs.eu/hubs/ (verified 2026-11-19)
