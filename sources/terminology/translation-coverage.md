@@ -41,3 +41,6 @@
 
 
 Note: the measured table above counts the 25 SNOMED codes in ECCDM's profiles and value sets (6 with a German term). A separate check of 32 codes, which adds 7 codes used only in ECCDM example instances, found 10 with a German term; both show the same gap.
+
+
+Belgian Edition 20261115 (verified 2026-11-19 from the release notes): French 75.29 %, Dutch 79.00 %, German 30.45 % of active concepts have a preferred term.

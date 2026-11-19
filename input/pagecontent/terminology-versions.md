@@ -298,6 +298,9 @@ ECCDM SNOMED codes without a term, per language ("x" = missing):
 
 Note: the measured table above counts the 25 SNOMED codes in ECCDM's profiles and value sets (6 with a German term). A separate check of 32 codes, which adds 7 codes used only in ECCDM example instances, found 10 with a German term; both show the same gap.
 
+
+Belgian Edition 20261115 (verified 2026-11-19 from the release notes): French 75.29 %, Dutch 79.00 %, German 30.45 % of active concepts have a preferred term.
+
 ### Official mappings between terminologies
 
 Live test 2026-11-19 on a local Snowstorm (SNOMED CT International plus German, Austrian, Swiss and LOINC-SNOMED editions): it serves eight implicit ConceptMaps, among them SNOMED→ICD-10 extended map (`http://snomed.info/sct?fhir_cm=447562003`), SNOMED→ICD-O simple map (`?fhir_cm=446608001`), SNOMED→ICD-10-CM complex map and the historical associations (SAME AS, REPLACED BY, POSSIBLY EQUIVALENT TO, ALTERNATIVE). `$translate` returned 254837009 Malignant neoplasm of breast → ICD-10 C50.9, and 82711006 Infiltrating duct carcinoma → ICD-O 8500/3. **Note for ECCDM:** the ICD-O map returns `system = http://hl7.org/fhir/sid/icd-o`, whereas ECCDM uses `http://terminology.hl7.org/CodeSystem/icd-o-3`; implementers translating from SNOMED must rewrite the system URI. The MII Ontoserver was unreachable (HTTP 503), so the German transition ConceptMaps were not test-loaded.
