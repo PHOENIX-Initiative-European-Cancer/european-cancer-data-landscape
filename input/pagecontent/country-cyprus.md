@@ -63,6 +63,7 @@ Region: Islands. Sources: see the URLs on each statement; raw research reports i
 
 #### (a) Cancer registries
 - Cyprus Cancer Registry: population-based, Health Monitoring Unit, Ministry of Health; established 1998 with MECC/US NCI support; member of IACR and ENCR. https://pmc.ncbi.nlm.nih.gov/articles/PMC4523219
+- ENCR member registries: Cyprus Cancer Registry (director Dr Vasos Scoutellas). Confirms the earlier ENCR membership statement. Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Output: ~4,260 new cases and ~1,600 deaths per year. https://en.politis.com.cy/social-lens/985101/cyprus-records-4260-new-cancer-cases-annually
 - Researcher access: pseudonymised data after National Bioethics Committee approval (study example). https://pmc.ncbi.nlm.nih.gov/articles/PMC11168067
 - Coding: ICD-O-3 with CanReg4 software deriving ICD-10 codes; registry set up 1996-1998 with Middle East Cancer Consortium support (https://pmc.ncbi.nlm.nih.gov/articles/PMC4523219) (verified 2026-11-19). Legal basis, submission format, TNM edition, variable dictionary: n/f.

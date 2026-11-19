@@ -19,7 +19,8 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
 
 #### (a) Cancer registries
 - Population-based: Kreftregisteret (Cancer Registry of Norway), founded 1952, part of Folkehelseinstituttet since 1 Jan 2024; basic registry covers 98.6% of cancer patients 2019–2023. https://fhi.no/om/fhi/omrader/kreftregisteret ; https://www.fhi.no/en/cancer/clinical-registries/prostate-cancer-registry/Degree-of-coverage-and-data-quality
-- ENCR/IACR: listed; ANCR member. https://catalogues.ema.europa.eu/node/1039/data-flows-and-management ; https://catalogues.ema.europa.eu/network/2221158
+- ANCR member. https://catalogues.ema.europa.eu/network/2221158
+- ENCR member registries: Cancer Registry of Norway (director Dr. Giske Ursin). Giske Ursin is the director named by ENCR; the entry does not reflect the move into Folkehelseinstituttet in 2024. Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Clinical quality registries: Kreftregisteret operates 12 quality registries (8 with national status, 2022). https://www.fhi.no/kreft/statistikk/Opplysninger-i-databasen/ ; https://www.ntnu.no/ojs/index.php/norepid/article/view/4975
 - Screening: three programmes (Mammografiprogrammet, Livmorhalsprogrammet, Tarmscreeningprogrammet), all run by Kreftregisteret. https://www.helsedirektoratet.no/forebygging-diagnose-og-behandling/diagnose-og-behandling/kreft/screeningprogram-for-kreft
 - Legal basis: Kreftregisterforskriften; mandatory electronic reporting since 2017. https://www.fhi.no/kreft/innrapportering/innrapportering-kremt/

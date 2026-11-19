@@ -18,7 +18,8 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
 
 #### (a) Cancer registries
 - Population-based: Icelandic Cancer Registry (Krabbameinsskrá), founded 1954, operated by the Icelandic Cancer Society research centre on behalf of the Directorate of Health (Act 41/2007); covers >99% of cancers; registration since 1955. https://www.krabb.is/rannsoknasetur/en/activities/about-icr/ ; https://www.laeknabladid.is/media/2024-06/f02.pdf
-- ENCR/IACR: ANCR member; ENCR registry page still n/f (ENCR list is script-rendered; needs browser). https://catalogues.ema.europa.eu/network/2221158
+- ANCR member. https://catalogues.ema.europa.eu/network/2221158
+- ENCR member registries: Icelandic Cancer Registry (directors Sigríður Gunnarsdóttir and Helgi Birgisson, medical director). Corrected: the registry is on the ENCR member list; the earlier n/f is resolved. Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Clinical quality registries: cancer quality registration started 1998 with prostate cancer and was expanded in 2010 (Læknablaðið) (verified 2026-11-19) https://www.laeknabladid.is/media/2020-09/u09.pdf
 - Screening: Samhæfingarstöð krabbameinsskimana (Cancer Screening Coordination Centre, Heilsugæsla höfuðborgarsvæðisins) runs breast, cervical and (from Feb 2025) colorectal screening; results via Heilsuvera. https://island.is/s/hh/samhaefingarstod-krabbameinsskimana ; https://island.is/s/hh/frett/langthradur-afangi-ad-hefja-skimun-fyrir-ristilkrabbameini-28-02-2025
 - Submission format: most reports arrive electronically from pathology laboratories; coverage over 99% of diagnoses (Læknablaðið 2024) (verified 2026-11-19) https://www.laeknabladid.is/media/2024-06/f02.pdf ; private clinicians report only prostate cancers. https://medicaljournalssweden.se/actaoncologica/article/view/24912

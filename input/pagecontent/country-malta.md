@@ -63,6 +63,7 @@ Region: Islands. Sources: see the URLs on each statement; raw research reports i
 
 #### (a) Cancer registries
 - Malta National Cancer Registry: population-based since 1991 (hospital-based before), within the Directorate for Health Information and Research (DHIR); ENCR member since 1995, IACR voting member. https://um.edu.mt/library/oar/bitstream/123456789/44319/1/CANCER%20INCIDENCE%20AND%20MORTALITY.PDF
+- ENCR member registries: Malta National Cancer Register (director Dr. Neville Calleja). Confirms the earlier membership statement; the join year 1995 is not shown on the list. Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Coverage: whole population (~400,000); ENCR contact list names director Neville Calleja. https://encr.eu/encr-members-contact-list?page=9
 - Clinical tumour registry: joint clinical tumour registry created for cancer care tracking (WHO OBS-PACE). https://eurohealthobservatory.who.int/monitors/pace/analyses/pace/integrated-governance-digital-solutions-and-stakeholder-collaboration-lessons-on-improving-cancer-care-from-malta-and-upper-austria
 - Screening: BreastScreen, colorectal, cervical programmes (healthscreening.gov.mt). https://healthscreening.gov.mt/en/?p=5486

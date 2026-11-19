@@ -19,7 +19,8 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
 
 #### (a) Cancer registries
 - Population-based: Finnish Cancer Registry (Suomen Syöpärekisteri), founded 1952/53, a THL statutory register maintained by the Cancer Society of Finland; statutory notification by all providers and labs. https://cancerregistry.fi/cancer-information-notification/
-- Coverage: near-complete (Nordic overview); ENCR listed; ANCR member. https://medicaljournalssweden.se/actaoncologica/article/view/24912 ; https://catalogues.ema.europa.eu/network/2221158
+- Coverage: near-complete (Nordic overview); ANCR member. https://medicaljournalssweden.se/actaoncologica/article/view/24912 ; https://catalogues.ema.europa.eu/network/2221158
+- ENCR member registries: Finnish Cancer Registry (director Dr. Janne Pitkäniemi). Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Screening registry: Mass Screening Registry (Joukkotarkastusrekisteri) within FCR; three statutory programmes (cervical, breast, colorectal since 2022). https://www.finngen.fi/sites/default/files/inline-files/FinnGen%20data%20protection%20statement%20April%202026.pdf ; https://www.news-medical.net/news/20240117/Study-shows-promise-of-gene-based-screening-to-fight-colorectal-cancer.aspx
 - Clinical quality registries: national cancer quality register project (Cancer Society, THL, FICAN) funded; permanent status pending. https://www.sttinfo.fi/tiedote/72255408/puutteita-syovanhoidossa-ei-voida-korjata-ilman-rahoitusta?lang=fi
 - Submission format: electronic transfers from hospitals/labs plus manual forms (older sources); current spec still n/f (cancerregistry.fi pages require a browser). https://medicaljournalssweden.se/actaoncologica/article/download/26654/31366/79205

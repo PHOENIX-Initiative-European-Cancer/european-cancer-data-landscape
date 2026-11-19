@@ -463,6 +463,7 @@ Scope: every item in italy-fhir.md and italy-landscape.md that was marked n/f or
 11. EHDS Cabina di regia composition and dates (DM 20 Feb 2026, DM 15 Apr 2026, installed 5 May 2026; includes ISTAT, DTD, AgID, Conferenza Regioni, EU EHDS Board delegate). https://www.osborneclarke.com/it/insights/digital-health-telemedicina-e-ia-le-novita-del-ii-trimestre-2026 (quotes the Ministry notice; the salute.gov.it page itself is client-rendered)
 12. HL7 Italia Terminology IG declares no terminology server; FSE Gateway dictionary microservice exists (it-fse-srv-dictionary). https://github.com/hl7-it/terminology/blob/master/sushi-config.yaml , https://github.com/ministero-salute/it-fse-srv-dictionary
 13. PNRR sub-investment 1.3.1 EUR 200 M (from DM 31 Dec 2024 recitals). Same GU source as item 1.
+14. ENCR membership: 51 Italian entries on the ENCR full-member contact list, including childhood, mesothelioma and colorectal registries; Fabrizio Stracci listed as director of the Umbrian Tumor Registry; applied to italy-landscape.md C1. https://www.encr.eu/encr-members-contact-list (read 2026-11-19)
 
 #### CORRECTED (old vs new)
 0. OECI Italian centres: old Wikipedia-derived list (9 CCC + 2 CCC-clinical + 8 other members) -> new live list of 16 certified Italian centres from https://accreditation.oeci.eu/ read with a browser by the team lead on 2026-11-19 (adds ASST Spedali Civili di Brescia, Policlinico San Matteo Pavia, INOC Candiolo, IRCCS Sacro Cuore Don Calabria, IRCCS San Raffaele; designation type per centre not shown). Snapshot: scratchpad/verify/oeci-centres-2026-11-19.txt
@@ -563,7 +564,7 @@ Also added: PALGA director Aletta Debernardi and board chair Iris Nagtegaal (onc
 
 Pass date: 2026-11-19. Method: local-language web searches; direct curl of registry PDFs into a dedicated download directory with pdftotext (Danish register declaration and LPR3 guide 2025 v5.1, Swedish "Kodning i cancerregistret 2026", Cancer in Norway 2023 and 2025, Estonian TAI notification guide and 2026 cancer-plan mid-term evaluation, Latvian SPKC cancer-card lecture and instruction, Lithuanian NVI 2025 activity report, EUnetCCC grant data sheet); direct fetch of ENCR registry pages, Genome of Europe partner page, Sundhedsdatastyrelsen reorganisation page, term.tehik.ee FHIR metadata. Outcomes: VERIFIED (fact confirmed with URL), CORRECTED (old statement replaced), STILL NOT FOUND (attempts listed).
 
-Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOUND 23 (of which 8 need a browser).
+Counts after browser follow-up on OECI and the ENCR member list (2026-11-19): VERIFIED 21, CORRECTED 23, STILL NOT FOUND 20.
 
 #### Priority 1: TNM editions in current registry use
 
@@ -606,13 +607,13 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 
 | Country | Outcome | Detail |
 |---|---|---|
-| Denmark | VERIFIED | Maya Christel Milter, Director, Danish Cancer Registry (ENCR). https://www.encr.eu/node/169 . ENCR lists the institute as "National Institute for Health Data and Disease Control", Artillerivej 5 (SSI address); this label could not be matched to any Danish agency name; see NEEDS BROWSER. |
-| Sweden | STILL NOT FOUND | No national Cancerregistret head named; ENCR member list is script-rendered. |
+| Denmark | VERIFIED | Maya Christel Milter, Director, Danish Cancer Registry (ENCR). https://www.encr.eu/node/169 . ENCR lists the institute as "National Institute for Health Data and Disease Control", Artillerivej 5 (SSI address); the ENCR member list (https://www.encr.eu/encr-members-contact-list (read 2026-11-19)) shows the same label; it could not be matched to a current Danish agency name. |
+| Sweden | CORRECTED | Old: n/f. New: Dr. David Pettersson, director, Swedish Cancer Registry (National Board of Health and Welfare). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Norway | VERIFIED | Giske Ursin, Director Kreftregisteret (FHI 2026 release, CiN 2025). https://www.fhi.no/nyheter/2026/40364-nye-krefttilfeller-i-2025/ |
 | Finland | VERIFIED | Janne Pitkäniemi, Director Finnish Cancer Registry (Syöpä 2024 report coverage). |
 | Iceland | VERIFIED | Sigríður Gunnarsdóttir, head of Rannsóknasetur – Krabbameinsskrá (Krabbameinsfélagið annual report 2025). https://www.krabb.is/media/arsskyrsla-krabbameinsfelagsins-2025.pdf |
-| Estonia | STILL NOT FOUND | TAI page gives phone only; report authors Mägi, Härmaorg, Innos. |
-| Latvia | STILL NOT FOUND | SPKC Reģistru pārraudzības nodaļa named, no person. |
+| Estonia | CORRECTED | Old: n/f. New: Dr. Margit Mägi, director, Estonian Cancer Registry (National Institute for Health Development). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| Latvia | CORRECTED | Old: n/f. New: Dr. Elina Liepina, director, Latvian Cancer Register (Centre for Disease Prevention and Control). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Lithuania | VERIFIED | Giedrė Smailytė, Director Lithuanian Cancer Registry (ENCR). https://encr.eu/node/262 |
 
 #### Other items
@@ -639,6 +640,8 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 | HL7 Denmark chair | STILL NOT FOUND | hl7.dk has no board page; conflicting secondary sources. |
 | HL7 Sweden chair | STILL NOT FOUND | hl7.se blocks automated fetch (Loopia block page); archive copy empty. |
 | Danish/Swedish/Norwegian/Finnish/Icelandic MDT, chemo module, openEHR oncology items | STILL NOT FOUND | Not pursued beyond earlier searches. |
+| ENCR membership (DK, SE, NO, FI, EE, LT) | VERIFIED | All six national registries on the ENCR member list; Denmark also lists the Faroese Cancer Registry. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| ENCR membership (IS, LV) | CORRECTED | Old: n/f (list script-rendered). New: Icelandic Cancer Registry and Latvian Cancer Register are ENCR members. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Synthetic datasets (all countries) | STILL NOT FOUND | No national synthetic cancer dataset found. |
 | DARWIN EU Swedish partner | STILL NOT FOUND | EMA PDF returns HTML block page. |
 | ECIS contributing registries (IS, EE, LV, LT) | STILL NOT FOUND | ECIS list page is script-rendered. |
@@ -648,15 +651,14 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 
 Pages that block or script-render for automated fetch; please open in a real browser:
 
-1. https://www.encr.eu/encr-members-contact-list and https://www.encr.eu/cancer-registries (registry directors for SE, FI, IS, EE, LV; ENCR membership of IS, EE, LV). Also confirm the institute label "National Institute for Health Data and Disease Control" on https://www.encr.eu/node/169 against the current Danish agency name.
-2. https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (ECIS contribution of IS, EE, LV, LT).
-3. https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf (DARWIN EU partners for SE, NO, EE).
-4. https://hl7.se/ (board / ordförande page) and https://hl7.dk/ members area or https://confluence.hl7.org/display/HD (HL7 Denmark chair).
-5. https://cancerregistry.fi/statistics/description-of-statistics-and-their-quality/ and https://syoparekisteri.fi/ilmoittaminen/ (Finnish TNM edition and current notification format).
-6. https://www.fhi.no/kreft/ search for "kodebok" (Kreftregisteret codebook, TNM/ICD-O statement).
-7. https://www.krabb.is/rannsoknasetur/ (Icelandic registry variable list / TNM).
-8. https://term.tehik.ee/ (login-protected UI; FHIR endpoint already verified).
-9. (resolved 2026-11-19 by team lead with a browser) https://accreditation.oeci.eu/ accredited-centres list; results applied above. Open point: the 'National Cancer Institute' entry shows no country; confirm it is NVI Vilnius, and check Tartu's accreditation level.
+1. https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (ECIS contribution of IS, EE, LV, LT).
+2. https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf (DARWIN EU partners for SE, NO, EE).
+3. https://hl7.se/ (board / ordförande page) and https://hl7.dk/ members area or https://confluence.hl7.org/display/HD (HL7 Denmark chair).
+4. https://cancerregistry.fi/statistics/description-of-statistics-and-their-quality/ and https://syoparekisteri.fi/ilmoittaminen/ (Finnish TNM edition and current notification format).
+5. https://www.fhi.no/kreft/ search for "kodebok" (Kreftregisteret codebook, TNM/ICD-O statement).
+6. https://www.krabb.is/rannsoknasetur/ (Icelandic registry variable list / TNM).
+7. https://term.tehik.ee/ (login-protected UI; FHIR endpoint already verified).
+8. (resolved 2026-11-19 by team lead with a browser) https://accreditation.oeci.eu/ accredited-centres list; results applied above. Open point: the 'National Cancer Institute' entry shows no country; confirm it is NVI Vilnius, and check Tartu's accreditation level.
 
 ### south
 
@@ -691,7 +693,7 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | # | Country | Item | Outcome | Detail / URL |
 |---|---|---|---|---|
 | 20 | IT | ECIS contributing registries | VERIFIED | 41 Italian registries in archived ECIS list. https://web.archive.org/web/2025/https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data |
-| 21 | IT | ENCR member list | STILL NOT FOUND | encr.eu contact list is JS-rendered; Wayback copy empty. NEEDS BROWSER. |
+| 21 | IT | ENCR member list | VERIFIED | 51 Italian entries on the ENCR full-member contact list (population and specialised registries, with directors); applied to south-landscape.md. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | 22 | IT | OECI centres | VERIFIED | 16 Italian centres on the OECI list read in a browser by the team lead on 2026-11-19 (saved at scratchpad/verify/oeci-centres-2026-11-19.txt). https://accreditation.oeci.eu/ |
 | 23 | IT | EU project partners | VERIFIED | CraNE: ACC, MoH, IDI; EUCanScreen: ISS, CPO Turin; TEHDAS2: MoH, UniBo, Parma, ACC, ULSS4, RER, UCSC; ECHoS hub ACC. https://crane4health.eu/partners/ ; https://eucanscreen.eu/partners/ ; https://tehdas.eu/partners/ ; https://cancermissionhubs.eu/hubs/ |
 | 24 | IT | 1+MG national programme; chemo prescribing; openEHR; patient portal oncology; hospital registries; synthetic data | STILL NOT FOUND | Left n/f; Italy deep-dive agent covers these. |
@@ -715,7 +717,7 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | 42 | GR | OECI | CORRECTED | Agios Savvas completed OECI accreditation June 2025. https://en.protothema.gr/2025/06/13/saint-savas-was-certified-by-the-organization-of-european-oncology-institutes/ |
 | 43 | GR | Researcher access | VERIFIED (partial) | Decree role "statistical information users"; INAB/CERTH National Cancer Data Node (CANDLE). https://www.inab.certh.gr/wp-content/uploads/2025/07/PRESS-RELEASE-CANDLE.pdf |
 | 44 | GR | EU projects | VERIFIED | CraNE: 1st YPE Attica, Agios Savvas, Laiko; EUCanScreen: DYPEDE; TEHDAS2: MoH, GRNET, IDIKA. |
-| 45 | GR | ENCR membership of national registry; ICD-O/TNM editions; open data portal; structured pathology; tumour board; openEHR | STILL NOT FOUND | Decree does not name coding systems; ENCR list NEEDS BROWSER. |
+| 45 | GR | ENCR membership of national registry; ICD-O/TNM editions; open data portal; structured pathology; tumour board; openEHR | STILL NOT FOUND (ENCR part CORRECTED) | Decree does not name coding systems. ENCR: Hellenic Cancer Registry (director Evangelia Tzala, KEELPNO, i.e. pre-2024 entry) and NARECHEM (childhood haematological malignancies, Eleni Petridou) are listed; the report's "NARECHEM-ST ENCR-listed" claim was corrected; membership of the 2024 HDIKA registry not shown. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | 46 | MT | Legal basis | VERIFIED | Notification of Cancer Act, Cap. 154 (1957). https://legislation.mt/eli/cap/154/eng/pdf |
 | 47 | MT | ECIS | CORRECTED | Malta contributes incidence 1993-2013 only (archived ECIS list). |
 | 48 | MT | Cancer plan after 2021 | VERIFIED (negative) | No successor plan found; Digital Health and Health Data Strategy 2025-2030 listed. https://health.gov.mt/resources/ |
@@ -732,10 +734,15 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | 58 | ES/PT/GR/LU | OECI centres | VERIFIED | Spain 8 (12 Octubre, CUN, ICO, Clínic, IVO, FJD, IOCS Reus, Vall d'Hebron), Portugal 3 (IPO Coimbra, Lisboa, Porto), Greece 1 (Saint Savvas), Luxembourg 0. https://accreditation.oeci.eu/ (browser, 2026-11-19) |
 | 59 | FR | SMT/ANS pages | NOTE | esante.gouv.fr was in maintenance on 2026-11-19; SMT FHIR endpoint answered. |
 
-Totals: VERIFIED 32 (incl. partial and negative), CORRECTED 10, STILL NOT FOUND 16 (several items bundle multiple sub-items).
+| 60 | ES | ENCR membership | CORRECTED | Old: "Spanish registries participate in ENCR" with Madrid as example of following ENCR recommendations. New: 19 Spanish ENCR member entries listed; Madrid appears only as its childhood and adolescent registry. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 61 | PT | ENCR membership | VERIFIED | 7 entries: RON, former regional registries (North, Central, ROR-SUL, Azores, Madeira) and ROPP. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 62 | LU | ENCR membership | VERIFIED | Cancer Registry of Luxembourg (LIH; Couffignal/Backes) and Morphological Tumour Registry (LNS; Hammer). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 63 | MT | ENCR membership | VERIFIED | Malta National Cancer Register, director Neville Calleja; join year 1995 not shown. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 64 | CY | ENCR membership | VERIFIED | Cyprus Cancer Registry, director Vasos Scoutellas. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+
+Totals: VERIFIED 37 (incl. partial and negative), CORRECTED 11, STILL NOT FOUND 15 (several items bundle multiple sub-items).
 
 #### NEEDS BROWSER
-- https://encr.eu/encr-members-contact-list (all pages) – ENCR member registries for IT, ES, PT, GR, MT, CY, LU; JS-rendered.
 - https://dhir.gov.mt/ and https://deputyprimeminister.gov.mt/ – Malta National Cancer Registry page, data request procedure, latest cancer report (HTTP 403 to curl; Cloudflare origin DNS error in browser on 2026-11-19; retry later).
 - https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-cy-2024-1662-en.pdf – EU Country Cancer Profile Cyprus 2025, to extract the gov.cy May 2024 national cancer strategy URL and read that PDF.
 - https://ron.min-saude.pt/ – Portugal RON platform documentation (site unreachable, no archive).

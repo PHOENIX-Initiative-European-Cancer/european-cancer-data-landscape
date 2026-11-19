@@ -2,7 +2,7 @@
 
 Pass date: 2026-11-19. Method: local-language web searches; direct curl of registry PDFs into a dedicated download directory with pdftotext (Danish register declaration and LPR3 guide 2025 v5.1, Swedish "Kodning i cancerregistret 2026", Cancer in Norway 2023 and 2025, Estonian TAI notification guide and 2026 cancer-plan mid-term evaluation, Latvian SPKC cancer-card lecture and instruction, Lithuanian NVI 2025 activity report, EUnetCCC grant data sheet); direct fetch of ENCR registry pages, Genome of Europe partner page, Sundhedsdatastyrelsen reorganisation page, term.tehik.ee FHIR metadata. Outcomes: VERIFIED (fact confirmed with URL), CORRECTED (old statement replaced), STILL NOT FOUND (attempts listed).
 
-Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOUND 23 (of which 8 need a browser).
+Counts after browser follow-up on OECI and the ENCR member list (2026-11-19): VERIFIED 21, CORRECTED 23, STILL NOT FOUND 20.
 
 ## Priority 1: TNM editions in current registry use
 
@@ -45,13 +45,13 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 
 | Country | Outcome | Detail |
 |---|---|---|
-| Denmark | VERIFIED | Maya Christel Milter, Director, Danish Cancer Registry (ENCR). https://www.encr.eu/node/169 . ENCR lists the institute as "National Institute for Health Data and Disease Control", Artillerivej 5 (SSI address); this label could not be matched to any Danish agency name; see NEEDS BROWSER. |
-| Sweden | STILL NOT FOUND | No national Cancerregistret head named; ENCR member list is script-rendered. |
+| Denmark | VERIFIED | Maya Christel Milter, Director, Danish Cancer Registry (ENCR). https://www.encr.eu/node/169 . ENCR lists the institute as "National Institute for Health Data and Disease Control", Artillerivej 5 (SSI address); the ENCR member list (https://www.encr.eu/encr-members-contact-list (read 2026-11-19)) shows the same label; it could not be matched to a current Danish agency name. |
+| Sweden | CORRECTED | Old: n/f. New: Dr. David Pettersson, director, Swedish Cancer Registry (National Board of Health and Welfare). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Norway | VERIFIED | Giske Ursin, Director Kreftregisteret (FHI 2026 release, CiN 2025). https://www.fhi.no/nyheter/2026/40364-nye-krefttilfeller-i-2025/ |
 | Finland | VERIFIED | Janne Pitkäniemi, Director Finnish Cancer Registry (Syöpä 2024 report coverage). |
 | Iceland | VERIFIED | Sigríður Gunnarsdóttir, head of Rannsóknasetur – Krabbameinsskrá (Krabbameinsfélagið annual report 2025). https://www.krabb.is/media/arsskyrsla-krabbameinsfelagsins-2025.pdf |
-| Estonia | STILL NOT FOUND | TAI page gives phone only; report authors Mägi, Härmaorg, Innos. |
-| Latvia | STILL NOT FOUND | SPKC Reģistru pārraudzības nodaļa named, no person. |
+| Estonia | CORRECTED | Old: n/f. New: Dr. Margit Mägi, director, Estonian Cancer Registry (National Institute for Health Development). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| Latvia | CORRECTED | Old: n/f. New: Dr. Elina Liepina, director, Latvian Cancer Register (Centre for Disease Prevention and Control). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Lithuania | VERIFIED | Giedrė Smailytė, Director Lithuanian Cancer Registry (ENCR). https://encr.eu/node/262 |
 
 ## Other items
@@ -78,6 +78,8 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 | HL7 Denmark chair | STILL NOT FOUND | hl7.dk has no board page; conflicting secondary sources. |
 | HL7 Sweden chair | STILL NOT FOUND | hl7.se blocks automated fetch (Loopia block page); archive copy empty. |
 | Danish/Swedish/Norwegian/Finnish/Icelandic MDT, chemo module, openEHR oncology items | STILL NOT FOUND | Not pursued beyond earlier searches. |
+| ENCR membership (DK, SE, NO, FI, EE, LT) | VERIFIED | All six national registries on the ENCR member list; Denmark also lists the Faroese Cancer Registry. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| ENCR membership (IS, LV) | CORRECTED | Old: n/f (list script-rendered). New: Icelandic Cancer Registry and Latvian Cancer Register are ENCR members. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | Synthetic datasets (all countries) | STILL NOT FOUND | No national synthetic cancer dataset found. |
 | DARWIN EU Swedish partner | STILL NOT FOUND | EMA PDF returns HTML block page. |
 | ECIS contributing registries (IS, EE, LV, LT) | STILL NOT FOUND | ECIS list page is script-rendered. |
@@ -87,12 +89,11 @@ Counts after browser follow-up on OECI: VERIFIED 20, CORRECTED 19, STILL NOT FOU
 
 Pages that block or script-render for automated fetch; please open in a real browser:
 
-1. https://www.encr.eu/encr-members-contact-list and https://www.encr.eu/cancer-registries (registry directors for SE, FI, IS, EE, LV; ENCR membership of IS, EE, LV). Also confirm the institute label "National Institute for Health Data and Disease Control" on https://www.encr.eu/node/169 against the current Danish agency name.
-2. https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (ECIS contribution of IS, EE, LV, LT).
-3. https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf (DARWIN EU partners for SE, NO, EE).
-4. https://hl7.se/ (board / ordförande page) and https://hl7.dk/ members area or https://confluence.hl7.org/display/HD (HL7 Denmark chair).
-5. https://cancerregistry.fi/statistics/description-of-statistics-and-their-quality/ and https://syoparekisteri.fi/ilmoittaminen/ (Finnish TNM edition and current notification format).
-6. https://www.fhi.no/kreft/ search for "kodebok" (Kreftregisteret codebook, TNM/ICD-O statement).
-7. https://www.krabb.is/rannsoknasetur/ (Icelandic registry variable list / TNM).
-8. https://term.tehik.ee/ (login-protected UI; FHIR endpoint already verified).
-9. (resolved 2026-11-19 by team lead with a browser) https://accreditation.oeci.eu/ accredited-centres list; results applied above. Open point: the 'National Cancer Institute' entry shows no country; confirm it is NVI Vilnius, and check Tartu's accreditation level.
+1. https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data (ECIS contribution of IS, EE, LV, LT).
+2. https://www.ema.europa.eu/system/files/documents/other/data-partners-onboarded-darwin-eu-phase-i-ii-iii-iv_en.pdf (DARWIN EU partners for SE, NO, EE).
+3. https://hl7.se/ (board / ordförande page) and https://hl7.dk/ members area or https://confluence.hl7.org/display/HD (HL7 Denmark chair).
+4. https://cancerregistry.fi/statistics/description-of-statistics-and-their-quality/ and https://syoparekisteri.fi/ilmoittaminen/ (Finnish TNM edition and current notification format).
+5. https://www.fhi.no/kreft/ search for "kodebok" (Kreftregisteret codebook, TNM/ICD-O statement).
+6. https://www.krabb.is/rannsoknasetur/ (Icelandic registry variable list / TNM).
+7. https://term.tehik.ee/ (login-protected UI; FHIR endpoint already verified).
+8. (resolved 2026-11-19 by team lead with a browser) https://accreditation.oeci.eu/ accredited-centres list; results applied above. Open point: the 'National Cancer Institute' entry shows no country; confirm it is NVI Vilnius, and check Tartu's accreditation level.

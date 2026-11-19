@@ -31,7 +31,7 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | # | Country | Item | Outcome | Detail / URL |
 |---|---|---|---|---|
 | 20 | IT | ECIS contributing registries | VERIFIED | 41 Italian registries in archived ECIS list. https://web.archive.org/web/2025/https://ecis.jrc.ec.europa.eu/list-registries-contributing-ecis-historical-data |
-| 21 | IT | ENCR member list | STILL NOT FOUND | encr.eu contact list is JS-rendered; Wayback copy empty. NEEDS BROWSER. |
+| 21 | IT | ENCR member list | VERIFIED | 51 Italian entries on the ENCR full-member contact list (population and specialised registries, with directors); applied to south-landscape.md. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | 22 | IT | OECI centres | VERIFIED | 16 Italian centres on the OECI list read in a browser by the team lead on 2026-11-19 (saved at scratchpad/verify/oeci-centres-2026-11-19.txt). https://accreditation.oeci.eu/ |
 | 23 | IT | EU project partners | VERIFIED | CraNE: ACC, MoH, IDI; EUCanScreen: ISS, CPO Turin; TEHDAS2: MoH, UniBo, Parma, ACC, ULSS4, RER, UCSC; ECHoS hub ACC. https://crane4health.eu/partners/ ; https://eucanscreen.eu/partners/ ; https://tehdas.eu/partners/ ; https://cancermissionhubs.eu/hubs/ |
 | 24 | IT | 1+MG national programme; chemo prescribing; openEHR; patient portal oncology; hospital registries; synthetic data | STILL NOT FOUND | Left n/f; Italy deep-dive agent covers these. |
@@ -55,7 +55,7 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | 42 | GR | OECI | CORRECTED | Agios Savvas completed OECI accreditation June 2025. https://en.protothema.gr/2025/06/13/saint-savas-was-certified-by-the-organization-of-european-oncology-institutes/ |
 | 43 | GR | Researcher access | VERIFIED (partial) | Decree role "statistical information users"; INAB/CERTH National Cancer Data Node (CANDLE). https://www.inab.certh.gr/wp-content/uploads/2025/07/PRESS-RELEASE-CANDLE.pdf |
 | 44 | GR | EU projects | VERIFIED | CraNE: 1st YPE Attica, Agios Savvas, Laiko; EUCanScreen: DYPEDE; TEHDAS2: MoH, GRNET, IDIKA. |
-| 45 | GR | ENCR membership of national registry; ICD-O/TNM editions; open data portal; structured pathology; tumour board; openEHR | STILL NOT FOUND | Decree does not name coding systems; ENCR list NEEDS BROWSER. |
+| 45 | GR | ENCR membership of national registry; ICD-O/TNM editions; open data portal; structured pathology; tumour board; openEHR | STILL NOT FOUND (ENCR part CORRECTED) | Decree does not name coding systems. ENCR: Hellenic Cancer Registry (director Evangelia Tzala, KEELPNO, i.e. pre-2024 entry) and NARECHEM (childhood haematological malignancies, Eleni Petridou) are listed; the report's "NARECHEM-ST ENCR-listed" claim was corrected; membership of the 2024 HDIKA registry not shown. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
 | 46 | MT | Legal basis | VERIFIED | Notification of Cancer Act, Cap. 154 (1957). https://legislation.mt/eli/cap/154/eng/pdf |
 | 47 | MT | ECIS | CORRECTED | Malta contributes incidence 1993-2013 only (archived ECIS list). |
 | 48 | MT | Cancer plan after 2021 | VERIFIED (negative) | No successor plan found; Digital Health and Health Data Strategy 2025-2030 listed. https://health.gov.mt/resources/ |
@@ -72,10 +72,15 @@ Date: 2026-11-19. Method: WebSearch in local languages, curl of primary pages an
 | 58 | ES/PT/GR/LU | OECI centres | VERIFIED | Spain 8 (12 Octubre, CUN, ICO, Clínic, IVO, FJD, IOCS Reus, Vall d'Hebron), Portugal 3 (IPO Coimbra, Lisboa, Porto), Greece 1 (Saint Savvas), Luxembourg 0. https://accreditation.oeci.eu/ (browser, 2026-11-19) |
 | 59 | FR | SMT/ANS pages | NOTE | esante.gouv.fr was in maintenance on 2026-11-19; SMT FHIR endpoint answered. |
 
-Totals: VERIFIED 32 (incl. partial and negative), CORRECTED 10, STILL NOT FOUND 16 (several items bundle multiple sub-items).
+| 60 | ES | ENCR membership | CORRECTED | Old: "Spanish registries participate in ENCR" with Madrid as example of following ENCR recommendations. New: 19 Spanish ENCR member entries listed; Madrid appears only as its childhood and adolescent registry. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 61 | PT | ENCR membership | VERIFIED | 7 entries: RON, former regional registries (North, Central, ROR-SUL, Azores, Madeira) and ROPP. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 62 | LU | ENCR membership | VERIFIED | Cancer Registry of Luxembourg (LIH; Couffignal/Backes) and Morphological Tumour Registry (LNS; Hammer). https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 63 | MT | ENCR membership | VERIFIED | Malta National Cancer Register, director Neville Calleja; join year 1995 not shown. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+| 64 | CY | ENCR membership | VERIFIED | Cyprus Cancer Registry, director Vasos Scoutellas. https://www.encr.eu/encr-members-contact-list (read 2026-11-19) |
+
+Totals: VERIFIED 37 (incl. partial and negative), CORRECTED 11, STILL NOT FOUND 15 (several items bundle multiple sub-items).
 
 ## NEEDS BROWSER
-- https://encr.eu/encr-members-contact-list (all pages) – ENCR member registries for IT, ES, PT, GR, MT, CY, LU; JS-rendered.
 - https://dhir.gov.mt/ and https://deputyprimeminister.gov.mt/ – Malta National Cancer Registry page, data request procedure, latest cancer report (HTTP 403 to curl; Cloudflare origin DNS error in browser on 2026-11-19; retry later).
 - https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-cy-2024-1662-en.pdf – EU Country Cancer Profile Cyprus 2025, to extract the gov.cy May 2024 national cancer strategy URL and read that PDF.
 - https://ron.min-saude.pt/ – Portugal RON platform documentation (site unreachable, no archive).

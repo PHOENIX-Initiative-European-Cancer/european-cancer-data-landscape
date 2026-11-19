@@ -17,7 +17,8 @@ Region: Nordic and Baltic. Sources: see the URLs on each statement; raw research
 ### Registries, public datasets, infrastructure and non-FHIR digital assets
 
 #### (a) Cancer registries
-- Population-based: Lithuanian Cancer Registry at Nacionalinis vėžio institutas (NVI); ENCR-listed; modernised registry with open data portal (Dec 2025); fully electronic registration per NVI 2025 report. https://encr.eu/node/262 ; https://ground.news/article/since-1978-67-million-cancer-cases-in-lithuania-new-tool-for-disease-control-introduced ; https://nvi.lt/wp-content/uploads/2026/04/2-priedas.-NVI_Ataskaita_2025_26-02-26.pdf
+- Population-based: Lithuanian Cancer Registry at Nacionalinis vėžio institutas (NVI); modernised registry with open data portal (Dec 2025); fully electronic registration per NVI 2025 report. https://encr.eu/node/262 ; https://ground.news/article/since-1978-67-million-cancer-cases-in-lithuania-new-tool-for-disease-control-introduced ; https://nvi.lt/wp-content/uploads/2026/04/2-priedas.-NVI_Ataskaita_2025_26-02-26.pdf
+- ENCR member registries: Lithuanian Cancer Registry (director Dr. Giedre Smailyte). Institute still listed under its former name, Institute of Oncology, Vilnius University (now NVI). Source: https://www.encr.eu/encr-members-contact-list (read 2026-11-19) (verified 2026-11-19)
 - Source document: form Nr. 090/a (first-diagnosis notice). https://www.nvi.lt/uploads/pdf/Vezio%20registras/V%C4%97%C5%BEys%20Lietuvoje%202016.pdf
 - Screening: ESPBI subsystem for prevention programmes (breast, cervical, colorectal, prostate) built 2023–2025 (Kaunas Clinics project). https://kaunoklinikos.lt/media/file/Prevencini%C5%B3%20program%C5%B3%20vykdymo,%20kokyb%C4%97s%20u%C5%BEtikrinimo%20ir%20kokyb%C4%97s%20kontrol%C4%97s%20ESPBI%20IS%20posistem%C4%97s%20k%C5%ABrimas.pdf
 - Clinical quality registries: n/f.
